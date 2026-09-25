@@ -101,6 +101,9 @@ Eight agents with identical rules skipped between **2 and 35** tickets each. Som
 
 ### Critic agents (Draft → Critique → Revise)
 **Rule: the builder shouldn't grade its own work.** A separate reviewer with a fresh context doesn't share the builder's blind spots. The critic **proposes**, a human **approves**, and only then does anything get applied. *(P2)*
+- **Make fixes machine-applicable.** The critic writes `review.md` (checkboxes for the human) *and* `review_fixes.json` (the same fixes as data), so approval → application is mechanical, not a re-interpretation.
+- **Order matters when applying fixes:** drops and remaps first (they use the original IDs), merges last (they rename IDs).
+- In P2 the critic proposed 85 fixes: 31 duplicate merges, 31 remaps, 17 drops. My prediction that it would recommend a schema change was wrong: every violation fit the existing schema once remapped. Good critics correct the orchestrator too.
 
 ---
 
@@ -120,6 +123,15 @@ Eight agents with identical rules skipped between **2 and 35** tickets each. Som
 
 ### Spot-checks
 Re-verify a **random sample** against the source of truth. Cheap, and it catches what summary stats miss. *(P1, P2)*
+
+### Confidence labels are a triage signal
+**Rule: ask agents to label their confidence, then spend your review time where confidence is low.** In P2 the critic found **80%** of high/medium facts fully supported (and 0 unsupported), but only **25%** of low-confidence facts. The labels were honest, so review effort goes where the risk is. *(P2)*
+
+### Verify the critic too
+**Rule: nobody's output is trusted unchecked, reviewers included.** Before presenting the critic's findings, spot-check 2–3 of its claims against the source. In P2 both checked claims held up (duplicate IDs exist; 6 of 8 "evidence" tickets never mention the controller). *(P2)*
+
+### Harvest structured facts; don't make agents guess them
+**Rule: if a fact exists as a field in the source system, collect the field.** Don't ask an agent to infer it from prose. P1 didn't harvest Jira's `fixVersion`, so P2 agents had to guess releases from text, and 4 of 23 release links had no support. Structured data is cheaper and more accurate than extraction. *(P2)*
 
 ### Passing checks ≠ true facts
 Mechanical checks (format, schema, counts) passing doesn't mean the content is right. **Rule: after the numbers pass, read a handful of real outputs yourself.** *(P2)*
@@ -190,6 +202,7 @@ Mechanical checks (format, schema, counts) passing doesn't mean the content is r
 | **Grounding** | Tying every claim to a checkable source |
 | **Hallucination** | Plausible-sounding output that isn't supported by any source |
 | **Human-in-the-loop (HITL)** | Designed pause points where a person approves before the agent continues |
+| **Evidence audit** | Checking a sample of facts against their cited sources: supported / weak / unsupported |
 | **Idempotent** | Safe to run twice: no duplicates, no damage |
 | **Independent evaluator** | A check separate from the worker, so the agent isn't grading its own homework |
 | **Model inheritance** | Subagents default to the parent session's model |

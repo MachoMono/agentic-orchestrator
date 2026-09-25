@@ -1,0 +1,889 @@
+[
+ {
+  "id": "F1",
+  "action": "merge",
+  "canonical": "component:kraft-controller",
+  "merge": [
+   "component:quorum-controller",
+   "component:raft-quorum-controller",
+   "component:kraftclustertest"
+  ]
+ },
+ {
+  "id": "F2",
+  "action": "merge",
+  "canonical": "component:kraft-quorum",
+  "merge": [
+   "component:kraft"
+  ]
+ },
+ {
+  "id": "F3",
+  "action": "merge",
+  "canonical": "component:raft-client",
+  "merge": [
+   "component:kraftclient"
+  ]
+ },
+ {
+  "id": "F4",
+  "action": "merge",
+  "canonical": "component:new-consumer",
+  "merge": [
+   "component:async-consumer",
+   "component:async-kafka-consumer"
+  ]
+ },
+ {
+  "id": "F5",
+  "action": "merge",
+  "canonical": "component:kafka-consumer",
+  "merge": [
+   "component:kafkaconsumer"
+  ]
+ },
+ {
+  "id": "F6",
+  "action": "merge",
+  "canonical": "component:consumer-coordinator",
+  "merge": [
+   "component:consumercoordinator",
+   "component:abstractcoordinator"
+  ]
+ },
+ {
+  "id": "F7",
+  "action": "merge",
+  "canonical": "component:producer",
+  "merge": [
+   "component:kafka-producer",
+   "component:producer-client"
+  ]
+ },
+ {
+  "id": "F8",
+  "action": "merge",
+  "canonical": "component:mirrormaker-2",
+  "merge": [
+   "component:mirror-maker-2",
+   "component:mirrormaker2-worker",
+   "component:dedicated-mirror-connector"
+  ]
+ },
+ {
+  "id": "F9",
+  "action": "merge",
+  "canonical": "component:mirror-source-connector",
+  "merge": [
+   "component:mirrorsourceconnector"
+  ]
+ },
+ {
+  "id": "F10",
+  "action": "merge",
+  "canonical": "component:connect-runtime",
+  "merge": [
+   "component:connect-worker",
+   "component:exactly-once-source-integration-test"
+  ]
+ },
+ {
+  "id": "F11",
+  "action": "merge",
+  "canonical": "component:connect-rest-api",
+  "merge": [
+   "component:connect-rest-api-test"
+  ]
+ },
+ {
+  "id": "F12",
+  "action": "merge",
+  "canonical": "component:distributed-herder",
+  "merge": [
+   "component:distributedherder",
+   "component:distributed-herder-test"
+  ]
+ },
+ {
+  "id": "F13",
+  "action": "merge",
+  "canonical": "component:log-cleaner",
+  "merge": [
+   "component:logcleaner",
+   "component:log-compaction-tester"
+  ]
+ },
+ {
+  "id": "F14",
+  "action": "merge",
+  "canonical": "component:log-manager",
+  "merge": [
+   "component:logmanager"
+  ]
+ },
+ {
+  "id": "F15",
+  "action": "merge",
+  "canonical": "component:remote-log-manager",
+  "merge": [
+   "component:remotelogmanager"
+  ]
+ },
+ {
+  "id": "F16",
+  "action": "merge",
+  "canonical": "component:remote-log-metadata-manager",
+  "merge": [
+   "component:topic-based-rlmm",
+   "component:topicbasedremotelogmetadatamanager"
+  ]
+ },
+ {
+  "id": "F17",
+  "action": "merge",
+  "canonical": "component:replica-fetcher-thread",
+  "merge": [
+   "component:replicafetcher",
+   "component:replica-fetcher"
+  ]
+ },
+ {
+  "id": "F18",
+  "action": "merge",
+  "canonical": "component:kafka-streams",
+  "merge": [
+   "component:kafka-streams-client",
+   "component:streams-smoke-test"
+  ]
+ },
+ {
+  "id": "F19",
+  "action": "merge",
+  "canonical": "component:foreign-key-join",
+  "merge": [
+   "component:fk-join",
+   "component:ktable-foreignkey-join"
+  ]
+ },
+ {
+  "id": "F20",
+  "action": "merge",
+  "canonical": "component:config-command",
+  "merge": [
+   "component:kafka-configs-cli",
+   "component:kafka-config-tool"
+  ]
+ },
+ {
+  "id": "F21",
+  "action": "merge",
+  "canonical": "component:metadata-quorum-command",
+  "merge": [
+   "component:kafka-metadata-quorum-cli"
+  ]
+ },
+ {
+  "id": "F22",
+  "action": "merge",
+  "canonical": "interface:consumer-close-closeoptions",
+  "merge": [
+   "interface:consumer-close-options"
+  ]
+ },
+ {
+  "id": "F23",
+  "action": "merge",
+  "canonical": "interface:kafka-configs-sh",
+  "merge": [
+   "interface:kafka-configs-cli"
+  ]
+ },
+ {
+  "id": "F24",
+  "action": "merge",
+  "canonical": "interface:streams-close-options",
+  "merge": [
+   "interface:close-options-api"
+  ]
+ },
+ {
+  "id": "F25",
+  "action": "merge",
+  "canonical": "initiative:kip-405",
+  "merge": [
+   "initiative:tiered-storage"
+  ]
+ },
+ {
+  "id": "F26",
+  "action": "merge",
+  "canonical": "initiative:kip-1030",
+  "merge": [
+   "initiative:config-defaults-4-0"
+  ]
+ },
+ {
+  "id": "F27",
+  "action": "merge",
+  "canonical": "release:4-0-0",
+  "merge": [
+   "release:4-0"
+  ]
+ },
+ {
+  "id": "F28",
+  "action": "merge",
+  "canonical": "release:3-9-0",
+  "merge": [
+   "release:3-9"
+  ]
+ },
+ {
+  "id": "F29",
+  "action": "merge",
+  "canonical": "release:4-3-0",
+  "merge": [
+   "release:4-3"
+  ]
+ },
+ {
+  "id": "F30",
+  "action": "merge",
+  "canonical": "release:5-0-0",
+  "merge": [
+   "release:5-0"
+  ]
+ },
+ {
+  "id": "F31",
+  "action": "drop_relationship",
+  "subject": "initiative:kip-500",
+  "predicate": "CHANGES",
+  "object": "component:metadata-module"
+ },
+ {
+  "id": "F32",
+  "action": "drop_relationship",
+  "subject": "component:kafkaapis",
+  "predicate": "DELIVERED_IN",
+  "object": "release:3-6-0"
+ },
+ {
+  "id": "F33",
+  "action": "drop_relationship",
+  "subject": "component:kafkaconsumer",
+  "predicate": "DELIVERED_IN",
+  "object": "release:3-7-0"
+ },
+ {
+  "id": "F34",
+  "action": "drop_relationship",
+  "subject": "component:producer",
+  "predicate": "EXHIBITS",
+  "object": "failure:incorrect-behavior"
+ },
+ {
+  "id": "F35",
+  "action": "drop_relationship",
+  "subject": "component:requestmanagers",
+  "predicate": "EXHIBITS",
+  "object": "failure:api-usability-gap"
+ },
+ {
+  "id": "F36",
+  "action": "drop_relationship",
+  "subject": "interface:kafka-consumer-groups-cli",
+  "predicate": "EXHIBITS",
+  "object": "failure:incorrect-behavior"
+ },
+ {
+  "id": "F37",
+  "action": "drop_relationship",
+  "subject": "interface:group-instance-id",
+  "predicate": "GOVERNED_BY",
+  "object": "process:kip-design-proposal-process"
+ },
+ {
+  "id": "F38",
+  "action": "drop_relationship",
+  "subject": "component:consumer",
+  "predicate": "EXHIBITS",
+  "object": "failure:resource-leak"
+ },
+ {
+  "id": "F39",
+  "action": "drop_relationship",
+  "subject": "component:streams-config",
+  "predicate": "EXHIBITS",
+  "object": "failure:compatibility-upgrade-break"
+ },
+ {
+  "id": "F40",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "component:consumer",
+   "predicate": "DELIVERED_IN",
+   "object": "release:3-7-1"
+  },
+  "to": {
+   "subject": "component:kafka-clients-build",
+   "predicate": "DELIVERED_IN",
+   "object": "release:3-7-1"
+  }
+ },
+ {
+  "id": "F41",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "component:log-manager",
+   "predicate": "EXPOSES",
+   "object": "interface:log-message-timestamp-difference-max-ms"
+  },
+  "to": {
+   "subject": "component:log-config",
+   "predicate": "EXPOSES",
+   "object": "interface:log-message-timestamp-difference-max-ms"
+  }
+ },
+ {
+  "id": "F42",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "interface:admin-api-pagination",
+   "predicate": "EXHIBITS",
+   "object": "failure:performance-degradation"
+  },
+  "to": {
+   "subject": "component:admin-client",
+   "predicate": "EXHIBITS",
+   "object": "failure:performance-degradation"
+  }
+ },
+ {
+  "id": "F43",
+  "action": "remove_evidence",
+  "subject": "initiative:zk-to-kraft-migration",
+  "predicate": "CHANGES",
+  "object": "component:kraft-controller",
+  "evidence": [
+   "KAFKA-17787",
+   "KAFKA-17788",
+   "KAFKA-17790",
+   "KAFKA-17987",
+   "KAFKA-18595",
+   "KAFKA-18599",
+   "KAFKA-18600"
+  ]
+ },
+ {
+  "id": "F44",
+  "action": "remove_evidence",
+  "subject": "component:new-consumer",
+  "predicate": "EXHIBITS",
+  "object": "failure:incorrect-behavior",
+  "evidence": [
+   "KAFKA-18769"
+  ]
+ },
+ {
+  "id": "F45",
+  "action": "remove_evidence",
+  "subject": "component:stream-thread",
+  "predicate": "EXHIBITS",
+  "object": "failure:hang-stuck-state",
+  "evidence": [
+   "KAFKA-17789"
+  ]
+ },
+ {
+  "id": "F46",
+  "action": "remove_evidence",
+  "subject": "component:kraft-controller",
+  "predicate": "EXHIBITS",
+  "object": "failure:crash-unhandled-exception",
+  "evidence": [
+   "KAFKA-18274"
+  ]
+ },
+ {
+  "id": "F47",
+  "action": "remove_evidence",
+  "subject": "role:committer-reviewer",
+  "predicate": "PERFORMS",
+  "object": "process:triage",
+  "evidence": [
+   "KAFKA-18596"
+  ]
+ },
+ {
+  "id": "F48",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "component:kafkametadataquorum-cli",
+   "predicate": "EXHIBITS",
+   "object": "failure:api-usability-gap"
+  },
+  "to": {
+   "subject": "component:metadata-quorum-command",
+   "predicate": "EXHIBITS",
+   "object": "failure:api-usability-gap"
+  }
+ },
+ {
+  "id": "F49",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "component:kafkametadataquorum-cli",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test"
+  },
+  "to": {
+   "subject": "component:metadata-quorum-command",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test"
+  }
+ },
+ {
+  "id": "F50",
+  "action": "drop_relationship",
+  "subject": "component:kafkametadataquorum-cli",
+  "predicate": "PART_OF",
+  "object": "system:tooling"
+ },
+ {
+  "id": "F51",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "dependency:jetty-server",
+   "predicate": "EXHIBITS",
+   "object": "failure:security-vulnerability"
+  },
+  "to": {
+   "subject": "failure:security-vulnerability",
+   "predicate": "TRIGGERED_BY",
+   "object": "dependency:jetty-server"
+  }
+ },
+ {
+  "id": "F52",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "dependency:jose4j",
+   "predicate": "EXHIBITS",
+   "object": "failure:security-vulnerability"
+  },
+  "to": {
+   "subject": "failure:security-vulnerability",
+   "predicate": "TRIGGERED_BY",
+   "object": "dependency:jose4j"
+  }
+ },
+ {
+  "id": "F53",
+  "action": "drop_relationship",
+  "subject": "dependency:scala-collection-compat",
+  "predicate": "EXHIBITS",
+  "object": "failure:security-vulnerability"
+ },
+ {
+  "id": "F54",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "dependency:zookeeper",
+   "predicate": "EXHIBITS",
+   "object": "failure:security-vulnerability"
+  },
+  "to": {
+   "subject": "failure:security-vulnerability",
+   "predicate": "TRIGGERED_BY",
+   "object": "dependency:zookeeper"
+  }
+ },
+ {
+  "id": "F55",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "initiative:tiered-storage",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test"
+  },
+  "to": {
+   "subject": "component:remote-log-manager",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test"
+  }
+ },
+ {
+  "id": "F56",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:broker",
+   "predicate": "EXHIBITS",
+   "object": "failure:documentation-gap"
+  },
+  "to": {
+   "subject": "component:logging-subsystem",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior"
+  }
+ },
+ {
+  "id": "F57",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:broker",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test"
+  },
+  "to": {
+   "subject": "component:broker-core",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test"
+  }
+ },
+ {
+  "id": "F58",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:build-ci",
+   "predicate": "EXHIBITS",
+   "object": "failure:build-ci-failure"
+  },
+  "to": {
+   "subject": "component:test-infrastructure",
+   "predicate": "EXHIBITS",
+   "object": "failure:build-ci-failure"
+  }
+ },
+ {
+  "id": "F59",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:build-ci",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test"
+  },
+  "to": {
+   "subject": "component:broker-core",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test"
+  }
+ },
+ {
+  "id": "F60",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:build-ci",
+   "predicate": "EXHIBITS",
+   "object": "failure:performance-degradation"
+  },
+  "to": {
+   "subject": "component:build-tooling",
+   "predicate": "EXHIBITS",
+   "object": "failure:performance-degradation"
+  }
+ },
+ {
+  "id": "F61",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:connect",
+   "predicate": "EXHIBITS",
+   "object": "failure:api-usability-gap"
+  },
+  "to": {
+   "subject": "component:connect-transformations",
+   "predicate": "EXHIBITS",
+   "object": "failure:api-usability-gap"
+  }
+ },
+ {
+  "id": "F62",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:connect",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test"
+  },
+  "to": {
+   "subject": "component:connect-runtime",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test"
+  }
+ },
+ {
+  "id": "F63",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:controller",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior"
+  },
+  "to": {
+   "subject": "component:kraft-migration-driver",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior"
+  }
+ },
+ {
+  "id": "F64",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:controller",
+   "predicate": "EXHIBITS",
+   "object": "failure:missing-observability"
+  },
+  "to": {
+   "subject": "component:kraft-controller",
+   "predicate": "EXHIBITS",
+   "object": "failure:missing-observability"
+  }
+ },
+ {
+  "id": "F65",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:controller",
+   "predicate": "EXHIBITS",
+   "object": "failure:performance-degradation"
+  },
+  "to": {
+   "subject": "component:controller",
+   "predicate": "EXHIBITS",
+   "object": "failure:performance-degradation"
+  }
+ },
+ {
+  "id": "F66",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:mirrormaker",
+   "predicate": "EXHIBITS",
+   "object": "failure:config-not-honored"
+  },
+  "to": {
+   "subject": "component:mirrormaker-2",
+   "predicate": "EXHIBITS",
+   "object": "failure:config-not-honored"
+  }
+ },
+ {
+  "id": "F67",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:mirrormaker",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test"
+  },
+  "to": {
+   "subject": "component:mirrormaker-2",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test"
+  }
+ },
+ {
+  "id": "F68",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:streams",
+   "predicate": "EXHIBITS",
+   "object": "failure:build-ci-failure"
+  },
+  "to": {
+   "subject": "component:streams-system-tests",
+   "predicate": "EXHIBITS",
+   "object": "failure:build-ci-failure"
+  }
+ },
+ {
+  "id": "F69",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:streams",
+   "predicate": "EXHIBITS",
+   "object": "failure:config-not-honored"
+  },
+  "to": {
+   "subject": "component:streams-config",
+   "predicate": "EXHIBITS",
+   "object": "failure:config-not-honored"
+  }
+ },
+ {
+  "id": "F70",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:streams",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test"
+  },
+  "to": {
+   "subject": "component:iqv2",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test"
+  }
+ },
+ {
+  "id": "F71",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:broker",
+   "predicate": "EXPOSES",
+   "object": "interface:deleterecords-api"
+  },
+  "to": {
+   "subject": "component:replica-manager",
+   "predicate": "EXPOSES",
+   "object": "interface:deleterecords-api"
+  }
+ },
+ {
+  "id": "F72",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:clients",
+   "predicate": "EXPOSES",
+   "object": "interface:appinfo-metrics"
+  },
+  "to": {
+   "subject": "component:kafka-metrics",
+   "predicate": "EXPOSES",
+   "object": "interface:appinfo-metrics"
+  }
+ },
+ {
+  "id": "F73",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:connect",
+   "predicate": "EXPOSES",
+   "object": "interface:connect-tasks-config-endpoint"
+  },
+  "to": {
+   "subject": "component:connect-rest-api",
+   "predicate": "EXPOSES",
+   "object": "interface:connect-tasks-config-endpoint"
+  }
+ },
+ {
+  "id": "F74",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:connect",
+   "predicate": "EXPOSES",
+   "object": "interface:connector-plugins-endpoint"
+  },
+  "to": {
+   "subject": "component:connect-rest-api",
+   "predicate": "EXPOSES",
+   "object": "interface:connector-plugins-endpoint"
+  }
+ },
+ {
+  "id": "F75",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:connect",
+   "predicate": "EXPOSES",
+   "object": "interface:sourceconnector-alteroffsets"
+  },
+  "to": {
+   "subject": "component:connect-runtime",
+   "predicate": "EXPOSES",
+   "object": "interface:sourceconnector-alteroffsets"
+  }
+ },
+ {
+  "id": "F76",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "system:connect",
+   "predicate": "EXPOSES",
+   "object": "interface:versioned-interface"
+  },
+  "to": {
+   "subject": "component:connect-runtime",
+   "predicate": "EXPOSES",
+   "object": "interface:versioned-interface"
+  }
+ },
+ {
+  "id": "F77",
+  "action": "drop_relationship",
+  "subject": "system:streams",
+  "predicate": "DELIVERED_IN",
+  "object": "release:3-6-0"
+ },
+ {
+  "id": "F78",
+  "action": "drop_relationship",
+  "subject": "initiative:zk-to-kraft-migration",
+  "predicate": "MITIGATED_BY",
+  "object": "process:release-backport"
+ },
+ {
+  "id": "F79",
+  "action": "remap_relationship",
+  "from": {
+   "subject": "interface:sync-topic-configs-enabled",
+   "predicate": "TRIGGERED_BY",
+   "object": "component:mirrorsourceconnector"
+  },
+  "to": {
+   "subject": "failure:config-not-honored",
+   "predicate": "TRIGGERED_BY",
+   "object": "interface:sync-topic-configs-enabled"
+  }
+ },
+ {
+  "id": "F80",
+  "action": "drop_relationship",
+  "subject": "component:alter-isr-manager",
+  "predicate": "PART_OF",
+  "object": "system:controller"
+ },
+ {
+  "id": "F81",
+  "action": "drop_relationship",
+  "subject": "component:metadata-cache",
+  "predicate": "PART_OF",
+  "object": "system:controller"
+ },
+ {
+  "id": "F82",
+  "action": "drop_relationship",
+  "subject": "component:streams-group-coordinator",
+  "predicate": "PART_OF",
+  "object": "system:streams"
+ },
+ {
+  "id": "F83",
+  "action": "drop_relationship",
+  "subject": "component:memory-pool",
+  "predicate": "PART_OF",
+  "object": "system:broker"
+ },
+ {
+  "id": "F84",
+  "action": "merge",
+  "canonical": "component:test-infrastructure",
+  "merge": [
+   "component:test-harness",
+   "component:cluster-test-kit",
+   "component:broker-topic-stats-test-utils",
+   "component:share-consumer-test-utils",
+   "component:embeddedconnectcluster",
+   "component:mock-client",
+   "component:raft-simulation-tests",
+   "component:upgrade-test",
+   "component:zk-migration-integration-tests",
+   "component:offset-validation-test",
+   "component:producer-id-expiration-test"
+  ]
+ },
+ {
+  "id": "F85",
+  "action": "drop_entity",
+  "entity": "component:requestquotatest"
+ }
+]
