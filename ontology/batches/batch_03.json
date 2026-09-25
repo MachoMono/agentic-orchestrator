@@ -1,0 +1,5240 @@
+{
+  "entities": [
+    {
+      "id": "component:worker-connector",
+      "type": "Component",
+      "name": "WorkerConnector",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14012"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "failure:crash-unhandled-exception",
+      "type": "Failure Mode",
+      "name": "Crash / Unhandled Exception",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "interface:reason-field",
+      "type": "Interface",
+      "name": "reason field",
+      "aliases": [],
+      "attributes": {
+        "kind": "protocol"
+      },
+      "evidence": [
+        "KAFKA-14013"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:group-coordinator",
+      "type": "Component",
+      "name": "GroupCoordinator",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14013",
+        "KAFKA-14363"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-800",
+      "type": "Initiative",
+      "name": "KIP-800",
+      "aliases": [
+        "reason field for JoinGroup/LeaveGroup"
+      ],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14013"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:named-topology",
+      "type": "Component",
+      "name": "NamedTopology",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14014"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "failure:flaky-test",
+      "type": "Failure Mode",
+      "name": "Flaky Test",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "process:ci-testing",
+      "type": "Process",
+      "name": "CI / Testing",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:standalone-herder",
+      "type": "Component",
+      "name": "StandaloneHerder",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14015"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "failure:incorrect-behavior",
+      "type": "Failure Mode",
+      "name": "Incorrect Behavior",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:consumer-rebalance-protocol",
+      "type": "Component",
+      "name": "Consumer Rebalance Protocol",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14016",
+        "KAFKA-14196",
+        "KAFKA-14366",
+        "KAFKA-14362",
+        "KAFKA-14739"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "impact:operational-burden",
+      "type": "Business Impact",
+      "name": "Operational Burden",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-618",
+      "type": "Initiative",
+      "name": "KIP-618",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:file-source-connector",
+      "type": "Component",
+      "name": "File Source Connector",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14017"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:kafka-producer",
+      "type": "Component",
+      "name": "KafkaProducer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14020",
+        "KAFKA-14359",
+        "KAFKA-14546"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "failure:performance-degradation",
+      "type": "Failure Mode",
+      "name": "Performance Degradation",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "impact:performance-cost",
+      "type": "Business Impact",
+      "name": "Performance / Cost",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "release:3-3-0",
+      "type": "Release",
+      "name": "3.3.0",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:mirror-checkpoint-connector",
+      "type": "Component",
+      "name": "MirrorCheckpointConnector",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14072"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:raft-snapshot",
+      "type": "Component",
+      "name": "Raft Snapshot",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14073",
+        "KAFKA-14323",
+        "KAFKA-14550"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "role:newcomer-contributor",
+      "type": "Role",
+      "name": "Newcomer Contributor",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "process:contributor-onboarding",
+      "type": "Process",
+      "name": "Contributor Onboarding",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:log-manager",
+      "type": "Component",
+      "name": "LogManager",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14074",
+        "KAFKA-14544"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:group-metadata-manager",
+      "type": "Component",
+      "name": "GroupMetadataManager",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14075"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:close-options-api",
+      "type": "Interface",
+      "name": "KafkaStreams.CloseOptions",
+      "aliases": [],
+      "attributes": {
+        "kind": "api"
+      },
+      "evidence": [
+        "KAFKA-14076"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:kafka-streams-client",
+      "type": "Component",
+      "name": "KafkaStreams client",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14076",
+        "KAFKA-14650",
+        "KAFKA-14641"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-812",
+      "type": "Initiative",
+      "name": "KIP-812",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:kraft-quorum",
+      "type": "Component",
+      "name": "KRaft / Raft",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14077",
+        "KAFKA-14145",
+        "KAFKA-14152",
+        "KAFKA-14315",
+        "KAFKA-14436",
+        "KAFKA-14644"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "failure:data-loss-corruption",
+      "type": "Failure Mode",
+      "name": "Data Loss / Corruption",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "impact:data-durability-risk",
+      "type": "Business Impact",
+      "name": "Data Durability Risk",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-853",
+      "type": "Initiative",
+      "name": "KIP-853",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "release:3-9-0",
+      "type": "Release",
+      "name": "3.9.0",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:replication-manager",
+      "type": "Component",
+      "name": "Replication Manager",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14078"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:submitted-records",
+      "type": "Component",
+      "name": "SubmittedRecords",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14079"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "failure:resource-leak",
+      "type": "Failure Mode",
+      "name": "Resource Leak",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "interface:error-tolerance-config",
+      "type": "Interface",
+      "name": "errors.tolerance",
+      "aliases": [],
+      "attributes": {
+        "kind": "config"
+      },
+      "evidence": [
+        "KAFKA-14079"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "role:committer-reviewer",
+      "type": "Role",
+      "name": "Committer / Reviewer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "process:release-backport",
+      "type": "Process",
+      "name": "Release & Backport",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:network-client",
+      "type": "Component",
+      "name": "NetworkClient",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14080",
+        "KAFKA-14317"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:kafka-metrics",
+      "type": "Component",
+      "name": "Kafka Metrics (MetricsReporter)",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14081"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "failure:missing-observability",
+      "type": "Failure Mode",
+      "name": "Missing Observability",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:mirrormaker-config-sync",
+      "type": "Component",
+      "name": "MirrorMaker Config Sync",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14082"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "failure:config-not-honored",
+      "type": "Failure Mode",
+      "name": "Config Not Honored",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:alter-partition-manager",
+      "type": "Component",
+      "name": "AlterPartitionManager",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14144"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "impact:availability-outage-risk",
+      "type": "Business Impact",
+      "name": "Availability / Outage Risk",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "interface:alter-partition-protocol",
+      "type": "Interface",
+      "name": "AlterPartition",
+      "aliases": [],
+      "attributes": {
+        "kind": "protocol"
+      },
+      "evidence": [
+        "KAFKA-14144"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-840",
+      "type": "Initiative",
+      "name": "KIP-840",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "interface:console-producer-consumer-cli",
+      "type": "Interface",
+      "name": "kafka-console-producer/consumer message formatter config",
+      "aliases": [],
+      "attributes": {
+        "kind": "cli"
+      },
+      "evidence": [
+        "KAFKA-14146"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:console-producer-consumer",
+      "type": "Component",
+      "name": "ConsoleProducer/ConsoleConsumer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14146"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:kafka-config-backing-store",
+      "type": "Component",
+      "name": "KafkaConfigBackingStore",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14147"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:reset-offsets-cli",
+      "type": "Interface",
+      "name": "kafka-consumer-groups.sh --reset-offsets",
+      "aliases": [],
+      "attributes": {
+        "kind": "cli"
+      },
+      "evidence": [
+        "KAFKA-14148"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:consumer-groups-command",
+      "type": "Component",
+      "name": "ConsumerGroupCommand",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14148"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "failure:documentation-gap",
+      "type": "Failure Mode",
+      "name": "Documentation Gap",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "impact:user-confusion-adoption-barrier",
+      "type": "Business Impact",
+      "name": "User Confusion / Adoption Barrier",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:dynamic-broker-reconfiguration",
+      "type": "Component",
+      "name": "DynamicBrokerReconfiguration",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14149"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "failure:build-ci-failure",
+      "type": "Failure Mode",
+      "name": "Build / CI Failure",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:partition-assignment",
+      "type": "Component",
+      "name": "Partition Assignment (initial allocation)",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14150"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:log-segment",
+      "type": "Component",
+      "name": "Log Segment",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14151"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:metadata-cache",
+      "type": "Component",
+      "name": "MetadataCache",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14153"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "failure:api-usability-gap",
+      "type": "Failure Mode",
+      "name": "API Usability Gap",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:controller",
+      "type": "Component",
+      "name": "Controller",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14154",
+        "KAFKA-14195",
+        "KAFKA-14358"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "dependency:zookeeper",
+      "type": "External Dependency",
+      "name": "ZooKeeper",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "interface:kafka-features-sh",
+      "type": "Interface",
+      "name": "kafka-features.sh",
+      "aliases": [],
+      "attributes": {
+        "kind": "cli"
+      },
+      "evidence": [
+        "KAFKA-14187"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:kafka-features-tool",
+      "type": "Component",
+      "name": "kafka-features.sh tool",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14187"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "failure:compatibility-upgrade-break",
+      "type": "Failure Mode",
+      "name": "Compatibility / Upgrade Break",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "impact:upgrade-migration-friction",
+      "type": "Business Impact",
+      "name": "Upgrade / Migration Friction",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:documentation-kraft",
+      "type": "Component",
+      "name": "KRaft Documentation",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14188",
+        "KAFKA-14360"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:kafka-consumer",
+      "type": "Component",
+      "name": "KafkaConsumer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14189",
+        "KAFKA-14648"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:admin-zk-client",
+      "type": "Component",
+      "name": "AdminZkClient",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14190"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:zookeeper-flag-cli",
+      "type": "Interface",
+      "name": "--zookeeper flag",
+      "aliases": [],
+      "attributes": {
+        "kind": "cli"
+      },
+      "evidence": [
+        "KAFKA-14190"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "process:triage",
+      "type": "Process",
+      "name": "Triage",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-864",
+      "type": "Initiative",
+      "name": "KIP-864",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "process:kip-design-proposal-process",
+      "type": "Process",
+      "name": "KIP (Design Proposal) Process",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "interface:connector-latency-metrics",
+      "type": "Interface",
+      "name": "connector end-to-end latency metrics",
+      "aliases": [],
+      "attributes": {
+        "kind": "metric"
+      },
+      "evidence": [
+        "KAFKA-14191"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:connect-runtime",
+      "type": "Component",
+      "name": "Connect Runtime",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14191",
+        "KAFKA-14645"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:state-updater",
+      "type": "Component",
+      "name": "State Updater",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14192"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:connect-rest-api-test",
+      "type": "Component",
+      "name": "ConnectRestApiTest",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14193",
+        "KAFKA-14598"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:cluster-metadata",
+      "type": "Component",
+      "name": "Cluster (client metadata)",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14194"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:offset-validation-test",
+      "type": "Component",
+      "name": "OffsetValidationTest",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14196"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:controller-write-event",
+      "type": "Component",
+      "name": "ControllerWriteEvent",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14197"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "failure:hang-stuck-state",
+      "type": "Failure Mode",
+      "name": "Hang / Stuck State",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "release:3-2-3",
+      "type": "Release",
+      "name": "3.2.3",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "failure:security-vulnerability",
+      "type": "Failure Mode",
+      "name": "Security Vulnerability",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "impact:security-compliance-exposure",
+      "type": "Business Impact",
+      "name": "Security & Compliance Exposure",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "process:vulnerability-response",
+      "type": "Process",
+      "name": "Vulnerability Response",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "role:security-reporter",
+      "type": "Role",
+      "name": "Security Reporter",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-720",
+      "type": "Initiative",
+      "name": "KIP-720",
+      "aliases": [
+        "Deprecate MirrorMaker v1"
+      ],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:mirrormaker-v1",
+      "type": "Component",
+      "name": "MirrorMaker v1",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14262"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:mirrormaker-2",
+      "type": "Component",
+      "name": "MirrorMaker 2 (MM2)",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14262",
+        "KAFKA-14314",
+        "KAFKA-14599",
+        "KAFKA-14740"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "release:4-0-0",
+      "type": "Release",
+      "name": "4.0.0",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:upgrade-test",
+      "type": "Component",
+      "name": "upgrade_test.py",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14263"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:consumer-threading-refactor",
+      "type": "Initiative",
+      "name": "Consumer Threading Refactor",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:consumer-coordinator",
+      "type": "Component",
+      "name": "Consumer Coordinator",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14264"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:fetcher",
+      "type": "Component",
+      "name": "Fetcher",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14365"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:standard-authorizer",
+      "type": "Component",
+      "name": "StandardAuthorizer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14265",
+        "KAFKA-14435"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:mirror-source-task",
+      "type": "Component",
+      "name": "MirrorSourceTask",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14266",
+        "KAFKA-14740"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:select-rate-metric",
+      "type": "Interface",
+      "name": "select-rate metric",
+      "aliases": [],
+      "attributes": {
+        "kind": "metric"
+      },
+      "evidence": [
+        "KAFKA-14266"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "role:operator-sre",
+      "type": "Role",
+      "name": "Operator / SRE",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:kafka-core",
+      "type": "Component",
+      "name": "Kafka Core (Scala runtime)",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14267",
+        "KAFKA-14320"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "dependency:scala",
+      "type": "External Dependency",
+      "name": "Scala",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "interface:kgroupedstream-aggregate-api",
+      "type": "Interface",
+      "name": "KGroupedStream#aggregate",
+      "aliases": [],
+      "attributes": {
+        "kind": "api"
+      },
+      "evidence": [
+        "KAFKA-14268"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:kstream-aggregate",
+      "type": "Component",
+      "name": "KGroupedStream Aggregate",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14268"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-874",
+      "type": "Initiative",
+      "name": "KIP-874",
+      "aliases": [
+        "Topic Round Robin Assignor"
+      ],
+      "attributes": {
+        "status": "rejected"
+      },
+      "evidence": [
+        "KAFKA-14269"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:client-metrics",
+      "type": "Component",
+      "name": "ClientMetrics",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14270"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "impact:developer-productivity-loss",
+      "type": "Business Impact",
+      "name": "Developer Productivity Loss",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:kraft-topic-management",
+      "type": "Component",
+      "name": "KRaft Topic Management",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14271"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:kraft-metadata-propagation",
+      "type": "Component",
+      "name": "KRaft Metadata Propagation",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14313"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:mirror-source-connector",
+      "type": "Component",
+      "name": "MirrorSourceConnector",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14314"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:feature-control-iterator",
+      "type": "Component",
+      "name": "FeatureControlIterator",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14316"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-878",
+      "type": "Initiative",
+      "name": "KIP-878",
+      "aliases": [
+        "Autoscaling for Statically Partitioned Streams"
+      ],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:streams-partition-assignment",
+      "type": "Component",
+      "name": "Streams Partition Assignment",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14318"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:kafka-storage-format-cli",
+      "type": "Interface",
+      "name": "kafka-storage.sh format",
+      "aliases": [],
+      "attributes": {
+        "kind": "cli"
+      },
+      "evidence": [
+        "KAFKA-14319"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:storage-tool",
+      "type": "Component",
+      "name": "Storage Tool",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14319",
+        "KAFKA-14547"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "dependency:jackson-databind",
+      "type": "External Dependency",
+      "name": "jackson-databind",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "interface:max-compaction-lag-ms",
+      "type": "Interface",
+      "name": "max.compaction.lag.ms",
+      "aliases": [],
+      "attributes": {
+        "kind": "config"
+      },
+      "evidence": [
+        "KAFKA-14321"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:log-cleaner",
+      "type": "Component",
+      "name": "LogCleaner",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14321",
+        "KAFKA-14322"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:scram-credentials-api",
+      "type": "Interface",
+      "name": "SCRAM-SHA credentials Admin API",
+      "aliases": [],
+      "attributes": {
+        "kind": "api"
+      },
+      "evidence": [
+        "KAFKA-14356"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:admin-client",
+      "type": "Component",
+      "name": "Admin Client",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14356",
+        "KAFKA-14357"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:describe-acls-api",
+      "type": "Interface",
+      "name": "Admin API describe (ACLs/Quotas/SCRAM)",
+      "aliases": [],
+      "attributes": {
+        "kind": "api"
+      },
+      "evidence": [
+        "KAFKA-14357"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:topic-validation",
+      "type": "Component",
+      "name": "Topic Validation",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14358"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:idempotent-producer",
+      "type": "Component",
+      "name": "Idempotent Producer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14359"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "dependency:commons-lang3",
+      "type": "External Dependency",
+      "name": "commons-lang3",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:connect-mirror",
+      "type": "Component",
+      "name": "Connect Mirror module",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14361",
+        "KAFKA-14647"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "failure:packaging-release-defect",
+      "type": "Failure Mode",
+      "name": "Packaging / Release Defect",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "interface:foreign-key-join-serde",
+      "type": "Interface",
+      "name": "Foreign Key Join serde",
+      "aliases": [],
+      "attributes": {
+        "kind": "api"
+      },
+      "evidence": [
+        "KAFKA-14364"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:foreign-key-join",
+      "type": "Component",
+      "name": "Foreign Key Join",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14364",
+        "KAFKA-14646"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:jmx-metrics-config",
+      "type": "Interface",
+      "name": "JMX remote metrics ports",
+      "aliases": [],
+      "attributes": {
+        "kind": "config"
+      },
+      "evidence": [
+        "KAFKA-14430"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:jmx-reporter",
+      "type": "Component",
+      "name": "JmxReporter",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14430"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:topology-test-driver",
+      "type": "Component",
+      "name": "TopologyTestDriver",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14431"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:rocksdb-store",
+      "type": "Component",
+      "name": "RocksDBStore",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14432"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "dependency:rocksdb",
+      "type": "External Dependency",
+      "name": "RocksDB",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:test-harness",
+      "type": "Component",
+      "name": "Integration Test Harness",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14433"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:zk-to-kraft-migration",
+      "type": "Initiative",
+      "name": "ZK to KRaft Migration",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:striped-replica-placer",
+      "type": "Component",
+      "name": "StripedReplicaPlacer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14437"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-848",
+      "type": "Initiative",
+      "name": "KIP-848",
+      "aliases": [
+        "new consumer protocol / rebalance"
+      ],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:async-kafka-consumer",
+      "type": "Component",
+      "name": "AsyncKafkaConsumer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14438"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:error-code-spec",
+      "type": "Interface",
+      "name": "Kafka protocol error code spec",
+      "aliases": [],
+      "attributes": {
+        "kind": "protocol"
+      },
+      "evidence": [
+        "KAFKA-14439"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:kafka-protocol",
+      "type": "Component",
+      "name": "Kafka Protocol",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14439",
+        "KAFKA-14640"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:eos-state-manager",
+      "type": "Component",
+      "name": "EOS State Manager",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14440",
+        "KAFKA-14548"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:data-output-stream-writable",
+      "type": "Component",
+      "name": "DataOutputStreamWritable",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14540"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-896",
+      "type": "Initiative",
+      "name": "KIP-896",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "interface:offsetfetch-commit-v0",
+      "type": "Interface",
+      "name": "OffsetFetch/OffsetCommit v0",
+      "aliases": [],
+      "attributes": {
+        "kind": "protocol"
+      },
+      "evidence": [
+        "KAFKA-14542"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:log-offset-metadata",
+      "type": "Component",
+      "name": "LogOffsetMetadata",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14543"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:is-future-metric-tag",
+      "type": "Interface",
+      "name": "is-future metric tag",
+      "aliases": [],
+      "attributes": {
+        "kind": "metric"
+      },
+      "evidence": [
+        "KAFKA-14544"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:mirror-checkpoint-task",
+      "type": "Component",
+      "name": "MirrorCheckpointTask",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14545"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:partitioner-api",
+      "type": "Interface",
+      "name": "Partitioner",
+      "aliases": [],
+      "attributes": {
+        "kind": "api"
+      },
+      "evidence": [
+        "KAFKA-14546"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-785",
+      "type": "Initiative",
+      "name": "KIP-785",
+      "aliases": [
+        "Automatic storage formatting"
+      ],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:kraft-server",
+      "type": "Component",
+      "name": "KRaft Server",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14547"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:store-changelog-reader",
+      "type": "Component",
+      "name": "StoreChangelogReader",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14548"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:snapshot-file",
+      "type": "Component",
+      "name": "SnapshotFile",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14550"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:log-dirs-cli",
+      "type": "Interface",
+      "name": "kafka-log-dirs.sh",
+      "aliases": [],
+      "attributes": {
+        "kind": "cli"
+      },
+      "evidence": [
+        "KAFKA-14594"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:log-dirs-command",
+      "type": "Component",
+      "name": "LogDirsCommand",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14594"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:reassign-partitions-command",
+      "type": "Component",
+      "name": "ReassignPartitionsCommand",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14595"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:topic-command",
+      "type": "Component",
+      "name": "TopicCommand",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14596"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:record-e2e-latency-max",
+      "type": "Interface",
+      "name": "record-e2e-latency-max",
+      "aliases": [],
+      "attributes": {
+        "kind": "metric"
+      },
+      "evidence": [
+        "KAFKA-14597"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:streams-metrics",
+      "type": "Component",
+      "name": "Streams Metrics",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14597"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-613",
+      "type": "Initiative",
+      "name": "KIP-613",
+      "aliases": [
+        "Add end-to-end latency metrics to Streams"
+      ],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14597"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:mirrormaker-pluggable-apis",
+      "type": "Interface",
+      "name": "MirrorMaker pluggable interfaces (ReplicationPolicy, TopicFilter, etc.)",
+      "aliases": [],
+      "attributes": {
+        "kind": "api"
+      },
+      "evidence": [
+        "KAFKA-14599"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:producer-id-expiration-test",
+      "type": "Component",
+      "name": "ProducerIdExpirationTest",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14600"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:kafka-event-queue",
+      "type": "Component",
+      "name": "KafkaEventQueue",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14601"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:batch-metadata",
+      "type": "Component",
+      "name": "BatchMetadata",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14602"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:kafka-metrics-group",
+      "type": "Component",
+      "name": "KafkaMetricsGroup",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14603"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:sasl-authenticator",
+      "type": "Component",
+      "name": "SaslServerAuthenticator/SaslClientAuthenticator",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14604"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-890",
+      "type": "Initiative",
+      "name": "KIP-890",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "interface:addpartitionstotxn-protocol",
+      "type": "Interface",
+      "name": "AddPartitionsToTxn",
+      "aliases": [],
+      "attributes": {
+        "kind": "protocol"
+      },
+      "evidence": [
+        "KAFKA-14640"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:transaction-coordinator",
+      "type": "Component",
+      "name": "Transaction Coordinator",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14640"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:stream-task",
+      "type": "Component",
+      "name": "StreamTask",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14641"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-405",
+      "type": "Initiative",
+      "name": "KIP-405",
+      "aliases": [
+        "Kafka Tiered Storage"
+      ],
+      "attributes": {},
+      "evidence": [],
+      "proposed": false
+    },
+    {
+      "id": "component:topic-based-rlmm",
+      "type": "Component",
+      "name": "TopicBasedRemoteLogMetadataManager",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14642",
+        "KAFKA-14643"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:connect-rest-api",
+      "type": "Component",
+      "name": "Connect REST API",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14645",
+        "KAFKA-14649"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:iqv2",
+      "type": "Component",
+      "name": "Interactive Query v2 (IQv2)",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14650"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:json-utils",
+      "type": "Component",
+      "name": "kafka.utils.json",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14737"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:mirrorsource-metrics-tags",
+      "type": "Interface",
+      "name": "MirrorSourceMetrics tags",
+      "aliases": [],
+      "attributes": {
+        "kind": "metric"
+      },
+      "evidence": [
+        "KAFKA-14740"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:exactly-once-source-integration-test",
+      "type": "Component",
+      "name": "ExactlyOnceSourceIntegrationTest",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14742"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:messageconversionstimems-metric",
+      "type": "Interface",
+      "name": "MessageConversionsTimeMs (fetch)",
+      "aliases": [],
+      "attributes": {
+        "kind": "metric"
+      },
+      "evidence": [
+        "KAFKA-14743"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:request-metrics",
+      "type": "Component",
+      "name": "RequestMetrics",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14743"
+      ],
+      "proposed": false
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "component:worker-connector",
+      "predicate": "PART_OF",
+      "object": "system:connect",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14012"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:worker-connector",
+      "predicate": "EXHIBITS",
+      "object": "failure:crash-unhandled-exception",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14012"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:group-coordinator",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14013",
+        "KAFKA-14363"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:group-coordinator",
+      "predicate": "EXPOSES",
+      "object": "interface:reason-field",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14013"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "initiative:kip-800",
+      "predicate": "CHANGES",
+      "object": "interface:reason-field",
+      "attributes": {
+        "action": "introduces"
+      },
+      "evidence": [
+        "KAFKA-14013"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:named-topology",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14014"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:named-topology",
+      "predicate": "EXHIBITS",
+      "object": "failure:flaky-test",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14014"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:flaky-test",
+      "predicate": "MITIGATED_BY",
+      "object": "process:ci-testing",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14014"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:standalone-herder",
+      "predicate": "PART_OF",
+      "object": "system:connect",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14015"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:standalone-herder",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14015"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:consumer-rebalance-protocol",
+      "predicate": "PART_OF",
+      "object": "system:clients",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14016",
+        "KAFKA-14196",
+        "KAFKA-14366",
+        "KAFKA-14362",
+        "KAFKA-14739"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:consumer-rebalance-protocol",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14016"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14016"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:file-source-connector",
+      "predicate": "PART_OF",
+      "object": "system:connect",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14017"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-618",
+      "predicate": "CHANGES",
+      "object": "component:file-source-connector",
+      "attributes": {
+        "action": "introduces"
+      },
+      "evidence": [
+        "KAFKA-14017"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-producer",
+      "predicate": "PART_OF",
+      "object": "system:clients",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14020",
+        "KAFKA-14359",
+        "KAFKA-14546"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-producer",
+      "predicate": "EXHIBITS",
+      "object": "failure:performance-degradation",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14020"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:performance-degradation",
+      "predicate": "CAUSES",
+      "object": "impact:performance-cost",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14020"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-producer",
+      "predicate": "DELIVERED_IN",
+      "object": "release:3-3-0",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14020"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:mirror-checkpoint-connector",
+      "predicate": "PART_OF",
+      "object": "system:mirrormaker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14072"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:mirror-checkpoint-connector",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14072"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14072"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:raft-snapshot",
+      "predicate": "PART_OF",
+      "object": "system:controller",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14073",
+        "KAFKA-14323",
+        "KAFKA-14550"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "role:newcomer-contributor",
+      "predicate": "PERFORMS",
+      "object": "process:contributor-onboarding",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14073"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log-manager",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14074",
+        "KAFKA-14544"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log-manager",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14074"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14074"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:group-metadata-manager",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14075"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:group-metadata-manager",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14075"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14075"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:kafka-streams-client",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14076",
+        "KAFKA-14650",
+        "KAFKA-14641"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-streams-client",
+      "predicate": "EXPOSES",
+      "object": "interface:close-options-api",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14076"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:close-options-api",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14076"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-812",
+      "predicate": "CHANGES",
+      "object": "interface:close-options-api",
+      "attributes": {
+        "action": "introduces"
+      },
+      "evidence": [
+        "KAFKA-14076"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kraft-quorum",
+      "predicate": "PART_OF",
+      "object": "system:controller",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14077",
+        "KAFKA-14145",
+        "KAFKA-14152",
+        "KAFKA-14315",
+        "KAFKA-14436",
+        "KAFKA-14644"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kraft-quorum",
+      "predicate": "EXHIBITS",
+      "object": "failure:data-loss-corruption",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14077"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:data-loss-corruption",
+      "predicate": "CAUSES",
+      "object": "impact:data-durability-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14077"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-853",
+      "predicate": "CHANGES",
+      "object": "component:kraft-quorum",
+      "attributes": {
+        "action": "introduces"
+      },
+      "evidence": [
+        "KAFKA-14077"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-853",
+      "predicate": "DELIVERED_IN",
+      "object": "release:3-9-0",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14077"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:replication-manager",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14078"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:replication-manager",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14078"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:submitted-records",
+      "predicate": "PART_OF",
+      "object": "system:connect",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14079"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:submitted-records",
+      "predicate": "EXHIBITS",
+      "object": "failure:resource-leak",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14079"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:resource-leak",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14079"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:resource-leak",
+      "predicate": "TRIGGERED_BY",
+      "object": "interface:error-tolerance-config",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14079"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "role:committer-reviewer",
+      "predicate": "PERFORMS",
+      "object": "process:release-backport",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14079"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:network-client",
+      "predicate": "PART_OF",
+      "object": "system:clients",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14080",
+        "KAFKA-14317"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:network-client",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14080"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14080"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:kafka-metrics",
+      "predicate": "PART_OF",
+      "object": "system:clients",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14081"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-metrics",
+      "predicate": "EXHIBITS",
+      "object": "failure:missing-observability",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14081"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:missing-observability",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14081"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:mirrormaker-config-sync",
+      "predicate": "PART_OF",
+      "object": "system:mirrormaker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14082"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:mirrormaker-config-sync",
+      "predicate": "EXHIBITS",
+      "object": "failure:config-not-honored",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14082"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:config-not-honored",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14082"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:alter-partition-manager",
+      "predicate": "PART_OF",
+      "object": "system:controller",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14144"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:alter-partition-manager",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14144"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14144"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "TRIGGERED_BY",
+      "object": "interface:alter-partition-protocol",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14144"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kraft-quorum",
+      "predicate": "EXHIBITS",
+      "object": "failure:performance-degradation",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14145"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:performance-degradation",
+      "predicate": "CAUSES",
+      "object": "impact:performance-cost",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14145"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:console-producer-consumer",
+      "predicate": "PART_OF",
+      "object": "system:tooling",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14146"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:console-producer-consumer",
+      "predicate": "EXPOSES",
+      "object": "interface:console-producer-consumer-cli",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14146"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-840",
+      "predicate": "CHANGES",
+      "object": "interface:console-producer-consumer-cli",
+      "attributes": {
+        "action": "introduces"
+      },
+      "evidence": [
+        "KAFKA-14146"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-config-backing-store",
+      "predicate": "PART_OF",
+      "object": "system:connect",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14147"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-config-backing-store",
+      "predicate": "EXHIBITS",
+      "object": "failure:resource-leak",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14147"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:resource-leak",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14147"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:consumer-groups-command",
+      "predicate": "PART_OF",
+      "object": "system:tooling",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14148"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:consumer-groups-command",
+      "predicate": "EXPOSES",
+      "object": "interface:reset-offsets-cli",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14148"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:reset-offsets-cli",
+      "predicate": "EXHIBITS",
+      "object": "failure:documentation-gap",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14148"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:documentation-gap",
+      "predicate": "CAUSES",
+      "object": "impact:user-confusion-adoption-barrier",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14148"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:dynamic-broker-reconfiguration",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14149"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:dynamic-broker-reconfiguration",
+      "predicate": "EXHIBITS",
+      "object": "failure:build-ci-failure",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14149"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:partition-assignment",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14150"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:partition-assignment",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14150"
+      ],
+      "confidence": "low"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:performance-cost",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14150"
+      ],
+      "confidence": "low"
+    },
+    {
+      "subject": "component:log-segment",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14151"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log-segment",
+      "predicate": "EXHIBITS",
+      "object": "failure:data-loss-corruption",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14151"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:data-loss-corruption",
+      "predicate": "CAUSES",
+      "object": "impact:data-durability-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14151"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:kraft-quorum",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14152"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14152"
+      ],
+      "confidence": "low"
+    },
+    {
+      "subject": "component:metadata-cache",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14153"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:metadata-cache",
+      "predicate": "EXHIBITS",
+      "object": "failure:api-usability-gap",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14153"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:controller",
+      "predicate": "PART_OF",
+      "object": "system:controller",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14154",
+        "KAFKA-14195",
+        "KAFKA-14358"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:controller",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14154"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14154"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "TRIGGERED_BY",
+      "object": "dependency:zookeeper",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14154"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:kafka-features-tool",
+      "predicate": "PART_OF",
+      "object": "system:tooling",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14187"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-features-tool",
+      "predicate": "EXPOSES",
+      "object": "interface:kafka-features-sh",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14187"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:kafka-features-sh",
+      "predicate": "EXHIBITS",
+      "object": "failure:compatibility-upgrade-break",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14187"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:compatibility-upgrade-break",
+      "predicate": "CAUSES",
+      "object": "impact:upgrade-migration-friction",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14187"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:documentation-kraft",
+      "predicate": "PART_OF",
+      "object": "system:documentation",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14188",
+        "KAFKA-14360"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:documentation-kraft",
+      "predicate": "EXHIBITS",
+      "object": "failure:documentation-gap",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14188"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:documentation-gap",
+      "predicate": "CAUSES",
+      "object": "impact:user-confusion-adoption-barrier",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14188"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:kafka-consumer",
+      "predicate": "PART_OF",
+      "object": "system:clients",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14189",
+        "KAFKA-14648"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-consumer",
+      "predicate": "EXHIBITS",
+      "object": "failure:performance-degradation",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14189"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:performance-degradation",
+      "predicate": "CAUSES",
+      "object": "impact:performance-cost",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14189"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:admin-zk-client",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14190"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:admin-zk-client",
+      "predicate": "EXHIBITS",
+      "object": "failure:data-loss-corruption",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14190"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:data-loss-corruption",
+      "predicate": "CAUSES",
+      "object": "impact:data-durability-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14190"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:data-loss-corruption",
+      "predicate": "TRIGGERED_BY",
+      "object": "interface:zookeeper-flag-cli",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14190"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "role:committer-reviewer",
+      "predicate": "PERFORMS",
+      "object": "process:triage",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14190",
+        "KAFKA-14192",
+        "KAFKA-14197",
+        "KAFKA-14271",
+        "KAFKA-14313",
+        "KAFKA-14321",
+        "KAFKA-14323",
+        "KAFKA-14434",
+        "KAFKA-14436",
+        "KAFKA-14440",
+        "KAFKA-14548"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-864",
+      "predicate": "GOVERNED_BY",
+      "object": "process:kip-design-proposal-process",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14191"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:connect-runtime",
+      "predicate": "PART_OF",
+      "object": "system:connect",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14191",
+        "KAFKA-14645"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:connect-runtime",
+      "predicate": "EXPOSES",
+      "object": "interface:connector-latency-metrics",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14191"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-864",
+      "predicate": "CHANGES",
+      "object": "interface:connector-latency-metrics",
+      "attributes": {
+        "action": "introduces"
+      },
+      "evidence": [
+        "KAFKA-14191"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:state-updater",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14192"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:connect-rest-api-test",
+      "predicate": "PART_OF",
+      "object": "system:build-ci",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14193",
+        "KAFKA-14598"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:connect-rest-api-test",
+      "predicate": "EXHIBITS",
+      "object": "failure:build-ci-failure",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14193"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:connect-rest-api-test",
+      "predicate": "EXHIBITS",
+      "object": "failure:flaky-test",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14598"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:flaky-test",
+      "predicate": "MITIGATED_BY",
+      "object": "process:ci-testing",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14598"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:cluster-metadata",
+      "predicate": "PART_OF",
+      "object": "system:clients",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14194"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:cluster-metadata",
+      "predicate": "EXHIBITS",
+      "object": "failure:crash-unhandled-exception",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14194"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:controller",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14195"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14195"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:consumer-rebalance-protocol",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14196"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:offset-validation-test",
+      "predicate": "PART_OF",
+      "object": "system:build-ci",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14196"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:offset-validation-test",
+      "predicate": "EXHIBITS",
+      "object": "failure:flaky-test",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14196"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:flaky-test",
+      "predicate": "MITIGATED_BY",
+      "object": "process:ci-testing",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14196"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:controller-write-event",
+      "predicate": "PART_OF",
+      "object": "system:controller",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14197"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:controller-write-event",
+      "predicate": "EXHIBITS",
+      "object": "failure:hang-stuck-state",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14197"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:hang-stuck-state",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14197"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "release:3-2-3",
+      "predicate": "EXHIBITS",
+      "object": "failure:security-vulnerability",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14261"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:security-vulnerability",
+      "predicate": "CAUSES",
+      "object": "impact:security-compliance-exposure",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14261"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:security-vulnerability",
+      "predicate": "MITIGATED_BY",
+      "object": "process:vulnerability-response",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14261",
+        "KAFKA-14267",
+        "KAFKA-14320",
+        "KAFKA-14435"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "role:security-reporter",
+      "predicate": "PERFORMS",
+      "object": "process:vulnerability-response",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14261"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:mirrormaker-v1",
+      "predicate": "PART_OF",
+      "object": "system:mirrormaker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14262"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:mirrormaker-2",
+      "predicate": "PART_OF",
+      "object": "system:mirrormaker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14262",
+        "KAFKA-14314",
+        "KAFKA-14599",
+        "KAFKA-14740"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-720",
+      "predicate": "CHANGES",
+      "object": "component:mirrormaker-v1",
+      "attributes": {
+        "action": "removes"
+      },
+      "evidence": [
+        "KAFKA-14262"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:mirrormaker-2",
+      "predicate": "SUPERSEDES",
+      "object": "component:mirrormaker-v1",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14262"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:mirrormaker-v1",
+      "predicate": "DELIVERED_IN",
+      "object": "release:4-0-0",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14262"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:upgrade-test",
+      "predicate": "PART_OF",
+      "object": "system:build-ci",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14263"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:upgrade-test",
+      "predicate": "EXHIBITS",
+      "object": "failure:flaky-test",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14263"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:flaky-test",
+      "predicate": "MITIGATED_BY",
+      "object": "process:ci-testing",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14263"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:consumer-coordinator",
+      "predicate": "PART_OF",
+      "object": "system:clients",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14264"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:consumer-threading-refactor",
+      "predicate": "CHANGES",
+      "object": "component:consumer-coordinator",
+      "attributes": {
+        "action": "modifies"
+      },
+      "evidence": [
+        "KAFKA-14264"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:fetcher",
+      "predicate": "PART_OF",
+      "object": "system:clients",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14365"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:consumer-threading-refactor",
+      "predicate": "CHANGES",
+      "object": "component:fetcher",
+      "attributes": {
+        "action": "modifies"
+      },
+      "evidence": [
+        "KAFKA-14365"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:standard-authorizer",
+      "predicate": "PART_OF",
+      "object": "system:security",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14265",
+        "KAFKA-14435"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:standard-authorizer",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14265"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:security-compliance-exposure",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14265"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:standard-authorizer",
+      "predicate": "EXHIBITS",
+      "object": "failure:security-vulnerability",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14435"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:security-vulnerability",
+      "predicate": "CAUSES",
+      "object": "impact:security-compliance-exposure",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14435"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:mirror-source-task",
+      "predicate": "PART_OF",
+      "object": "system:mirrormaker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14266",
+        "KAFKA-14740"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:mirror-source-task",
+      "predicate": "EXHIBITS",
+      "object": "failure:hang-stuck-state",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14266"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:hang-stuck-state",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14266"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:hang-stuck-state",
+      "predicate": "MITIGATED_BY",
+      "object": "interface:select-rate-metric",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14266"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "role:operator-sre",
+      "predicate": "CONCERNED_WITH",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14266"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-core",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14267",
+        "KAFKA-14320"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-core",
+      "predicate": "DEPENDS_ON",
+      "object": "dependency:scala",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14267"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-core",
+      "predicate": "EXHIBITS",
+      "object": "failure:security-vulnerability",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14267"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:security-vulnerability",
+      "predicate": "CAUSES",
+      "object": "impact:security-compliance-exposure",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14267"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kstream-aggregate",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14268"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kstream-aggregate",
+      "predicate": "EXPOSES",
+      "object": "interface:kgroupedstream-aggregate-api",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14268"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:kgroupedstream-aggregate-api",
+      "predicate": "EXHIBITS",
+      "object": "failure:api-usability-gap",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14268"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "initiative:kip-874",
+      "predicate": "GOVERNED_BY",
+      "object": "process:kip-design-proposal-process",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14269"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:client-metrics",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14270"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:client-metrics",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14270"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14270"
+      ],
+      "confidence": "low"
+    },
+    {
+      "subject": "component:kraft-topic-management",
+      "predicate": "PART_OF",
+      "object": "system:controller",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14271"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kraft-topic-management",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14271"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14271"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:kraft-metadata-propagation",
+      "predicate": "PART_OF",
+      "object": "system:controller",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14313"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kraft-metadata-propagation",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14313"
+      ],
+      "confidence": "low"
+    },
+    {
+      "subject": "component:mirror-source-connector",
+      "predicate": "PART_OF",
+      "object": "system:mirrormaker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14314"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:mirror-source-connector",
+      "predicate": "EXHIBITS",
+      "object": "failure:crash-unhandled-exception",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14314"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kraft-quorum",
+      "predicate": "EXHIBITS",
+      "object": "failure:performance-degradation",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14315"
+      ],
+      "confidence": "low"
+    },
+    {
+      "subject": "component:feature-control-iterator",
+      "predicate": "PART_OF",
+      "object": "system:controller",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14316"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:feature-control-iterator",
+      "predicate": "EXHIBITS",
+      "object": "failure:crash-unhandled-exception",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14316"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:network-client",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14317"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:user-confusion-adoption-barrier",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14317"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "initiative:kip-878",
+      "predicate": "GOVERNED_BY",
+      "object": "process:kip-design-proposal-process",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14318"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:streams-partition-assignment",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14318"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-878",
+      "predicate": "CHANGES",
+      "object": "component:streams-partition-assignment",
+      "attributes": {
+        "action": "modifies"
+      },
+      "evidence": [
+        "KAFKA-14318"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:storage-tool",
+      "predicate": "PART_OF",
+      "object": "system:tooling",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14319",
+        "KAFKA-14547"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:storage-tool",
+      "predicate": "EXPOSES",
+      "object": "interface:kafka-storage-format-cli",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14319"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:kafka-storage-format-cli",
+      "predicate": "EXHIBITS",
+      "object": "failure:compatibility-upgrade-break",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14319"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:compatibility-upgrade-break",
+      "predicate": "CAUSES",
+      "object": "impact:upgrade-migration-friction",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14319"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-core",
+      "predicate": "DEPENDS_ON",
+      "object": "dependency:jackson-databind",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14320"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-core",
+      "predicate": "EXHIBITS",
+      "object": "failure:security-vulnerability",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14320"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:security-vulnerability",
+      "predicate": "CAUSES",
+      "object": "impact:security-compliance-exposure",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14320"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log-cleaner",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14321",
+        "KAFKA-14322"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log-cleaner",
+      "predicate": "EXPOSES",
+      "object": "interface:max-compaction-lag-ms",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14321"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:max-compaction-lag-ms",
+      "predicate": "EXHIBITS",
+      "object": "failure:config-not-honored",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14321"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:config-not-honored",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14321"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:log-cleaner",
+      "predicate": "EXHIBITS",
+      "object": "failure:resource-leak",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14322"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:resource-leak",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14322"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:admin-client",
+      "predicate": "PART_OF",
+      "object": "system:clients",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14356",
+        "KAFKA-14357"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:admin-client",
+      "predicate": "EXPOSES",
+      "object": "interface:scram-credentials-api",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14356"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:scram-credentials-api",
+      "predicate": "EXHIBITS",
+      "object": "failure:missing-observability",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14356"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:missing-observability",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14356"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:admin-client",
+      "predicate": "EXPOSES",
+      "object": "interface:describe-acls-api",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14357"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:describe-acls-api",
+      "predicate": "EXHIBITS",
+      "object": "failure:api-usability-gap",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14357"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:api-usability-gap",
+      "predicate": "CAUSES",
+      "object": "impact:developer-productivity-loss",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14357"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:topic-validation",
+      "predicate": "PART_OF",
+      "object": "system:controller",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14358"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:topic-validation",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14358"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14358"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:idempotent-producer",
+      "predicate": "PART_OF",
+      "object": "system:clients",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14359"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:idempotent-producer",
+      "predicate": "EXHIBITS",
+      "object": "failure:hang-stuck-state",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14359"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:hang-stuck-state",
+      "predicate": "CAUSES",
+      "object": "impact:data-durability-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14359"
+      ],
+      "confidence": "low"
+    },
+    {
+      "subject": "component:documentation-kraft",
+      "predicate": "EXHIBITS",
+      "object": "failure:documentation-gap",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14360"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:connect-mirror",
+      "predicate": "PART_OF",
+      "object": "system:mirrormaker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14361",
+        "KAFKA-14647"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:connect-mirror",
+      "predicate": "DEPENDS_ON",
+      "object": "dependency:commons-lang3",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14361"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:connect-mirror",
+      "predicate": "EXHIBITS",
+      "object": "failure:packaging-release-defect",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14361"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:packaging-release-defect",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14361"
+      ],
+      "confidence": "low"
+    },
+    {
+      "subject": "component:consumer-rebalance-protocol",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14362"
+      ],
+      "confidence": "low"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:data-durability-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14362"
+      ],
+      "confidence": "low"
+    },
+    {
+      "subject": "component:foreign-key-join",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14364",
+        "KAFKA-14646"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:foreign-key-join",
+      "predicate": "EXPOSES",
+      "object": "interface:foreign-key-join-serde",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14364"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:foreign-key-join-serde",
+      "predicate": "EXHIBITS",
+      "object": "failure:api-usability-gap",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14364"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:consumer-rebalance-protocol",
+      "predicate": "EXHIBITS",
+      "object": "failure:data-loss-corruption",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14366"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:data-loss-corruption",
+      "predicate": "CAUSES",
+      "object": "impact:data-durability-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14366"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:jmx-reporter",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14430"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:jmx-reporter",
+      "predicate": "EXPOSES",
+      "object": "interface:jmx-metrics-config",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14430"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:jmx-metrics-config",
+      "predicate": "EXHIBITS",
+      "object": "failure:missing-observability",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14430"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:missing-observability",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14430"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:topology-test-driver",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14431"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:topology-test-driver",
+      "predicate": "EXHIBITS",
+      "object": "failure:crash-unhandled-exception",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14431"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:rocksdb-store",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14432"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:rocksdb-store",
+      "predicate": "DEPENDS_ON",
+      "object": "dependency:rocksdb",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14432"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:rocksdb-store",
+      "predicate": "EXHIBITS",
+      "object": "failure:resource-leak",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14432"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:resource-leak",
+      "predicate": "CAUSES",
+      "object": "impact:performance-cost",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14432"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:test-harness",
+      "predicate": "PART_OF",
+      "object": "system:build-ci",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14433"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:test-harness",
+      "predicate": "EXHIBITS",
+      "object": "failure:resource-leak",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14433"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:resource-leak",
+      "predicate": "CAUSES",
+      "object": "impact:developer-productivity-loss",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14433"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "role:committer-reviewer",
+      "predicate": "PERFORMS",
+      "object": "process:triage",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14434"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:zk-to-kraft-migration",
+      "predicate": "CHANGES",
+      "object": "component:kraft-quorum",
+      "attributes": {
+        "action": "modifies"
+      },
+      "evidence": [
+        "KAFKA-14436"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:striped-replica-placer",
+      "predicate": "PART_OF",
+      "object": "system:controller",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14437"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:striped-replica-placer",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14437"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14437"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:async-kafka-consumer",
+      "predicate": "PART_OF",
+      "object": "system:clients",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14438"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-848",
+      "predicate": "CHANGES",
+      "object": "component:async-kafka-consumer",
+      "attributes": {
+        "action": "modifies"
+      },
+      "evidence": [
+        "KAFKA-14438"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-protocol",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14439",
+        "KAFKA-14640"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-protocol",
+      "predicate": "EXPOSES",
+      "object": "interface:error-code-spec",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14439"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:error-code-spec",
+      "predicate": "EXHIBITS",
+      "object": "failure:documentation-gap",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14439"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:documentation-gap",
+      "predicate": "CAUSES",
+      "object": "impact:user-confusion-adoption-barrier",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14439"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:eos-state-manager",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14440",
+        "KAFKA-14548"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:eos-state-manager",
+      "predicate": "EXHIBITS",
+      "object": "failure:data-loss-corruption",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14440"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:data-loss-corruption",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14440"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:data-output-stream-writable",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14540"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:data-output-stream-writable",
+      "predicate": "EXHIBITS",
+      "object": "failure:data-loss-corruption",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14540"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:data-loss-corruption",
+      "predicate": "CAUSES",
+      "object": "impact:data-durability-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14540"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "initiative:kip-896",
+      "predicate": "CHANGES",
+      "object": "interface:offsetfetch-commit-v0",
+      "attributes": {
+        "action": "deprecates"
+      },
+      "evidence": [
+        "KAFKA-14542"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-896",
+      "predicate": "GOVERNED_BY",
+      "object": "process:kip-design-proposal-process",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14542"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:offsetfetch-commit-v0",
+      "predicate": "DELIVERED_IN",
+      "object": "release:4-0-0",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14542"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:log-offset-metadata",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14543"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log-manager",
+      "predicate": "EXPOSES",
+      "object": "interface:is-future-metric-tag",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14544"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:is-future-metric-tag",
+      "predicate": "EXHIBITS",
+      "object": "failure:missing-observability",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14544"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:missing-observability",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14544"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:mirror-checkpoint-task",
+      "predicate": "PART_OF",
+      "object": "system:mirrormaker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14545"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:mirror-checkpoint-task",
+      "predicate": "EXHIBITS",
+      "object": "failure:crash-unhandled-exception",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14545"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:crash-unhandled-exception",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14545"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:kafka-producer",
+      "predicate": "EXPOSES",
+      "object": "interface:partitioner-api",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14546"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:partitioner-api",
+      "predicate": "EXHIBITS",
+      "object": "failure:api-usability-gap",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14546"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:api-usability-gap",
+      "predicate": "CAUSES",
+      "object": "impact:developer-productivity-loss",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14546"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:kraft-server",
+      "predicate": "PART_OF",
+      "object": "system:controller",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14547"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-785",
+      "predicate": "CHANGES",
+      "object": "component:kraft-server",
+      "attributes": {
+        "action": "modifies"
+      },
+      "evidence": [
+        "KAFKA-14547"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "initiative:kip-785",
+      "predicate": "GOVERNED_BY",
+      "object": "process:kip-design-proposal-process",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14547"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:store-changelog-reader",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14548"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:store-changelog-reader",
+      "predicate": "EXHIBITS",
+      "object": "failure:hang-stuck-state",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14548"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:hang-stuck-state",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14548"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:snapshot-file",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14550"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log-dirs-command",
+      "predicate": "PART_OF",
+      "object": "system:tooling",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14594"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log-dirs-command",
+      "predicate": "EXPOSES",
+      "object": "interface:log-dirs-cli",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14594"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:reassign-partitions-command",
+      "predicate": "PART_OF",
+      "object": "system:tooling",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14595"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:topic-command",
+      "predicate": "PART_OF",
+      "object": "system:tooling",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14596"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:streams-metrics",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14597"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:streams-metrics",
+      "predicate": "EXPOSES",
+      "object": "interface:record-e2e-latency-max",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14597"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:record-e2e-latency-max",
+      "predicate": "EXHIBITS",
+      "object": "failure:missing-observability",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14597"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:missing-observability",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14597"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "initiative:kip-613",
+      "predicate": "CHANGES",
+      "object": "interface:record-e2e-latency-max",
+      "attributes": {
+        "action": "introduces"
+      },
+      "evidence": [
+        "KAFKA-14597"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:mirrormaker-2",
+      "predicate": "EXPOSES",
+      "object": "interface:mirrormaker-pluggable-apis",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14599"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:mirrormaker-pluggable-apis",
+      "predicate": "EXHIBITS",
+      "object": "failure:documentation-gap",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14599"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:documentation-gap",
+      "predicate": "CAUSES",
+      "object": "impact:user-confusion-adoption-barrier",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14599"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:producer-id-expiration-test",
+      "predicate": "PART_OF",
+      "object": "system:build-ci",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14600"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:producer-id-expiration-test",
+      "predicate": "EXHIBITS",
+      "object": "failure:flaky-test",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14600"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:flaky-test",
+      "predicate": "MITIGATED_BY",
+      "object": "process:ci-testing",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14600"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:kafka-event-queue",
+      "predicate": "PART_OF",
+      "object": "system:controller",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14601"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-event-queue",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14601"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14601"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:batch-metadata",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14602"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:batch-metadata",
+      "predicate": "EXHIBITS",
+      "object": "failure:data-loss-corruption",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14602"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:data-loss-corruption",
+      "predicate": "CAUSES",
+      "object": "impact:data-durability-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14602"
+      ],
+      "confidence": "low"
+    },
+    {
+      "subject": "component:kafka-metrics-group",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14603"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:sasl-authenticator",
+      "predicate": "PART_OF",
+      "object": "system:security",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14604"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:sasl-authenticator",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14604"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14604"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:transaction-coordinator",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14640"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:transaction-coordinator",
+      "predicate": "EXPOSES",
+      "object": "interface:addpartitionstotxn-protocol",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14640"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-890",
+      "predicate": "CHANGES",
+      "object": "interface:addpartitionstotxn-protocol",
+      "attributes": {
+        "action": "modifies"
+      },
+      "evidence": [
+        "KAFKA-14640"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:stream-task",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14641"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:topic-based-rlmm",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14642",
+        "KAFKA-14643"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:topic-based-rlmm",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14642",
+        "KAFKA-14643"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14642",
+        "KAFKA-14643"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "initiative:kip-405",
+      "predicate": "CHANGES",
+      "object": "component:topic-based-rlmm",
+      "attributes": {
+        "action": "introduces"
+      },
+      "evidence": [
+        "KAFKA-14642",
+        "KAFKA-14643"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:kraft-quorum",
+      "predicate": "EXHIBITS",
+      "object": "failure:hang-stuck-state",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14644"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:hang-stuck-state",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14644"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:connect-rest-api",
+      "predicate": "PART_OF",
+      "object": "system:connect",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14645",
+        "KAFKA-14649"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:connect-rest-api",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14645"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14645"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:foreign-key-join",
+      "predicate": "EXHIBITS",
+      "object": "failure:compatibility-upgrade-break",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14646"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:compatibility-upgrade-break",
+      "predicate": "CAUSES",
+      "object": "impact:upgrade-migration-friction",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14646"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-consumer",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14648"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14648"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:connect-rest-api",
+      "predicate": "EXHIBITS",
+      "object": "failure:crash-unhandled-exception",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14649"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:crash-unhandled-exception",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14649"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:iqv2",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14650"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:iqv2",
+      "predicate": "EXHIBITS",
+      "object": "failure:crash-unhandled-exception",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14650"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:json-utils",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14737"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:consumer-rebalance-protocol",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14739"
+      ],
+      "confidence": "low"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:data-durability-risk",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14739"
+      ],
+      "confidence": "low"
+    },
+    {
+      "subject": "component:mirror-source-task",
+      "predicate": "EXPOSES",
+      "object": "interface:mirrorsource-metrics-tags",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14740"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:mirrorsource-metrics-tags",
+      "predicate": "EXHIBITS",
+      "object": "failure:missing-observability",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14740"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:missing-observability",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14740"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:exactly-once-source-integration-test",
+      "predicate": "PART_OF",
+      "object": "system:build-ci",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14742"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:exactly-once-source-integration-test",
+      "predicate": "EXHIBITS",
+      "object": "failure:flaky-test",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14742"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:flaky-test",
+      "predicate": "MITIGATED_BY",
+      "object": "process:ci-testing",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14742"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:request-metrics",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14743"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:request-metrics",
+      "predicate": "EXPOSES",
+      "object": "interface:messageconversionstimems-metric",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14743"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:messageconversionstimems-metric",
+      "predicate": "EXHIBITS",
+      "object": "failure:missing-observability",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14743"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:missing-observability",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "KAFKA-14743"
+      ],
+      "confidence": "medium"
+    }
+  ]
+}

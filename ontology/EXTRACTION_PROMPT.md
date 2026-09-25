@@ -24,7 +24,7 @@ Relationship: `{"subject", "predicate", "object", "attributes": {}, "evidence": 
 - Interfaces: add `attributes.kind` = `api` | `config` | `metric` | `cli` | `protocol`.
 
 ## Rules
-1. **Evidence is mandatory.** Every entity (except vocabulary values) and every relationship cites the ticket key(s) from *your batch* that support it. Never cite a ticket you weren't given.
+1. **Evidence is mandatory.** Use full ticket keys (`KAFKA-13270`, never `13270`). Every entity (except vocabulary values) and every relationship cites the ticket key(s) from *your batch* that support it. Never cite a ticket you weren't given.
 2. **Domain/range is mandatory.** Only use subject→object type pairs allowed in `vocab.json` → `relations`. If a fact doesn't fit any allowed relationship, skip it.
 3. **Every Component gets a PART_OF to exactly one System.**
 4. **Go for the core chain.** For bugs and failures, try to capture: `Component EXHIBITS Failure Mode`, `Failure Mode CAUSES Business Impact`, and `TRIGGERED_BY` / `MITIGATED_BY` when the ticket says so.

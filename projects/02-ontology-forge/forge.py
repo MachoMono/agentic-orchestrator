@@ -102,7 +102,7 @@ def cmd_merge(args):
         r = json.loads(line)
         created[r["key"]] = r["created"][:10]
     vids = vocab_ids()
-    entities, rels = {}, {}
+    entities, rels, pending = {}, {}, {}
     problems = collections.defaultdict(list)
     batch_keys_seen = set()
     raw_counts = collections.Counter()
@@ -116,7 +116,8 @@ def cmd_merge(args):
         raw_counts["relationships"] += len(data.get("relationships", []))
 
         def check_evidence(ev, where):
-            ev = [k for k in ev or []]
+            # Normalize bare numbers ("13270" -> "KAFKA-13270"); still checked against the batch below.
+            ev = [f"KAFKA-{k}" if str(k).isdigit() else k for k in ev or []]
             bad = [k for k in ev if k not in allowed]
             if bad:
                 problems["evidence not in the agent's batch (possible hallucination)"].append(f"{bf.name} {where}: {bad}")
@@ -133,8 +134,9 @@ def cmd_merge(args):
                 problems["controlled-vocabulary value not in seed list (and not marked proposed)"].append(
                     f"{bf.name} {eid}")
             ev = check_evidence(e.get("evidence"), eid)
-            if not ev and t not in VOCAB:
-                problems["entity with no valid evidence (dropped)"].append(f"{bf.name} {eid}")
+            if not ev and t not in VOCAB and eid not in entities:
+                # Held back: kept only if a relationship with valid evidence references it (see below).
+                pending.setdefault(eid, e | {"type": t})
                 continue
             cur = entities.setdefault(eid, {"id": eid, "type": t, "name": e.get("name") or eid,
                                              "aliases": set(), "attributes": {}, "evidence": set(),
@@ -160,6 +162,20 @@ def cmd_merge(args):
             c = r.get("confidence", "medium")
             if CONF_RANK.get(c, 1) > CONF_RANK[cur["confidence"]]:
                 cur["confidence"] = c
+
+    # Evidence-less entities survive only if an evidenced relationship uses them; they inherit its evidence.
+    for key, r in rels.items():
+        for eid in (key[0], key[2]):
+            if eid in pending and eid not in entities:
+                e = pending[eid]
+                entities[eid] = {"id": eid, "type": e["type"], "name": e.get("name") or eid,
+                                 "aliases": set(e.get("aliases") or []), "attributes": dict(e.get("attributes") or {}),
+                                 "evidence": set(), "proposed": bool(e.get("proposed"))}
+            if eid in entities and eid in pending:
+                entities[eid]["evidence"] |= r["evidence"]
+    for eid in pending:
+        if eid not in entities:
+            problems["entity with no evidence and no evidenced relationship (dropped)"].append(eid)
 
     # Canonical nodes (controlled vocabularies + the fixed System list) always exist when referenced.
     canonical = dict(vids, **{f"system:{k}": ("System", v) for k, v in SYSTEMS.items()})
@@ -244,7 +260,7 @@ def main():
     v.add_argument("--out", default="ontology/vocab.json")
     m = sub.add_parser("merge")
     m.add_argument("--batches", default="ontology/batches")
-    m.add_argument("--pattern", default="batch_*.json")
+    m.add_argument("--pattern", default="[bg]*.json")  # batch_*.json + gapfill.json (pilot excluded)
     m.add_argument("--batch-md-dir", default="data/batches")
     m.add_argument("--raw", default="data/raw/kafka_issues.jsonl")
     m.add_argument("--out", default="ontology/ontology.json")

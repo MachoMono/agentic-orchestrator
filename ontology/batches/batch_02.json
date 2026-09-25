@@ -1,0 +1,3994 @@
+{
+  "entities": [
+    {
+      "id": "component:broker-zookeeper-client",
+      "type": "Component",
+      "name": "Broker ZooKeeper Client",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13270"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:transaction-coordinator",
+      "type": "Component",
+      "name": "Transaction Coordinator",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13272"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:window-store",
+      "type": "Component",
+      "name": "Window Store",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13356",
+        "13934"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:metadata-delta",
+      "type": "Component",
+      "name": "MetadataDelta",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13357",
+        "13812"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:mirror-checkpoint-connector",
+      "type": "Component",
+      "name": "MirrorCheckpointConnector",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13358",
+        "13606",
+        "13808"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:round-robin-partitioner",
+      "type": "Component",
+      "name": "RoundRobinPartitioner",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13359"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:ssl-transport-layer",
+      "type": "Component",
+      "name": "SslTransportLayer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13360",
+        "13418",
+        "13474"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:authorizer",
+      "type": "Component",
+      "name": "Authorizer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13363"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:mirror-source-connector",
+      "type": "Component",
+      "name": "MirrorSourceConnector",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13465",
+        "13529",
+        "13876"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:consumer-coordinator",
+      "type": "Component",
+      "name": "ConsumerCoordinator",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13419",
+        "13420",
+        "13421",
+        "13425",
+        "13670",
+        "13717"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:connect-authorizer",
+      "type": "Component",
+      "name": "Connect Authorizer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13362"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:global-stream-thread",
+      "type": "Component",
+      "name": "GlobalStreamThread",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13423"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:topic-deletion-manager",
+      "type": "Component",
+      "name": "TopicDeletionManager",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13424"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:scram-sasl-server",
+      "type": "Component",
+      "name": "ScramSaslServer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13464"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:network-client",
+      "type": "Component",
+      "name": "NetworkClient",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13467"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:log-manager",
+      "type": "Component",
+      "name": "LogManager",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13468",
+        "13674",
+        "13527"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:worker-source-task",
+      "type": "Component",
+      "name": "WorkerSourceTask",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13469",
+        "13669"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:worker-sink-task",
+      "type": "Component",
+      "name": "WorkerSinkTask",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13472",
+        "13601"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:log-cleaner",
+      "type": "Component",
+      "name": "LogCleaner",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13473",
+        "13727",
+        "13753",
+        "13760"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:quickstart-docs",
+      "type": "Component",
+      "name": "Quickstart Documentation",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13520"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:kstream-suppress-buffer",
+      "type": "Component",
+      "name": "Suppress Buffer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13521",
+        "13870"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:key-value-store",
+      "type": "Component",
+      "name": "Key Value Store",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13522",
+        "13523",
+        "13524",
+        "13525",
+        "13526",
+        "13599",
+        "13605"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:kraft-controller",
+      "type": "Component",
+      "name": "KRaft Controller",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13528",
+        "13667",
+        "13755",
+        "13871",
+        "13940",
+        "13944"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:replica-manager",
+      "type": "Component",
+      "name": "ReplicaManager",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13530",
+        "13872"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:producer-config",
+      "type": "Component",
+      "name": "Producer Config",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13598",
+        "13673",
+        "13361"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:idempotent-producer",
+      "type": "Component",
+      "name": "Idempotent Producer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13668"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:dynamic-broker-config",
+      "type": "Component",
+      "name": "DynamicBrokerConfig",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13417",
+        "13474",
+        "13807",
+        "13672"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:stream-task-assignor",
+      "type": "Component",
+      "name": "Streams Task Assignor",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13600"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:kstream-sink-processor",
+      "type": "Component",
+      "name": "KStream Sink Processor",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13602"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:streams-topology",
+      "type": "Component",
+      "name": "KafkaStreams Topology",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13873"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:log-segment",
+      "type": "Component",
+      "name": "LogSegment",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13603"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:group-metadata-manager",
+      "type": "Component",
+      "name": "GroupMetadataManager",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13758"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:distributed-herder",
+      "type": "Component",
+      "name": "DistributedHerder",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13719"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:worker-connector",
+      "type": "Component",
+      "name": "WorkerConnector",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13878"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:kafka-scheduler",
+      "type": "Component",
+      "name": "KafkaScheduler",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13802"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:dependency-management",
+      "type": "Component",
+      "name": "Dependency Management",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13724",
+        "13726",
+        "13805"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:oauthbearer-security",
+      "type": "Component",
+      "name": "OAuthBearer Security",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13725"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:replica-fetcher",
+      "type": "Component",
+      "name": "ReplicaFetcher",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13754"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:alter-isr-manager",
+      "type": "Component",
+      "name": "AlterIsrManager",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "14010",
+        "13720"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:connect-worker",
+      "type": "Component",
+      "name": "Connect Worker",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13756"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:admin-client",
+      "type": "Component",
+      "name": "AdminClient",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13757"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:connect-producer-config",
+      "type": "Component",
+      "name": "Connect Producer Config",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13759"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:log4j-appender",
+      "type": "Component",
+      "name": "KafkaLog4jAppender",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13761"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:kafka-website",
+      "type": "Component",
+      "name": "Kafka Website",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13868"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:client-quota-manager",
+      "type": "Component",
+      "name": "Client Quota Manager",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13869"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:socket-server",
+      "type": "Component",
+      "name": "SocketServer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13874"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:streams-rack-awareness-assignor",
+      "type": "Component",
+      "name": "Rack Awareness Assignor",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13877"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:build-ci-pipeline",
+      "type": "Component",
+      "name": "Build/CI Pipeline",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13938",
+        "13941",
+        "13942",
+        "13943",
+        "13671"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:in-memory-time-ordered-keyvalue-buffer",
+      "type": "Component",
+      "name": "InMemoryTimeOrderedKeyValueBuffer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13939"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:standard-authorizer",
+      "type": "Component",
+      "name": "StandardAuthorizer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13937"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:file-stream-connector",
+      "type": "Component",
+      "name": "FileStream Connectors",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13809"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:streams-consumer-client",
+      "type": "Component",
+      "name": "Streams Consumer Client",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13936"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:sliding-window-store",
+      "type": "Component",
+      "name": "Sliding Window Store",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13811"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:metrics-registry",
+      "type": "Component",
+      "name": "Metrics Registry",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13366",
+        "13416"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:kafka-topics-cli",
+      "type": "Component",
+      "name": "kafka-topics.sh",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13718",
+        "13875"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:streams-application-reset-tool",
+      "type": "Component",
+      "name": "Streams Application Reset Tool",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13675"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:producer",
+      "type": "Component",
+      "name": "KafkaProducer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13810"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:sasl-authenticator",
+      "type": "Component",
+      "name": "SASL Authenticator",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13422"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:ssl-engine-factory",
+      "type": "Component",
+      "name": "SslEngineFactory",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13607"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:stream-stream-join",
+      "type": "Component",
+      "name": "Stream-Stream Join",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13721"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "component:kafka-server",
+      "type": "Component",
+      "name": "KafkaServer",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13804"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:leader-imbalance-per-broker-percentage-metric",
+      "type": "Interface",
+      "name": "leader.imbalance.per.broker.percentage metric",
+      "aliases": [],
+      "attributes": {
+        "kind": "metric"
+      },
+      "evidence": [
+        "13366"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:topic-partition-metrics",
+      "type": "Interface",
+      "name": "Topic/Partition-tagged metrics",
+      "aliases": [],
+      "attributes": {
+        "kind": "metric"
+      },
+      "evidence": [
+        "13416"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:consumer-protocol",
+      "type": "Interface",
+      "name": "Consumer Group Protocol",
+      "aliases": [],
+      "attributes": {
+        "kind": "protocol"
+      },
+      "evidence": [
+        "13420"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:state-store-context-api",
+      "type": "Interface",
+      "name": "StateStoreContext API",
+      "aliases": [],
+      "attributes": {
+        "kind": "api"
+      },
+      "evidence": [
+        "13426"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:describe-log-dirs-protocol",
+      "type": "Interface",
+      "name": "DescribeLogDirs protocol",
+      "aliases": [],
+      "attributes": {
+        "kind": "protocol"
+      },
+      "evidence": [
+        "13527"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:mm2-client-configuration",
+      "type": "Interface",
+      "name": "MirrorMaker2 client configuration",
+      "aliases": [],
+      "attributes": {
+        "kind": "config"
+      },
+      "evidence": [
+        "13365",
+        "13529",
+        "13876"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:kafka-streams-application-reset-cli",
+      "type": "Interface",
+      "name": "kafka-streams-application-reset-tool CLI",
+      "aliases": [],
+      "attributes": {
+        "kind": "cli"
+      },
+      "evidence": [
+        "13675"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:kafka-topics-describe-cli",
+      "type": "Interface",
+      "name": "kafka-topics.sh --describe",
+      "aliases": [],
+      "attributes": {
+        "kind": "cli"
+      },
+      "evidence": [
+        "13718",
+        "13875"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:connect-validate-endpoint-api",
+      "type": "Interface",
+      "name": "Connect /validate REST endpoint",
+      "aliases": [],
+      "attributes": {
+        "kind": "api"
+      },
+      "evidence": [
+        "13756"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:delegation-token-admin-api",
+      "type": "Interface",
+      "name": "DelegationToken Admin API",
+      "aliases": [],
+      "attributes": {
+        "kind": "api"
+      },
+      "evidence": [
+        "13757"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:log-flush-interval-ms-config",
+      "type": "Interface",
+      "name": "log.flush.interval.ms config",
+      "aliases": [],
+      "attributes": {
+        "kind": "config"
+      },
+      "evidence": [
+        "13807"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:producer-flush-api",
+      "type": "Interface",
+      "name": "KafkaProducer#flush() API",
+      "aliases": [],
+      "attributes": {
+        "kind": "api"
+      },
+      "evidence": [
+        "13810"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:networkprocessoravgidlepercent-metric",
+      "type": "Interface",
+      "name": "NetworkProcessorAvgIdlePercent metric",
+      "aliases": [],
+      "attributes": {
+        "kind": "metric"
+      },
+      "evidence": [
+        "13874"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:records-lag-max-metric",
+      "type": "Interface",
+      "name": "records-lag-max metric",
+      "aliases": [],
+      "attributes": {
+        "kind": "metric"
+      },
+      "evidence": [
+        "13936"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:describe-quorum-protocol",
+      "type": "Interface",
+      "name": "DescribeQuorum protocol",
+      "aliases": [],
+      "attributes": {
+        "kind": "protocol"
+      },
+      "evidence": [
+        "13940"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:quorum-fetch-timeout-ms-config",
+      "type": "Interface",
+      "name": "QUORUM_FETCH_TIMEOUT_MS config",
+      "aliases": [],
+      "attributes": {
+        "kind": "config"
+      },
+      "evidence": [
+        "13871"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "interface:fine-grained-compression-config",
+      "type": "Interface",
+      "name": "Fine-grained compression options config",
+      "aliases": [],
+      "attributes": {
+        "kind": "config"
+      },
+      "evidence": [
+        "13361"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "dependency:zookeeper",
+      "type": "External Dependency",
+      "name": "ZooKeeper",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13270",
+        "13720"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "dependency:jdk",
+      "type": "External Dependency",
+      "name": "JDK",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13273",
+        "13274",
+        "13418"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "dependency:rocksdb",
+      "type": "External Dependency",
+      "name": "RocksDB",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13599"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "dependency:xstream",
+      "type": "External Dependency",
+      "name": "com.thoughtworks.xstream_xstream",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13724"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "dependency:tomcat-embed-core",
+      "type": "External Dependency",
+      "name": "org.apache.tomcat.embed_tomcat-embed-core",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13726"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "dependency:jackson-databind",
+      "type": "External Dependency",
+      "name": "jackson-databind",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13805"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "dependency:log4j",
+      "type": "External Dependency",
+      "name": "log4j",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13604",
+        "13761"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-780",
+      "type": "Initiative",
+      "name": "KIP-780",
+      "aliases": [
+        "Support fine-grained compression options"
+      ],
+      "attributes": {},
+      "evidence": [
+        "13361"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-791",
+      "type": "Initiative",
+      "name": "KIP-791",
+      "aliases": [
+        "Add Record Metadata to State Store Context"
+      ],
+      "attributes": {},
+      "evidence": [
+        "13426"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-784",
+      "type": "Initiative",
+      "name": "KIP-784",
+      "aliases": [
+        "Add top-level error code field to DescribeLogDirsResponse"
+      ],
+      "attributes": {},
+      "evidence": [
+        "13527"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-679",
+      "type": "Initiative",
+      "name": "KIP-679",
+      "aliases": [
+        "Producer will enable the strongest delivery guarantee by default"
+      ],
+      "attributes": {},
+      "evidence": [
+        "13598",
+        "13673"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-500",
+      "type": "Initiative",
+      "name": "KIP-500",
+      "aliases": [
+        "ZooKeeper removal / KRaft"
+      ],
+      "attributes": {},
+      "evidence": [
+        "13755",
+        "13869",
+        "13944"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-966",
+      "type": "Initiative",
+      "name": "KIP-966",
+      "aliases": [
+        "Eligible Leader Replicas"
+      ],
+      "attributes": {},
+      "evidence": [
+        "13872"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-768",
+      "type": "Initiative",
+      "name": "KIP-768",
+      "aliases": [
+        "OAuth support"
+      ],
+      "attributes": {},
+      "evidence": [
+        "13725"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:kip-834",
+      "type": "Initiative",
+      "name": "KIP-834",
+      "aliases": [
+        "Pause/Resume KafkaStreams Topologies"
+      ],
+      "attributes": {},
+      "evidence": [
+        "13873"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:consolidate-window-types",
+      "type": "Initiative",
+      "name": "Consolidate TimeWindow/SessionWindow/SlidingWindow",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13934"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:suppress-buffer-time-and-size-limits",
+      "type": "Initiative",
+      "name": "Support Suppressed untilTimeLimit with maxBytes",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13870"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:broadcast-result-record",
+      "type": "Initiative",
+      "name": "Allow broadcasting a result record",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13602"
+      ],
+      "proposed": false
+    },
+    {
+      "id": "initiative:mm2-client-config-improvement",
+      "type": "Initiative",
+      "name": "Improve MirrorMaker2 client configuration",
+      "aliases": [],
+      "attributes": {},
+      "evidence": [
+        "13365"
+      ],
+      "proposed": false
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "component:broker-zookeeper-client",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "13270"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:transaction-coordinator",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "13272"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:window-store",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "13356",
+        "13934"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:metadata-delta",
+      "predicate": "PART_OF",
+      "object": "system:controller",
+      "attributes": {},
+      "evidence": [
+        "13357",
+        "13812"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:mirror-checkpoint-connector",
+      "predicate": "PART_OF",
+      "object": "system:mirrormaker",
+      "attributes": {},
+      "evidence": [
+        "13358",
+        "13606",
+        "13808"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:round-robin-partitioner",
+      "predicate": "PART_OF",
+      "object": "system:clients",
+      "attributes": {},
+      "evidence": [
+        "13359"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:ssl-transport-layer",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "13360",
+        "13418",
+        "13474"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:authorizer",
+      "predicate": "PART_OF",
+      "object": "system:security",
+      "attributes": {},
+      "evidence": [
+        "13363"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:mirror-source-connector",
+      "predicate": "PART_OF",
+      "object": "system:mirrormaker",
+      "attributes": {},
+      "evidence": [
+        "13465",
+        "13529",
+        "13876"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:consumer-coordinator",
+      "predicate": "PART_OF",
+      "object": "system:clients",
+      "attributes": {},
+      "evidence": [
+        "13419",
+        "13420",
+        "13421",
+        "13425",
+        "13670",
+        "13717"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:connect-authorizer",
+      "predicate": "PART_OF",
+      "object": "system:connect",
+      "attributes": {},
+      "evidence": [
+        "13362"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:global-stream-thread",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "13423"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:topic-deletion-manager",
+      "predicate": "PART_OF",
+      "object": "system:controller",
+      "attributes": {},
+      "evidence": [
+        "13424"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:scram-sasl-server",
+      "predicate": "PART_OF",
+      "object": "system:security",
+      "attributes": {},
+      "evidence": [
+        "13464"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:network-client",
+      "predicate": "PART_OF",
+      "object": "system:clients",
+      "attributes": {},
+      "evidence": [
+        "13467"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log-manager",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "13468",
+        "13674",
+        "13527"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:worker-source-task",
+      "predicate": "PART_OF",
+      "object": "system:connect",
+      "attributes": {},
+      "evidence": [
+        "13469",
+        "13669"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:worker-sink-task",
+      "predicate": "PART_OF",
+      "object": "system:connect",
+      "attributes": {},
+      "evidence": [
+        "13472",
+        "13601"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log-cleaner",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "13473",
+        "13727",
+        "13753",
+        "13760"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:quickstart-docs",
+      "predicate": "PART_OF",
+      "object": "system:documentation",
+      "attributes": {},
+      "evidence": [
+        "13520"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kstream-suppress-buffer",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "13521",
+        "13870"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:key-value-store",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "13522",
+        "13523",
+        "13524",
+        "13525",
+        "13526",
+        "13599",
+        "13605"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kraft-controller",
+      "predicate": "PART_OF",
+      "object": "system:controller",
+      "attributes": {},
+      "evidence": [
+        "13528",
+        "13667",
+        "13755",
+        "13871",
+        "13940",
+        "13944"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:replica-manager",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "13530",
+        "13872"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:producer-config",
+      "predicate": "PART_OF",
+      "object": "system:clients",
+      "attributes": {},
+      "evidence": [
+        "13598",
+        "13673",
+        "13361"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:idempotent-producer",
+      "predicate": "PART_OF",
+      "object": "system:clients",
+      "attributes": {},
+      "evidence": [
+        "13668"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:dynamic-broker-config",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "13417",
+        "13474",
+        "13807",
+        "13672"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:stream-task-assignor",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "13600"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kstream-sink-processor",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "13602"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:streams-topology",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "13873"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log-segment",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "13603"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:group-metadata-manager",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "13758"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:distributed-herder",
+      "predicate": "PART_OF",
+      "object": "system:connect",
+      "attributes": {},
+      "evidence": [
+        "13719"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:worker-connector",
+      "predicate": "PART_OF",
+      "object": "system:connect",
+      "attributes": {},
+      "evidence": [
+        "13878"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-scheduler",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "13802"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:dependency-management",
+      "predicate": "PART_OF",
+      "object": "system:build-ci",
+      "attributes": {},
+      "evidence": [
+        "13724",
+        "13726",
+        "13805"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:oauthbearer-security",
+      "predicate": "PART_OF",
+      "object": "system:security",
+      "attributes": {},
+      "evidence": [
+        "13725"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:replica-fetcher",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "13754"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:alter-isr-manager",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "14010",
+        "13720"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:connect-worker",
+      "predicate": "PART_OF",
+      "object": "system:connect",
+      "attributes": {},
+      "evidence": [
+        "13756"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:admin-client",
+      "predicate": "PART_OF",
+      "object": "system:clients",
+      "attributes": {},
+      "evidence": [
+        "13757"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:connect-producer-config",
+      "predicate": "PART_OF",
+      "object": "system:connect",
+      "attributes": {},
+      "evidence": [
+        "13759"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log4j-appender",
+      "predicate": "PART_OF",
+      "object": "system:tooling",
+      "attributes": {},
+      "evidence": [
+        "13761"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-website",
+      "predicate": "PART_OF",
+      "object": "system:documentation",
+      "attributes": {},
+      "evidence": [
+        "13868"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:client-quota-manager",
+      "predicate": "PART_OF",
+      "object": "system:controller",
+      "attributes": {},
+      "evidence": [
+        "13869"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:socket-server",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "13874"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:streams-rack-awareness-assignor",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "13877"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:build-ci-pipeline",
+      "predicate": "PART_OF",
+      "object": "system:build-ci",
+      "attributes": {},
+      "evidence": [
+        "13938",
+        "13941",
+        "13942",
+        "13943",
+        "13671"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:in-memory-time-ordered-keyvalue-buffer",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "13939"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:standard-authorizer",
+      "predicate": "PART_OF",
+      "object": "system:security",
+      "attributes": {},
+      "evidence": [
+        "13937"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:file-stream-connector",
+      "predicate": "PART_OF",
+      "object": "system:connect",
+      "attributes": {},
+      "evidence": [
+        "13809"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:streams-consumer-client",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "13936"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:sliding-window-store",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "13811"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:metrics-registry",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "13366",
+        "13416"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-topics-cli",
+      "predicate": "PART_OF",
+      "object": "system:tooling",
+      "attributes": {},
+      "evidence": [
+        "13718",
+        "13875"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:streams-application-reset-tool",
+      "predicate": "PART_OF",
+      "object": "system:tooling",
+      "attributes": {},
+      "evidence": [
+        "13675"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:producer",
+      "predicate": "PART_OF",
+      "object": "system:clients",
+      "attributes": {},
+      "evidence": [
+        "13810"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:sasl-authenticator",
+      "predicate": "PART_OF",
+      "object": "system:security",
+      "attributes": {},
+      "evidence": [
+        "13422"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:ssl-engine-factory",
+      "predicate": "PART_OF",
+      "object": "system:security",
+      "attributes": {},
+      "evidence": [
+        "13607"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:stream-stream-join",
+      "predicate": "PART_OF",
+      "object": "system:streams",
+      "attributes": {},
+      "evidence": [
+        "13721"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-server",
+      "predicate": "PART_OF",
+      "object": "system:broker",
+      "attributes": {},
+      "evidence": [
+        "13804"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:metrics-registry",
+      "predicate": "EXPOSES",
+      "object": "interface:leader-imbalance-per-broker-percentage-metric",
+      "attributes": {},
+      "evidence": [
+        "13366"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:metrics-registry",
+      "predicate": "EXPOSES",
+      "object": "interface:topic-partition-metrics",
+      "attributes": {},
+      "evidence": [
+        "13416"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:consumer-coordinator",
+      "predicate": "EXPOSES",
+      "object": "interface:consumer-protocol",
+      "attributes": {},
+      "evidence": [
+        "13420"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:key-value-store",
+      "predicate": "EXPOSES",
+      "object": "interface:state-store-context-api",
+      "attributes": {},
+      "evidence": [
+        "13426"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log-manager",
+      "predicate": "EXPOSES",
+      "object": "interface:describe-log-dirs-protocol",
+      "attributes": {},
+      "evidence": [
+        "13527"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:mirror-source-connector",
+      "predicate": "EXPOSES",
+      "object": "interface:mm2-client-configuration",
+      "attributes": {},
+      "evidence": [
+        "13365",
+        "13529",
+        "13876"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:streams-application-reset-tool",
+      "predicate": "EXPOSES",
+      "object": "interface:kafka-streams-application-reset-cli",
+      "attributes": {},
+      "evidence": [
+        "13675"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-topics-cli",
+      "predicate": "EXPOSES",
+      "object": "interface:kafka-topics-describe-cli",
+      "attributes": {},
+      "evidence": [
+        "13718",
+        "13875"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:connect-worker",
+      "predicate": "EXPOSES",
+      "object": "interface:connect-validate-endpoint-api",
+      "attributes": {},
+      "evidence": [
+        "13756"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:admin-client",
+      "predicate": "EXPOSES",
+      "object": "interface:delegation-token-admin-api",
+      "attributes": {},
+      "evidence": [
+        "13757"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:dynamic-broker-config",
+      "predicate": "EXPOSES",
+      "object": "interface:log-flush-interval-ms-config",
+      "attributes": {},
+      "evidence": [
+        "13807"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:producer",
+      "predicate": "EXPOSES",
+      "object": "interface:producer-flush-api",
+      "attributes": {},
+      "evidence": [
+        "13810"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:socket-server",
+      "predicate": "EXPOSES",
+      "object": "interface:networkprocessoravgidlepercent-metric",
+      "attributes": {},
+      "evidence": [
+        "13874"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:streams-consumer-client",
+      "predicate": "EXPOSES",
+      "object": "interface:records-lag-max-metric",
+      "attributes": {},
+      "evidence": [
+        "13936"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kraft-controller",
+      "predicate": "EXPOSES",
+      "object": "interface:describe-quorum-protocol",
+      "attributes": {},
+      "evidence": [
+        "13940"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kraft-controller",
+      "predicate": "EXPOSES",
+      "object": "interface:quorum-fetch-timeout-ms-config",
+      "attributes": {},
+      "evidence": [
+        "13871"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:producer-config",
+      "predicate": "EXPOSES",
+      "object": "interface:fine-grained-compression-config",
+      "attributes": {},
+      "evidence": [
+        "13361"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:broker-zookeeper-client",
+      "predicate": "DEPENDS_ON",
+      "object": "dependency:zookeeper",
+      "attributes": {},
+      "evidence": [
+        "13270"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:alter-isr-manager",
+      "predicate": "DEPENDS_ON",
+      "object": "dependency:zookeeper",
+      "attributes": {},
+      "evidence": [
+        "13720"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "system:build-ci",
+      "predicate": "DEPENDS_ON",
+      "object": "dependency:jdk",
+      "attributes": {},
+      "evidence": [
+        "13273",
+        "13274"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:ssl-transport-layer",
+      "predicate": "DEPENDS_ON",
+      "object": "dependency:jdk",
+      "attributes": {},
+      "evidence": [
+        "13418"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:key-value-store",
+      "predicate": "DEPENDS_ON",
+      "object": "dependency:rocksdb",
+      "attributes": {},
+      "evidence": [
+        "13599"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:dependency-management",
+      "predicate": "DEPENDS_ON",
+      "object": "dependency:xstream",
+      "attributes": {},
+      "evidence": [
+        "13724"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:dependency-management",
+      "predicate": "DEPENDS_ON",
+      "object": "dependency:tomcat-embed-core",
+      "attributes": {},
+      "evidence": [
+        "13726"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:dependency-management",
+      "predicate": "DEPENDS_ON",
+      "object": "dependency:jackson-databind",
+      "attributes": {},
+      "evidence": [
+        "13805"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log4j-appender",
+      "predicate": "DEPENDS_ON",
+      "object": "dependency:log4j",
+      "attributes": {},
+      "evidence": [
+        "13761"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-791",
+      "predicate": "CHANGES",
+      "object": "interface:state-store-context-api",
+      "attributes": {
+        "action": "modifies"
+      },
+      "evidence": [
+        "13426"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-784",
+      "predicate": "CHANGES",
+      "object": "interface:describe-log-dirs-protocol",
+      "attributes": {
+        "action": "modifies"
+      },
+      "evidence": [
+        "13527"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-679",
+      "predicate": "CHANGES",
+      "object": "component:producer-config",
+      "attributes": {
+        "action": "modifies"
+      },
+      "evidence": [
+        "13598",
+        "13673"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-500",
+      "predicate": "CHANGES",
+      "object": "component:kraft-controller",
+      "attributes": {
+        "action": "modifies"
+      },
+      "evidence": [
+        "13755",
+        "13944"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "initiative:kip-500",
+      "predicate": "CHANGES",
+      "object": "component:client-quota-manager",
+      "attributes": {
+        "action": "modifies"
+      },
+      "evidence": [
+        "13869"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "initiative:kip-768",
+      "predicate": "CHANGES",
+      "object": "component:oauthbearer-security",
+      "attributes": {
+        "action": "modifies"
+      },
+      "evidence": [
+        "13725"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-834",
+      "predicate": "CHANGES",
+      "object": "component:streams-topology",
+      "attributes": {
+        "action": "introduces"
+      },
+      "evidence": [
+        "13873"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-780",
+      "predicate": "CHANGES",
+      "object": "interface:fine-grained-compression-config",
+      "attributes": {
+        "action": "introduces"
+      },
+      "evidence": [
+        "13361"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "initiative:mm2-client-config-improvement",
+      "predicate": "CHANGES",
+      "object": "interface:mm2-client-configuration",
+      "attributes": {
+        "action": "modifies"
+      },
+      "evidence": [
+        "13365"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "initiative:consolidate-window-types",
+      "predicate": "CHANGES",
+      "object": "component:window-store",
+      "attributes": {
+        "action": "modifies"
+      },
+      "evidence": [
+        "13934"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "initiative:suppress-buffer-time-and-size-limits",
+      "predicate": "CHANGES",
+      "object": "component:kstream-suppress-buffer",
+      "attributes": {
+        "action": "modifies"
+      },
+      "evidence": [
+        "13870"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "initiative:broadcast-result-record",
+      "predicate": "CHANGES",
+      "object": "component:kstream-sink-processor",
+      "attributes": {
+        "action": "introduces"
+      },
+      "evidence": [
+        "13602"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "initiative:kip-966",
+      "predicate": "CHANGES",
+      "object": "component:replica-manager",
+      "attributes": {
+        "action": "modifies"
+      },
+      "evidence": [
+        "13872"
+      ],
+      "confidence": "low"
+    },
+    {
+      "subject": "interface:fine-grained-compression-config",
+      "predicate": "GOVERNED_BY",
+      "object": "process:kip-design-proposal-process",
+      "attributes": {},
+      "evidence": [
+        "13361"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:consumer-protocol",
+      "predicate": "GOVERNED_BY",
+      "object": "process:kip-design-proposal-process",
+      "attributes": {},
+      "evidence": [
+        "13420"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:mm2-client-config-improvement",
+      "predicate": "GOVERNED_BY",
+      "object": "process:kip-design-proposal-process",
+      "attributes": {},
+      "evidence": [
+        "13365"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:consolidate-window-types",
+      "predicate": "GOVERNED_BY",
+      "object": "process:kip-design-proposal-process",
+      "attributes": {},
+      "evidence": [
+        "13934"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:suppress-buffer-time-and-size-limits",
+      "predicate": "GOVERNED_BY",
+      "object": "process:kip-design-proposal-process",
+      "attributes": {},
+      "evidence": [
+        "13870"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:broadcast-result-record",
+      "predicate": "GOVERNED_BY",
+      "object": "process:kip-design-proposal-process",
+      "attributes": {},
+      "evidence": [
+        "13602"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-791",
+      "predicate": "GOVERNED_BY",
+      "object": "process:kip-design-proposal-process",
+      "attributes": {},
+      "evidence": [
+        "13426"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-784",
+      "predicate": "GOVERNED_BY",
+      "object": "process:kip-design-proposal-process",
+      "attributes": {},
+      "evidence": [
+        "13527"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "initiative:kip-834",
+      "predicate": "GOVERNED_BY",
+      "object": "process:kip-design-proposal-process",
+      "attributes": {},
+      "evidence": [
+        "13873"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:broker-zookeeper-client",
+      "predicate": "EXHIBITS",
+      "object": "failure:hang-stuck-state",
+      "attributes": {},
+      "evidence": [
+        "13270"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:transaction-coordinator",
+      "predicate": "EXHIBITS",
+      "object": "failure:hang-stuck-state",
+      "attributes": {},
+      "evidence": [
+        "13272"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:window-store",
+      "predicate": "EXHIBITS",
+      "object": "failure:performance-degradation",
+      "attributes": {},
+      "evidence": [
+        "13356"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:metadata-delta",
+      "predicate": "EXHIBITS",
+      "object": "failure:data-loss-corruption",
+      "attributes": {},
+      "evidence": [
+        "13357"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:mirror-checkpoint-connector",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13358"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:round-robin-partitioner",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13359"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:ssl-transport-layer",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13360"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:ssl-transport-layer",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13418"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:ssl-transport-layer",
+      "predicate": "EXHIBITS",
+      "object": "failure:config-not-honored",
+      "attributes": {},
+      "evidence": [
+        "13474"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:connect-authorizer",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13362"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:mirror-source-connector",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13465"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:mirror-source-connector",
+      "predicate": "EXHIBITS",
+      "object": "failure:config-not-honored",
+      "attributes": {},
+      "evidence": [
+        "13529"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:mirror-source-connector",
+      "predicate": "EXHIBITS",
+      "object": "failure:config-not-honored",
+      "attributes": {},
+      "evidence": [
+        "13876"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:consumer-coordinator",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13419"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:consumer-coordinator",
+      "predicate": "EXHIBITS",
+      "object": "failure:flaky-test",
+      "attributes": {},
+      "evidence": [
+        "13421"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:consumer-coordinator",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13425"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:consumer-coordinator",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13670"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:consumer-coordinator",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13717"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:global-stream-thread",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13423"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:topic-deletion-manager",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13424"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:scram-sasl-server",
+      "predicate": "EXHIBITS",
+      "object": "failure:security-vulnerability",
+      "attributes": {},
+      "evidence": [
+        "13464"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:network-client",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13467"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:log-manager",
+      "predicate": "EXHIBITS",
+      "object": "failure:hang-stuck-state",
+      "attributes": {},
+      "evidence": [
+        "13468"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log-manager",
+      "predicate": "EXHIBITS",
+      "object": "failure:crash-unhandled-exception",
+      "attributes": {},
+      "evidence": [
+        "13674"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:worker-source-task",
+      "predicate": "EXHIBITS",
+      "object": "failure:data-loss-corruption",
+      "attributes": {},
+      "evidence": [
+        "13469"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:worker-source-task",
+      "predicate": "EXHIBITS",
+      "object": "failure:missing-observability",
+      "attributes": {},
+      "evidence": [
+        "13669"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:worker-sink-task",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13472"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log-cleaner",
+      "predicate": "EXHIBITS",
+      "object": "failure:config-not-honored",
+      "attributes": {},
+      "evidence": [
+        "13473"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log-cleaner",
+      "predicate": "EXHIBITS",
+      "object": "failure:data-loss-corruption",
+      "attributes": {},
+      "evidence": [
+        "13727"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log-cleaner",
+      "predicate": "EXHIBITS",
+      "object": "failure:data-loss-corruption",
+      "attributes": {},
+      "evidence": [
+        "13753"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:log-cleaner",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13760"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:quickstart-docs",
+      "predicate": "EXHIBITS",
+      "object": "failure:documentation-gap",
+      "attributes": {},
+      "evidence": [
+        "13520"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kstream-suppress-buffer",
+      "predicate": "EXHIBITS",
+      "object": "failure:compatibility-upgrade-break",
+      "attributes": {},
+      "evidence": [
+        "13521"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kstream-suppress-buffer",
+      "predicate": "EXHIBITS",
+      "object": "failure:api-usability-gap",
+      "attributes": {},
+      "evidence": [
+        "13870"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:key-value-store",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13605"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:kraft-controller",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13528"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:kraft-controller",
+      "predicate": "EXHIBITS",
+      "object": "failure:hang-stuck-state",
+      "attributes": {},
+      "evidence": [
+        "13755"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kraft-controller",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13667"
+      ],
+      "confidence": "low"
+    },
+    {
+      "subject": "component:kraft-controller",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13944"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:replica-manager",
+      "predicate": "EXHIBITS",
+      "object": "failure:flaky-test",
+      "attributes": {},
+      "evidence": [
+        "13530"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:replica-manager",
+      "predicate": "EXHIBITS",
+      "object": "failure:data-loss-corruption",
+      "attributes": {},
+      "evidence": [
+        "13872"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:producer-config",
+      "predicate": "EXHIBITS",
+      "object": "failure:config-not-honored",
+      "attributes": {},
+      "evidence": [
+        "13598"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:producer-config",
+      "predicate": "EXHIBITS",
+      "object": "failure:config-not-honored",
+      "attributes": {},
+      "evidence": [
+        "13673"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:producer-config",
+      "predicate": "EXHIBITS",
+      "object": "failure:api-usability-gap",
+      "attributes": {},
+      "evidence": [
+        "13361"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:idempotent-producer",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13668"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:dynamic-broker-config",
+      "predicate": "EXHIBITS",
+      "object": "failure:config-not-honored",
+      "attributes": {},
+      "evidence": [
+        "13417"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:dynamic-broker-config",
+      "predicate": "EXHIBITS",
+      "object": "failure:config-not-honored",
+      "attributes": {},
+      "evidence": [
+        "13807"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:dynamic-broker-config",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13672"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:stream-task-assignor",
+      "predicate": "EXHIBITS",
+      "object": "failure:performance-degradation",
+      "attributes": {},
+      "evidence": [
+        "13600"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:log-segment",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13603"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:group-metadata-manager",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13758"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:distributed-herder",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13719"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:worker-connector",
+      "predicate": "EXHIBITS",
+      "object": "failure:hang-stuck-state",
+      "attributes": {},
+      "evidence": [
+        "13878"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-scheduler",
+      "predicate": "EXHIBITS",
+      "object": "failure:crash-unhandled-exception",
+      "attributes": {},
+      "evidence": [
+        "13802"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:dependency-management",
+      "predicate": "EXHIBITS",
+      "object": "failure:security-vulnerability",
+      "attributes": {},
+      "evidence": [
+        "13724"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:dependency-management",
+      "predicate": "EXHIBITS",
+      "object": "failure:security-vulnerability",
+      "attributes": {},
+      "evidence": [
+        "13726"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:dependency-management",
+      "predicate": "EXHIBITS",
+      "object": "failure:security-vulnerability",
+      "attributes": {},
+      "evidence": [
+        "13805"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:oauthbearer-security",
+      "predicate": "EXHIBITS",
+      "object": "failure:api-usability-gap",
+      "attributes": {},
+      "evidence": [
+        "13725"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:replica-fetcher",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13754"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:alter-isr-manager",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "14010"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:alter-isr-manager",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13720"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:connect-producer-config",
+      "predicate": "EXHIBITS",
+      "object": "failure:compatibility-upgrade-break",
+      "attributes": {},
+      "evidence": [
+        "13759"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:log4j-appender",
+      "predicate": "EXHIBITS",
+      "object": "failure:hang-stuck-state",
+      "attributes": {},
+      "evidence": [
+        "13761"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:client-quota-manager",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13869"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:streams-rack-awareness-assignor",
+      "predicate": "EXHIBITS",
+      "object": "failure:flaky-test",
+      "attributes": {},
+      "evidence": [
+        "13877"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:build-ci-pipeline",
+      "predicate": "EXHIBITS",
+      "object": "failure:build-ci-failure",
+      "attributes": {},
+      "evidence": [
+        "13938"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:build-ci-pipeline",
+      "predicate": "EXHIBITS",
+      "object": "failure:build-ci-failure",
+      "attributes": {},
+      "evidence": [
+        "13941"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:build-ci-pipeline",
+      "predicate": "EXHIBITS",
+      "object": "failure:build-ci-failure",
+      "attributes": {},
+      "evidence": [
+        "13942"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:build-ci-pipeline",
+      "predicate": "EXHIBITS",
+      "object": "failure:build-ci-failure",
+      "attributes": {},
+      "evidence": [
+        "13671"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:in-memory-time-ordered-keyvalue-buffer",
+      "predicate": "EXHIBITS",
+      "object": "failure:resource-leak",
+      "attributes": {},
+      "evidence": [
+        "13939"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:standard-authorizer",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13937"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:file-stream-connector",
+      "predicate": "EXHIBITS",
+      "object": "failure:api-usability-gap",
+      "attributes": {},
+      "evidence": [
+        "13809"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:sliding-window-store",
+      "predicate": "EXHIBITS",
+      "object": "failure:performance-degradation",
+      "attributes": {},
+      "evidence": [
+        "13811"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:sasl-authenticator",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13422"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:ssl-engine-factory",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13607"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:stream-stream-join",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13721"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "component:kafka-server",
+      "predicate": "EXHIBITS",
+      "object": "failure:missing-observability",
+      "attributes": {},
+      "evidence": [
+        "13804"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "component:mirror-checkpoint-connector",
+      "predicate": "EXHIBITS",
+      "object": "failure:missing-observability",
+      "attributes": {},
+      "evidence": [
+        "13606"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:networkprocessoravgidlepercent-metric",
+      "predicate": "EXHIBITS",
+      "object": "failure:performance-degradation",
+      "attributes": {},
+      "evidence": [
+        "13874"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "interface:records-lag-max-metric",
+      "predicate": "EXHIBITS",
+      "object": "failure:missing-observability",
+      "attributes": {},
+      "evidence": [
+        "13936"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "interface:leader-imbalance-per-broker-percentage-metric",
+      "predicate": "EXHIBITS",
+      "object": "failure:missing-observability",
+      "attributes": {},
+      "evidence": [
+        "13366"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:topic-partition-metrics",
+      "predicate": "EXHIBITS",
+      "object": "failure:missing-observability",
+      "attributes": {},
+      "evidence": [
+        "13416"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:consumer-protocol",
+      "predicate": "EXHIBITS",
+      "object": "failure:api-usability-gap",
+      "attributes": {},
+      "evidence": [
+        "13420"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "interface:describe-log-dirs-protocol",
+      "predicate": "EXHIBITS",
+      "object": "failure:api-usability-gap",
+      "attributes": {},
+      "evidence": [
+        "13527"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "interface:mm2-client-configuration",
+      "predicate": "EXHIBITS",
+      "object": "failure:config-not-honored",
+      "attributes": {},
+      "evidence": [
+        "13365"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:kafka-streams-application-reset-cli",
+      "predicate": "EXHIBITS",
+      "object": "failure:crash-unhandled-exception",
+      "attributes": {},
+      "evidence": [
+        "13675"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:kafka-topics-describe-cli",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13718"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:kafka-topics-describe-cli",
+      "predicate": "EXHIBITS",
+      "object": "failure:documentation-gap",
+      "attributes": {},
+      "evidence": [
+        "13875"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:producer-flush-api",
+      "predicate": "EXHIBITS",
+      "object": "failure:documentation-gap",
+      "attributes": {},
+      "evidence": [
+        "13810"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:delegation-token-admin-api",
+      "predicate": "EXHIBITS",
+      "object": "failure:documentation-gap",
+      "attributes": {},
+      "evidence": [
+        "13757"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:describe-quorum-protocol",
+      "predicate": "EXHIBITS",
+      "object": "failure:incorrect-behavior",
+      "attributes": {},
+      "evidence": [
+        "13940"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:quorum-fetch-timeout-ms-config",
+      "predicate": "EXHIBITS",
+      "object": "failure:documentation-gap",
+      "attributes": {},
+      "evidence": [
+        "13871"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "interface:connect-validate-endpoint-api",
+      "predicate": "EXHIBITS",
+      "object": "failure:api-usability-gap",
+      "attributes": {},
+      "evidence": [
+        "13756"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:hang-stuck-state",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "13270"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:hang-stuck-state",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "13272"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:performance-degradation",
+      "predicate": "CAUSES",
+      "object": "impact:performance-cost",
+      "attributes": {},
+      "evidence": [
+        "13356"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:data-loss-corruption",
+      "predicate": "CAUSES",
+      "object": "impact:data-durability-risk",
+      "attributes": {},
+      "evidence": [
+        "13357"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "13358"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:performance-cost",
+      "attributes": {},
+      "evidence": [
+        "13359"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "13418"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:config-not-honored",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "13474"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "13465"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:config-not-honored",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "13529"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:config-not-honored",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "13876"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "13419"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:data-durability-risk",
+      "attributes": {},
+      "evidence": [
+        "13425"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:security-vulnerability",
+      "predicate": "CAUSES",
+      "object": "impact:security-compliance-exposure",
+      "attributes": {},
+      "evidence": [
+        "13464"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:hang-stuck-state",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "13468"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:crash-unhandled-exception",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "13674"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:data-loss-corruption",
+      "predicate": "CAUSES",
+      "object": "impact:data-durability-risk",
+      "attributes": {},
+      "evidence": [
+        "13469"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:data-durability-risk",
+      "attributes": {},
+      "evidence": [
+        "13472"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:config-not-honored",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "13473"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:data-loss-corruption",
+      "predicate": "CAUSES",
+      "object": "impact:data-durability-risk",
+      "attributes": {},
+      "evidence": [
+        "13727"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:data-loss-corruption",
+      "predicate": "CAUSES",
+      "object": "impact:data-durability-risk",
+      "attributes": {},
+      "evidence": [
+        "13753"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:documentation-gap",
+      "predicate": "CAUSES",
+      "object": "impact:user-confusion-adoption-barrier",
+      "attributes": {},
+      "evidence": [
+        "13520"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:compatibility-upgrade-break",
+      "predicate": "CAUSES",
+      "object": "impact:upgrade-migration-friction",
+      "attributes": {},
+      "evidence": [
+        "13521"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:hang-stuck-state",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "13755"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "13940"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "13944"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:data-loss-corruption",
+      "predicate": "CAUSES",
+      "object": "impact:data-durability-risk",
+      "attributes": {},
+      "evidence": [
+        "13872"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:config-not-honored",
+      "predicate": "CAUSES",
+      "object": "impact:upgrade-migration-friction",
+      "attributes": {},
+      "evidence": [
+        "13598"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "13668"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:hang-stuck-state",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "13878"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:crash-unhandled-exception",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "13802"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:security-vulnerability",
+      "predicate": "CAUSES",
+      "object": "impact:security-compliance-exposure",
+      "attributes": {},
+      "evidence": [
+        "13724"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:security-vulnerability",
+      "predicate": "CAUSES",
+      "object": "impact:security-compliance-exposure",
+      "attributes": {},
+      "evidence": [
+        "13726"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:security-vulnerability",
+      "predicate": "CAUSES",
+      "object": "impact:security-compliance-exposure",
+      "attributes": {},
+      "evidence": [
+        "13805"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:compatibility-upgrade-break",
+      "predicate": "CAUSES",
+      "object": "impact:upgrade-migration-friction",
+      "attributes": {},
+      "evidence": [
+        "13759"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:hang-stuck-state",
+      "predicate": "CAUSES",
+      "object": "impact:availability-outage-risk",
+      "attributes": {},
+      "evidence": [
+        "13761"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:build-ci-failure",
+      "predicate": "CAUSES",
+      "object": "impact:developer-productivity-loss",
+      "attributes": {},
+      "evidence": [
+        "13938"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:build-ci-failure",
+      "predicate": "CAUSES",
+      "object": "impact:developer-productivity-loss",
+      "attributes": {},
+      "evidence": [
+        "13941"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:build-ci-failure",
+      "predicate": "CAUSES",
+      "object": "impact:developer-productivity-loss",
+      "attributes": {},
+      "evidence": [
+        "13942"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:build-ci-failure",
+      "predicate": "CAUSES",
+      "object": "impact:developer-productivity-loss",
+      "attributes": {},
+      "evidence": [
+        "13671"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:resource-leak",
+      "predicate": "CAUSES",
+      "object": "impact:performance-cost",
+      "attributes": {},
+      "evidence": [
+        "13939"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:performance-degradation",
+      "predicate": "CAUSES",
+      "object": "impact:performance-cost",
+      "attributes": {},
+      "evidence": [
+        "13811"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:performance-degradation",
+      "predicate": "CAUSES",
+      "object": "impact:performance-cost",
+      "attributes": {},
+      "evidence": [
+        "13874"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:missing-observability",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "13366"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:missing-observability",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "13416"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:missing-observability",
+      "predicate": "CAUSES",
+      "object": "impact:user-confusion-adoption-barrier",
+      "attributes": {},
+      "evidence": [
+        "13936"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:documentation-gap",
+      "predicate": "CAUSES",
+      "object": "impact:user-confusion-adoption-barrier",
+      "attributes": {},
+      "evidence": [
+        "13871"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:documentation-gap",
+      "predicate": "CAUSES",
+      "object": "impact:user-confusion-adoption-barrier",
+      "attributes": {},
+      "evidence": [
+        "13757"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:documentation-gap",
+      "predicate": "CAUSES",
+      "object": "impact:user-confusion-adoption-barrier",
+      "attributes": {},
+      "evidence": [
+        "13875"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:documentation-gap",
+      "predicate": "CAUSES",
+      "object": "impact:user-confusion-adoption-barrier",
+      "attributes": {},
+      "evidence": [
+        "13810"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:flaky-test",
+      "predicate": "CAUSES",
+      "object": "impact:developer-productivity-loss",
+      "attributes": {},
+      "evidence": [
+        "13421"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:flaky-test",
+      "predicate": "CAUSES",
+      "object": "impact:developer-productivity-loss",
+      "attributes": {},
+      "evidence": [
+        "13530"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:flaky-test",
+      "predicate": "CAUSES",
+      "object": "impact:developer-productivity-loss",
+      "attributes": {},
+      "evidence": [
+        "13877"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:missing-observability",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "13606"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:upgrade-migration-friction",
+      "attributes": {},
+      "evidence": [
+        "13607"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "CAUSES",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "13422"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:hang-stuck-state",
+      "predicate": "TRIGGERED_BY",
+      "object": "dependency:zookeeper",
+      "attributes": {},
+      "evidence": [
+        "13270"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "TRIGGERED_BY",
+      "object": "dependency:jdk",
+      "attributes": {},
+      "evidence": [
+        "13418"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:incorrect-behavior",
+      "predicate": "TRIGGERED_BY",
+      "object": "dependency:zookeeper",
+      "attributes": {},
+      "evidence": [
+        "13720"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "failure:flaky-test",
+      "predicate": "MITIGATED_BY",
+      "object": "process:ci-testing",
+      "attributes": {},
+      "evidence": [
+        "13421"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:flaky-test",
+      "predicate": "MITIGATED_BY",
+      "object": "process:ci-testing",
+      "attributes": {},
+      "evidence": [
+        "13530"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:flaky-test",
+      "predicate": "MITIGATED_BY",
+      "object": "process:ci-testing",
+      "attributes": {},
+      "evidence": [
+        "13877"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:security-vulnerability",
+      "predicate": "MITIGATED_BY",
+      "object": "process:vulnerability-response",
+      "attributes": {},
+      "evidence": [
+        "13724"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:security-vulnerability",
+      "predicate": "MITIGATED_BY",
+      "object": "process:vulnerability-response",
+      "attributes": {},
+      "evidence": [
+        "13726"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:security-vulnerability",
+      "predicate": "MITIGATED_BY",
+      "object": "process:vulnerability-response",
+      "attributes": {},
+      "evidence": [
+        "13805"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "failure:data-loss-corruption",
+      "predicate": "MITIGATED_BY",
+      "object": "initiative:kip-966",
+      "attributes": {},
+      "evidence": [
+        "13872"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "subject": "role:committer-reviewer",
+      "predicate": "PERFORMS",
+      "object": "process:release-backport",
+      "attributes": {},
+      "evidence": [
+        "13469",
+        "13472",
+        "13520",
+        "13759",
+        "13868"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "role:committer-reviewer",
+      "predicate": "PERFORMS",
+      "object": "process:triage",
+      "attributes": {},
+      "evidence": [
+        "13364",
+        "13597",
+        "13601",
+        "13723",
+        "13762",
+        "13806",
+        "13812",
+        "13937"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "role:newcomer-contributor",
+      "predicate": "PERFORMS",
+      "object": "process:contributor-onboarding",
+      "attributes": {},
+      "evidence": [
+        "13361",
+        "13602",
+        "13718",
+        "13875",
+        "13877"
+      ],
+      "confidence": "high"
+    },
+    {
+      "subject": "role:operator-sre",
+      "predicate": "CONCERNED_WITH",
+      "object": "impact:operational-burden",
+      "attributes": {},
+      "evidence": [
+        "13606"
+      ],
+      "confidence": "medium"
+    }
+  ]
+}

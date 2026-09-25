@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {"id": "system:connect", "type": "System", "name": "Connect", "aliases": [], "attributes": {}, "evidence": ["KAFKA-12164"], "proposed": false},
+    {"id": "system:streams", "type": "System", "name": "Streams", "aliases": [], "attributes": {}, "evidence": ["KAFKA-12562"], "proposed": false},
+    {"id": "system:clients", "type": "System", "name": "Clients", "aliases": [], "attributes": {}, "evidence": ["KAFKA-13271"], "proposed": false},
+    {"id": "system:controller", "type": "System", "name": "Controller", "aliases": [], "attributes": {}, "evidence": ["KAFKA-13470"], "proposed": false},
+    {"id": "system:broker", "type": "System", "name": "Broker", "aliases": [], "attributes": {}, "evidence": ["KAFKA-13803"], "proposed": false},
+    {"id": "system:tooling", "type": "System", "name": "Tooling", "aliases": [], "attributes": {}, "evidence": ["KAFKA-13466"], "proposed": false},
+    {"id": "system:build-ci", "type": "System", "name": "Build & CI", "aliases": [], "attributes": {}, "evidence": ["KAFKA-15829"], "proposed": false},
+    {"id": "system:documentation", "type": "System", "name": "Documentation", "aliases": [], "attributes": {}, "evidence": ["KAFKA-16847"], "proposed": false},
+    {"id": "system:security", "type": "System", "name": "Security", "aliases": [], "attributes": {}, "evidence": ["KAFKA-14738"], "proposed": false},
+
+    {"id": "component:kafka-connect-framework", "type": "Component", "name": "Kafka Connect Framework", "aliases": [], "attributes": {}, "evidence": ["KAFKA-12164", "KAFKA-13763", "KAFKA-14011", "KAFKA-14741", "KAFKA-14978", "KAFKA-15179"], "proposed": false},
+    {"id": "component:kafka-streams", "type": "Component", "name": "Kafka Streams", "aliases": [], "attributes": {}, "evidence": ["KAFKA-12562", "KAFKA-13676", "KAFKA-13677", "KAFKA-13722", "KAFKA-17994", "KAFKA-19256", "KAFKA-19271", "KAFKA-20326", "KAFKA-19660", "KAFKA-19666", "KAFKA-19683", "KAFKA-19942", "KAFKA-20454", "KAFKA-21054", "KAFKA-21053", "KAFKA-16343"], "proposed": false},
+    {"id": "component:producer-client", "type": "Component", "name": "Producer Client", "aliases": [], "attributes": {}, "evidence": ["KAFKA-13271", "KAFKA-18068", "KAFKA-19250"], "proposed": false},
+    {"id": "component:console-producer-tool", "type": "Component", "name": "kafka-console-producer.sh", "aliases": [], "attributes": {}, "evidence": ["KAFKA-13466"], "proposed": false},
+    {"id": "component:kraft-controller", "type": "Component", "name": "KRaft Controller", "aliases": [], "attributes": {}, "evidence": ["KAFKA-13470", "KAFKA-13471", "KAFKA-16517", "KAFKA-16839", "KAFKA-19587", "KAFKA-19830", "KAFKA-16519", "KAFKA-17576", "KAFKA-17045", "KAFKA-17988", "KAFKA-18771", "KAFKA-19130", "KAFKA-19687"], "proposed": false},
+    {"id": "component:group-coordinator", "type": "Component", "name": "Group Coordinator", "aliases": [], "attributes": {}, "evidence": ["KAFKA-14019", "KAFKA-14987", "KAFKA-16367", "KAFKA-19431"], "proposed": false},
+    {"id": "component:replica-fetcher", "type": "Component", "name": "Replica Fetcher / Leader Access", "aliases": [], "attributes": {}, "evidence": ["KAFKA-13803"], "proposed": false},
+    {"id": "component:broker-core", "type": "Component", "name": "Broker Core", "aliases": [], "attributes": {}, "evidence": ["KAFKA-13935", "KAFKA-14541", "KAFKA-14549", "KAFKA-14854", "KAFKA-14899", "KAFKA-14907", "KAFKA-15830", "KAFKA-16016", "KAFKA-16181", "KAFKA-16677", "KAFKA-16843", "KAFKA-19264", "KAFKA-19265", "KAFKA-19270", "KAFKA-19433", "KAFKA-20233", "KAFKA-20234", "KAFKA-20639", "KAFKA-20645", "KAFKA-20648", "KAFKA-20795", "KAFKA-21150", "KAFKA-20152", "KAFKA-16340", "KAFKA-16020", "KAFKA-16341", "KAFKA-16342", "KAFKA-16845", "KAFKA-17577", "KAFKA-17585", "KAFKA-18390", "KAFKA-18770", "KAFKA-19137"], "proposed": false},
+    {"id": "component:acl-authorizer", "type": "Component", "name": "ACL Authorizer", "aliases": [], "attributes": {}, "evidence": ["KAFKA-14738"], "proposed": false},
+    {"id": "component:stream-resetter-tool", "type": "Component", "name": "StreamResetter Tool", "aliases": [], "attributes": {}, "evidence": ["KAFKA-14851"], "proposed": false},
+    {"id": "component:admin-client", "type": "Component", "name": "Admin Client", "aliases": [], "attributes": {}, "evidence": ["KAFKA-15598", "KAFKA-16840"], "proposed": false},
+    {"id": "component:consumer-client", "type": "Component", "name": "Consumer Client", "aliases": [], "attributes": {}, "evidence": ["KAFKA-15828", "KAFKA-16109", "KAFKA-16110", "KAFKA-16111", "KAFKA-17106", "KAFKA-17110", "KAFKA-17213", "KAFKA-17217", "KAFKA-19822", "KAFKA-16021"], "proposed": false},
+    {"id": "component:build-tooling", "type": "Component", "name": "Build Tooling", "aliases": [], "attributes": {}, "evidence": ["KAFKA-15829", "KAFKA-19580", "KAFKA-20146", "KAFKA-20147", "KAFKA-20153", "KAFKA-20154", "KAFKA-21056", "KAFKA-13186"], "proposed": false},
+    {"id": "component:test-infrastructure", "type": "Component", "name": "Test Infrastructure", "aliases": [], "attributes": {}, "evidence": ["KAFKA-16678", "KAFKA-16679", "KAFKA-16680", "KAFKA-16681", "KAFKA-16682", "KAFKA-16683", "KAFKA-19252", "KAFKA-20105", "KAFKA-21148", "KAFKA-21145", "KAFKA-17214"], "proposed": false},
+    {"id": "component:share-partition", "type": "Component", "name": "Share Partition / Share Consumer", "aliases": [], "attributes": {}, "evidence": ["KAFKA-18273", "KAFKA-18392", "KAFKA-19253", "KAFKA-19268", "KAFKA-19476", "KAFKA-19693", "KAFKA-19795", "KAFKA-19796", "KAFKA-19798", "KAFKA-19800", "KAFKA-19937", "KAFKA-20793"], "proposed": false},
+    {"id": "component:documentation", "type": "Component", "name": "Documentation", "aliases": [], "attributes": {}, "evidence": ["KAFKA-16847", "KAFKA-20149", "KAFKA-20150", "KAFKA-20151", "KAFKA-20331", "KAFKA-20335", "KAFKA-20336"], "proposed": false},
+    {"id": "component:ssl-client", "type": "Component", "name": "SSL Client", "aliases": [], "attributes": {}, "evidence": ["KAFKA-14018"], "proposed": false},
+
+    {"id": "interface:batch-size-config", "type": "Interface", "name": "batch.size (console producer)", "aliases": [], "attributes": {"kind": "config"}, "evidence": ["KAFKA-13466"], "proposed": false},
+    {"id": "interface:producerconfig-adaptive-partitioning-config", "type": "Interface", "name": "PARTITIONER_ADPATIVE_PARTITIONING_ENABLE_CONFIG", "aliases": [], "attributes": {"kind": "config"}, "evidence": ["KAFKA-18068"], "proposed": false},
+
+    {"id": "initiative:kip-922", "type": "Initiative", "name": "KIP-922", "aliases": ["Partition dimension traffic metrics"], "attributes": {}, "evidence": ["KAFKA-14907"], "proposed": false},
+    {"id": "initiative:client-broker-hostname-reuse-protection", "type": "Initiative", "name": "Client Broker Hostname Reuse Protection", "aliases": [], "attributes": {}, "evidence": ["KAFKA-15828"], "proposed": false},
+    {"id": "initiative:kip-1099", "type": "Initiative", "name": "KIP-1099", "aliases": ["Share groups CLI"], "attributes": {}, "evidence": ["KAFKA-18273"], "proposed": false},
+    {"id": "initiative:kip-1082", "type": "Initiative", "name": "KIP-1082", "aliases": ["Client-generated member IDs"], "attributes": {}, "evidence": ["KAFKA-18392"], "proposed": false},
+    {"id": "initiative:kip-1071", "type": "Initiative", "name": "KIP-1071", "aliases": ["New Streams rebalance protocol"], "attributes": {}, "evidence": ["KAFKA-19271"], "proposed": false},
+    {"id": "initiative:kip-950", "type": "Initiative", "name": "KIP-950", "aliases": ["Tiered storage thread pool defaults"], "attributes": {}, "evidence": ["KAFKA-19264"], "proposed": false},
+    {"id": "initiative:kip-405", "type": "Initiative", "name": "KIP-405", "aliases": ["Tiered storage remote log metadata"], "attributes": {}, "evidence": ["KAFKA-19265"], "proposed": false},
+    {"id": "initiative:kip-1271", "type": "Initiative", "name": "KIP-1271", "aliases": ["Header-aware state stores"], "attributes": {}, "evidence": ["KAFKA-20335", "KAFKA-20336"], "proposed": false},
+
+    {"id": "release:4-3-0", "type": "Release", "name": "4.3.0", "aliases": [], "attributes": {}, "evidence": ["KAFKA-20335", "KAFKA-20336"], "proposed": false}
+  ],
+  "relationships": [
+    {"subject": "component:kafka-connect-framework", "predicate": "PART_OF", "object": "system:connect", "attributes": {}, "evidence": ["KAFKA-12164", "KAFKA-13763", "KAFKA-14011", "KAFKA-14741", "KAFKA-14978", "KAFKA-15179"], "confidence": "high"},
+    {"subject": "component:kafka-streams", "predicate": "PART_OF", "object": "system:streams", "attributes": {}, "evidence": ["KAFKA-12562", "KAFKA-13676", "KAFKA-13677", "KAFKA-13722", "KAFKA-17994", "KAFKA-19256", "KAFKA-19271", "KAFKA-20326", "KAFKA-19660", "KAFKA-19666", "KAFKA-19683", "KAFKA-19942", "KAFKA-20454", "KAFKA-21054", "KAFKA-21053", "KAFKA-16343"], "confidence": "high"},
+    {"subject": "component:producer-client", "predicate": "PART_OF", "object": "system:clients", "attributes": {}, "evidence": ["KAFKA-13271", "KAFKA-18068", "KAFKA-19250"], "confidence": "high"},
+    {"subject": "component:console-producer-tool", "predicate": "PART_OF", "object": "system:tooling", "attributes": {}, "evidence": ["KAFKA-13466"], "confidence": "medium"},
+    {"subject": "component:kraft-controller", "predicate": "PART_OF", "object": "system:controller", "attributes": {}, "evidence": ["KAFKA-13470", "KAFKA-13471", "KAFKA-16517", "KAFKA-16839", "KAFKA-19587", "KAFKA-19830", "KAFKA-16519", "KAFKA-17576", "KAFKA-17045", "KAFKA-17988", "KAFKA-18771", "KAFKA-19130", "KAFKA-19687"], "confidence": "high"},
+    {"subject": "component:group-coordinator", "predicate": "PART_OF", "object": "system:broker", "attributes": {}, "evidence": ["KAFKA-14019", "KAFKA-14987", "KAFKA-16367", "KAFKA-19431"], "confidence": "high"},
+    {"subject": "component:replica-fetcher", "predicate": "PART_OF", "object": "system:broker", "attributes": {}, "evidence": ["KAFKA-13803"], "confidence": "high"},
+    {"subject": "component:broker-core", "predicate": "PART_OF", "object": "system:broker", "attributes": {}, "evidence": ["KAFKA-13935", "KAFKA-14541", "KAFKA-14549", "KAFKA-14854", "KAFKA-14899", "KAFKA-14907", "KAFKA-15830", "KAFKA-16016", "KAFKA-16181", "KAFKA-16677", "KAFKA-16843", "KAFKA-19264", "KAFKA-19265", "KAFKA-19270", "KAFKA-19433", "KAFKA-20233", "KAFKA-20234", "KAFKA-20639", "KAFKA-20645", "KAFKA-20648", "KAFKA-20795", "KAFKA-21150", "KAFKA-20152", "KAFKA-16340", "KAFKA-16020", "KAFKA-16341", "KAFKA-16342", "KAFKA-16845", "KAFKA-17577", "KAFKA-17585", "KAFKA-18390", "KAFKA-18770", "KAFKA-19137"], "confidence": "high"},
+    {"subject": "component:acl-authorizer", "predicate": "PART_OF", "object": "system:security", "attributes": {}, "evidence": ["KAFKA-14738"], "confidence": "medium"},
+    {"subject": "component:stream-resetter-tool", "predicate": "PART_OF", "object": "system:tooling", "attributes": {}, "evidence": ["KAFKA-14851"], "confidence": "medium"},
+    {"subject": "component:admin-client", "predicate": "PART_OF", "object": "system:clients", "attributes": {}, "evidence": ["KAFKA-15598", "KAFKA-16840"], "confidence": "high"},
+    {"subject": "component:consumer-client", "predicate": "PART_OF", "object": "system:clients", "attributes": {}, "evidence": ["KAFKA-15828", "KAFKA-16109", "KAFKA-16110", "KAFKA-16111", "KAFKA-17106", "KAFKA-17110", "KAFKA-17213", "KAFKA-17217", "KAFKA-19822", "KAFKA-16021"], "confidence": "high"},
+    {"subject": "component:build-tooling", "predicate": "PART_OF", "object": "system:build-ci", "attributes": {}, "evidence": ["KAFKA-15829", "KAFKA-19580", "KAFKA-20146", "KAFKA-20147", "KAFKA-20153", "KAFKA-20154", "KAFKA-21056", "KAFKA-13186"], "confidence": "medium"},
+    {"subject": "component:test-infrastructure", "predicate": "PART_OF", "object": "system:build-ci", "attributes": {}, "evidence": ["KAFKA-16678", "KAFKA-16679", "KAFKA-16680", "KAFKA-16681", "KAFKA-16682", "KAFKA-16683", "KAFKA-19252", "KAFKA-20105", "KAFKA-21148", "KAFKA-21145", "KAFKA-17214"], "confidence": "high"},
+    {"subject": "component:share-partition", "predicate": "PART_OF", "object": "system:broker", "attributes": {}, "evidence": ["KAFKA-18273", "KAFKA-18392", "KAFKA-19253", "KAFKA-19268", "KAFKA-19476", "KAFKA-19693", "KAFKA-19795", "KAFKA-19796", "KAFKA-19798", "KAFKA-19800", "KAFKA-19937", "KAFKA-20793"], "confidence": "high"},
+    {"subject": "component:documentation", "predicate": "PART_OF", "object": "system:documentation", "attributes": {}, "evidence": ["KAFKA-16847", "KAFKA-20149", "KAFKA-20150", "KAFKA-20151", "KAFKA-20331", "KAFKA-20335", "KAFKA-20336"], "confidence": "high"},
+    {"subject": "component:ssl-client", "predicate": "PART_OF", "object": "system:clients", "attributes": {}, "evidence": ["KAFKA-14018"], "confidence": "high"},
+
+    {"subject": "component:console-producer-tool", "predicate": "EXPOSES", "object": "interface:batch-size-config", "attributes": {}, "evidence": ["KAFKA-13466"], "confidence": "high"},
+    {"subject": "component:producer-client", "predicate": "EXPOSES", "object": "interface:producerconfig-adaptive-partitioning-config", "attributes": {}, "evidence": ["KAFKA-18068"], "confidence": "high"},
+
+    {"subject": "component:ssl-client", "predicate": "EXHIBITS", "object": "failure:compatibility-upgrade-break", "attributes": {"trigger": "SHA256-encrypted p12 certificate not supported by JDK8 keytool"}, "evidence": ["KAFKA-14018"], "confidence": "medium"},
+    {"subject": "failure:compatibility-upgrade-break", "predicate": "CAUSES", "object": "impact:upgrade-migration-friction", "attributes": {}, "evidence": ["KAFKA-14018"], "confidence": "medium"},
+
+    {"subject": "component:kafka-streams", "predicate": "EXHIBITS", "object": "failure:crash-unhandled-exception", "attributes": {"trigger": "checked exception thrown from a custom Deserializer is not caught by DeserializationExceptionHandler"}, "evidence": ["KAFKA-17994"], "confidence": "high"},
+    {"subject": "failure:crash-unhandled-exception", "predicate": "CAUSES", "object": "impact:availability-outage-risk", "attributes": {}, "evidence": ["KAFKA-17994"], "confidence": "medium"},
+
+    {"subject": "component:broker-core", "predicate": "EXHIBITS", "object": "failure:flaky-test", "attributes": {}, "evidence": ["KAFKA-18770"], "confidence": "high"},
+    {"subject": "component:kraft-controller", "predicate": "EXHIBITS", "object": "failure:flaky-test", "attributes": {}, "evidence": ["KAFKA-18771", "KAFKA-17988"], "confidence": "high"},
+    {"subject": "failure:flaky-test", "predicate": "MITIGATED_BY", "object": "process:ci-testing", "attributes": {}, "evidence": ["KAFKA-18770", "KAFKA-18771", "KAFKA-17988"], "confidence": "high"},
+
+    {"subject": "component:documentation", "predicate": "EXHIBITS", "object": "failure:documentation-gap", "attributes": {}, "evidence": ["KAFKA-16847", "KAFKA-20149", "KAFKA-20150", "KAFKA-20151", "KAFKA-20331", "KAFKA-20335", "KAFKA-20336"], "confidence": "high"},
+
+    {"subject": "initiative:kip-922", "predicate": "CHANGES", "object": "component:broker-core", "attributes": {"action": "introduces"}, "evidence": ["KAFKA-14907"], "confidence": "high"},
+    {"subject": "initiative:kip-922", "predicate": "GOVERNED_BY", "object": "process:kip-design-proposal-process", "attributes": {}, "evidence": ["KAFKA-14907"], "confidence": "high"},
+
+    {"subject": "interface:producerconfig-adaptive-partitioning-config", "predicate": "GOVERNED_BY", "object": "process:kip-design-proposal-process", "attributes": {}, "evidence": ["KAFKA-18068"], "confidence": "high"},
+
+    {"subject": "initiative:client-broker-hostname-reuse-protection", "predicate": "CHANGES", "object": "component:consumer-client", "attributes": {"action": "modifies"}, "evidence": ["KAFKA-15828"], "confidence": "medium"},
+    {"subject": "initiative:client-broker-hostname-reuse-protection", "predicate": "GOVERNED_BY", "object": "process:kip-design-proposal-process", "attributes": {}, "evidence": ["KAFKA-15828"], "confidence": "high"},
+
+    {"subject": "initiative:kip-1099", "predicate": "CHANGES", "object": "component:share-partition", "attributes": {"action": "introduces"}, "evidence": ["KAFKA-18273"], "confidence": "high"},
+    {"subject": "initiative:kip-1099", "predicate": "GOVERNED_BY", "object": "process:kip-design-proposal-process", "attributes": {}, "evidence": ["KAFKA-18273"], "confidence": "high"},
+
+    {"subject": "initiative:kip-1082", "predicate": "CHANGES", "object": "component:share-partition", "attributes": {"action": "modifies"}, "evidence": ["KAFKA-18392"], "confidence": "high"},
+    {"subject": "initiative:kip-1082", "predicate": "GOVERNED_BY", "object": "process:kip-design-proposal-process", "attributes": {}, "evidence": ["KAFKA-18392"], "confidence": "high"},
+
+    {"subject": "initiative:kip-1071", "predicate": "CHANGES", "object": "component:kafka-streams", "attributes": {"action": "introduces"}, "evidence": ["KAFKA-19271"], "confidence": "high"},
+    {"subject": "initiative:kip-1071", "predicate": "GOVERNED_BY", "object": "process:kip-design-proposal-process", "attributes": {}, "evidence": ["KAFKA-19271"], "confidence": "medium"},
+
+    {"subject": "initiative:kip-950", "predicate": "CHANGES", "object": "component:broker-core", "attributes": {"action": "modifies"}, "evidence": ["KAFKA-19264"], "confidence": "high"},
+    {"subject": "initiative:kip-405", "predicate": "CHANGES", "object": "component:broker-core", "attributes": {"action": "modifies"}, "evidence": ["KAFKA-19265"], "confidence": "high"},
+
+    {"subject": "initiative:kip-1271", "predicate": "CHANGES", "object": "component:kafka-streams", "attributes": {"action": "introduces"}, "evidence": ["KAFKA-20335", "KAFKA-20336"], "confidence": "high"},
+    {"subject": "initiative:kip-1271", "predicate": "DELIVERED_IN", "object": "release:4-3-0", "attributes": {}, "evidence": ["KAFKA-20335", "KAFKA-20336"], "confidence": "high"},
+
+    {"subject": "role:committer-reviewer", "predicate": "PERFORMS", "object": "process:triage", "attributes": {}, "evidence": ["KAFKA-12164", "KAFKA-12760", "KAFKA-14738", "KAFKA-14741", "KAFKA-16519", "KAFKA-16847", "KAFKA-20147"], "confidence": "high"},
+
+    {"subject": "role:contributor", "predicate": "CONCERNED_WITH", "object": "system:build-ci", "attributes": {"reason": "raises code-quality/coding-guideline concern (commented-out code) spanning connect/streams/clients"}, "evidence": ["KAFKA-13186"], "confidence": "low"},
+
+    {"subject": "role:newcomer-contributor", "predicate": "PERFORMS", "object": "process:contributor-onboarding", "attributes": {}, "evidence": ["KAFKA-14019", "KAFKA-16677", "KAFKA-16679", "KAFKA-16681", "KAFKA-16683", "KAFKA-16845", "KAFKA-16847", "KAFKA-17045", "KAFKA-17585", "KAFKA-19137", "KAFKA-19268", "KAFKA-19937", "KAFKA-20234", "KAFKA-20795"], "confidence": "medium"}
+  ]
+}
