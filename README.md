@@ -12,7 +12,7 @@ The agent is given a **goal**, not step-by-step instructions. It **plans → cal
 |---|---|---|---|
 | 00 | [Portfolio Scaffold](projects/00-portfolio-scaffold) | Goal → multi-tool execution | ✅ |
 | 01 | [Jira Harvester](projects/01-jira-harvester) | Gather | ✅ |
-| 02 | Ontology Forge | Fan-out → Merge, Critique → Revise | ⏳ |
+| 02 | [Ontology Forge](projects/02-ontology-forge) | Fan-out → Merge, Critique → Revise | ✅ |
 | 03 | Organizational Archaeology | Build → browser QA loop | ⏳ |
 | 04 | Ontology MCP Server | Knowledge as a tool | ⏳ |
 | 05 | Synthetic Stakeholder Council | Multi-agent debate | ⏳ |

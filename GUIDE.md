@@ -102,6 +102,7 @@ Eight agents with identical rules skipped between **2 and 35** tickets each. Som
 ### Critic agents (Draft → Critique → Revise)
 **Rule: the builder shouldn't grade its own work.** A separate reviewer with a fresh context doesn't share the builder's blind spots. The critic **proposes**, a human **approves**, and only then does anything get applied. *(P2)*
 - **Make fixes machine-applicable.** The critic writes `review.md` (checkboxes for the human) *and* `review_fixes.json` (the same fixes as data), so approval → application is mechanical, not a re-interpretation.
+- **Approved deletions cascade.** Dropping facts can leave entities with nothing connected to them (orphans). Clean them up as a consequence of the decision, and *tell the human*. Don't do it silently. *(P2)*
 - **Order matters when applying fixes:** drops and remaps first (they use the original IDs), merges last (they rename IDs).
 - In P2 the critic proposed 85 fixes: 31 duplicate merges, 31 remaps, 17 drops. My prediction that it would recommend a schema change was wrong: every violation fit the existing schema once remapped. Good critics correct the orchestrator too.
 

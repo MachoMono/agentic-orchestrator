@@ -3,7 +3,8 @@
 
   split  - cut data/tickets.md into batch files for parallel extraction agents
   vocab  - write ontology/vocab.json (the controlled vocabularies + canonical ids)
-  merge  - merge agent batch outputs, enforce the schema, write ontology.json + report
+  merge  - merge agent batch outputs, enforce the schema, write ontology.merged.json + report
+  apply  - apply human-approved critic fixes (review_fixes.json) -> ontology.json, re-validate
 """
 import argparse
 import collections
@@ -249,6 +250,127 @@ def cmd_merge(args):
         print(f"  {k}: {len(v)}")
 
 
+def cmd_apply(args):
+    """Apply approved fixes in the order the critic specified:
+    1) drop / remove_evidence / remap (pre-merge ids)  2) drop_entity (cascade)  3) merge (rename ids)."""
+    created = {json.loads(l)["key"]: json.loads(l)["created"][:10] for l in open(args.raw)}
+    d = json.loads(Path(args.inp).read_text())
+    fixes = json.loads(Path(args.fixes).read_text())
+    ents = {e["id"]: e for e in d["entities"]}
+    rels = {(r["subject"], r["predicate"], r["object"]): r for r in d["relationships"]}
+    before = (len(ents), len(rels))
+    log, failed = collections.Counter(), []
+
+    def key(x):
+        return (x["subject"], x["predicate"], x["object"])
+
+    def add_rel(k, r):
+        if k in rels:  # collision: union evidence, keep higher confidence
+            cur = rels[k]
+            cur["evidence"] = sorted(set(cur["evidence"]) | set(r["evidence"]))
+            if CONF_RANK.get(r["confidence"], 1) > CONF_RANK.get(cur["confidence"], 1):
+                cur["confidence"] = r["confidence"]
+            cur["attributes"].update(r.get("attributes") or {})
+        else:
+            rels[k] = dict(r, subject=k[0], predicate=k[1], object=k[2])
+
+    order = {"drop_relationship": 0, "remove_evidence": 0, "remap_relationship": 0,
+             "drop_entity": 1, "merge": 2, "schema_change": 3}
+    for f in sorted(fixes, key=lambda f: order.get(f["action"], 9)):
+        a = f["action"]
+        if a == "drop_relationship":
+            if rels.pop(key(f), None) is None:
+                failed.append(f"{f['id']}: relationship not found")
+                continue
+        elif a == "remove_evidence":
+            r = rels.get(key(f))
+            if r is None:
+                failed.append(f"{f['id']}: relationship not found")
+                continue
+            r["evidence"] = [k for k in r["evidence"] if k not in set(f["evidence"])]
+            if not r["evidence"]:
+                del rels[key(f)]
+                log["relationships emptied by evidence removal (dropped)"] += 1
+        elif a == "remap_relationship":
+            r = rels.pop(key(f["from"]), None)
+            if r is None:
+                failed.append(f"{f['id']}: source relationship not found")
+                continue
+            r.pop("schema_violation", None)
+            add_rel(key(f["to"]), r)
+        elif a == "drop_entity":
+            eid = f["entity"]
+            ents.pop(eid, None)
+            for k in [k for k in rels if eid in (k[0], k[2])]:
+                del rels[k]
+                log["relationships cascaded by drop_entity"] += 1
+        elif a == "merge":
+            canon = f["canonical"]
+            if canon not in ents:
+                failed.append(f"{f['id']}: canonical {canon} not found")
+                continue
+            c = ents[canon]
+            for old in f["merge"]:
+                e = ents.pop(old, None)
+                if e is None:
+                    failed.append(f"{f['id']}: {old} not found")
+                    continue
+                aliases = set(c["aliases"]) | set(e["aliases"]) | {e["name"]}
+                c["aliases"] = sorted(a for a in aliases if a != c["name"] and "test" not in a.lower())
+                c["evidence"] = sorted(set(c["evidence"]) | set(e["evidence"]))
+                has_part_of = any(k[0] == canon and k[1] == "PART_OF" for k in rels)
+                for k in [k for k in rels if old in (k[0], k[2])]:
+                    r = rels.pop(k)
+                    if k[1] == "PART_OF" and k[0] == old and has_part_of:
+                        log["merged PART_OF discarded (canonical already has one)"] += 1
+                        continue
+                    add_rel((canon if k[0] == old else k[0], k[1], canon if k[2] == old else k[2]), r)
+        else:
+            log[f"skipped action {a}"] += 1
+            continue
+        log[a] += 1
+
+    # Re-validate everything after the fixes.
+    problems = []
+    for k, r in rels.items():
+        r.pop("schema_violation", None)
+        s, p, o = k
+        if s not in ents or o not in ents:
+            problems.append(f"dangling: {s} -{p}-> {o}")
+        elif ents[s]["type"] not in RELATIONS[p][0] or ents[o]["type"] not in RELATIONS[p][1]:
+            problems.append(f"domain/range: {ents[s]['type']} -{p}-> {ents[o]['type']} ({s} -> {o})")
+    part_of = collections.Counter(k[0] for k in rels if k[1] == "PART_OF")
+    for eid, e in ents.items():
+        if e["type"] == "Component" and part_of[eid] != 1:
+            problems.append(f"component with {part_of[eid]} PART_OF: {eid}")
+    # Vocabulary/System nodes: evidence = union of their relationships' evidence. Then recompute dates.
+    derived = {eid for eid, e in ents.items() if e["type"] in VOCAB or e["type"] == "System"}
+    for eid in derived:
+        ents[eid]["evidence"] = sorted({x for k, r in rels.items() if eid in (k[0], k[2]) for x in r["evidence"]})
+    for e in ents.values():
+        dates = sorted(created[k] for k in e["evidence"])
+        e["first_seen"], e["last_seen"] = (dates[0], dates[-1]) if dates else (None, None)
+    # Entities whose only facts were removed by approved fixes are now unsupported: remove them, and report it.
+    orphans = [eid for eid in ents if eid not in derived and not any(eid in (k[0], k[2]) for k in rels)]
+    for eid in orphans:
+        del ents[eid]
+
+    out = {"schema_version": "1.0", "review": "critic fixes applied (human-approved)",
+           "entities": sorted(ents.values(), key=lambda e: (e["type"], e["id"])),
+           "relationships": sorted(rels.values(), key=lambda r: (r["predicate"], r["subject"], r["object"]))}
+    Path(args.out).write_text(json.dumps(out, indent=1, ensure_ascii=False))
+    cited = {k for x in out["entities"] + out["relationships"] for k in x["evidence"]}
+    print(f"before: {before[0]} entities, {before[1]} relationships")
+    print(f"after:  {len(ents)} entities, {len(rels)} relationships")
+    print(f"ticket coverage: {len(cited)}/{len(created)} = {len(cited) / len(created):.0%}")
+    for k, v in log.items():
+        print(f"  {k}: {v}")
+    print(f"fixes that failed to apply: {len(failed)}", *failed[:10], sep="\n  ")
+    print(f"schema problems after fixes: {len(problems)}", *problems[:10], sep="\n  ")
+    print(f"orphan entities removed (all their facts were dropped by approved fixes): {len(orphans)}",
+          *orphans[:10], sep="\n  ")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -263,10 +385,15 @@ def main():
     m.add_argument("--pattern", default="[bg]*.json")  # batch_*.json + gapfill.json (pilot excluded)
     m.add_argument("--batch-md-dir", default="data/batches")
     m.add_argument("--raw", default="data/raw/kafka_issues.jsonl")
-    m.add_argument("--out", default="ontology/ontology.json")
+    m.add_argument("--out", default="ontology/ontology.merged.json")
     m.add_argument("--report", default="ontology/merge_report.md")
+    a = sub.add_parser("apply")
+    a.add_argument("--inp", default="ontology/ontology.merged.json")
+    a.add_argument("--fixes", default="ontology/review_fixes.json")
+    a.add_argument("--raw", default="data/raw/kafka_issues.jsonl")
+    a.add_argument("--out", default="ontology/ontology.json")
     args = ap.parse_args()
-    {"split": cmd_split, "vocab": cmd_vocab, "merge": cmd_merge}[args.cmd](args)
+    {"split": cmd_split, "vocab": cmd_vocab, "merge": cmd_merge, "apply": cmd_apply}[args.cmd](args)
 
 
 if __name__ == "__main__":

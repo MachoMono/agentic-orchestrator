@@ -1,6 +1,5 @@
 {
  "schema_version": "1.0",
- "review": "critic fixes applied (human-approved)",
  "entities": [
   {
    "id": "impact:availability-outage-risk",
@@ -454,6 +453,19 @@
    "last_seen": "2026-07-13"
   },
   {
+   "id": "component:abstractcoordinator",
+   "type": "Component",
+   "name": "AbstractCoordinator",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15474"
+   ],
+   "proposed": false,
+   "first_seen": "2023-09-18",
+   "last_seen": "2023-09-18"
+  },
+  {
    "id": "component:abstractstickyassignor",
    "type": "Component",
    "name": "AbstractStickyAssignor",
@@ -638,6 +650,33 @@
    "last_seen": "2024-03-11"
   },
   {
+   "id": "component:async-consumer",
+   "type": "Component",
+   "name": "AsyncKafkaConsumer",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-20332",
+    "KAFKA-21049"
+   ],
+   "proposed": false,
+   "first_seen": "2026-03-18",
+   "last_seen": "2026-09-08"
+  },
+  {
+   "id": "component:async-kafka-consumer",
+   "type": "Component",
+   "name": "AsyncKafkaConsumer",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14438"
+   ],
+   "proposed": false,
+   "first_seen": "2022-12-02",
+   "last_seen": "2022-12-02"
+  },
+  {
    "id": "component:authorizer",
    "type": "Component",
    "name": "Authorizer",
@@ -749,6 +788,20 @@
    "proposed": false,
    "first_seen": "2021-04-09",
    "last_seen": "2021-04-09"
+  },
+  {
+   "id": "component:broker-topic-stats-test-utils",
+   "type": "Component",
+   "name": "BrokerTopicStats Test Utilities",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-21048",
+    "KAFKA-21146"
+   ],
+   "proposed": false,
+   "first_seen": "2026-09-07",
+   "last_seen": "2026-09-23"
   },
   {
    "id": "component:broker-zk-registration",
@@ -939,6 +992,19 @@
    "last_seen": "2022-09-01"
   },
   {
+   "id": "component:cluster-test-kit",
+   "type": "Component",
+   "name": "KafkaClusterTestKit",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-19938"
+   ],
+   "proposed": false,
+   "first_seen": "2025-11-28",
+   "last_seen": "2025-11-28"
+  },
+  {
    "id": "component:common-errors",
    "type": "Component",
    "name": "Common Errors Package",
@@ -955,22 +1021,14 @@
    "id": "component:config-command",
    "type": "Component",
    "name": "ConfigCommand",
-   "aliases": [
-    "ConfigCommand (kafka-configs.sh)",
-    "kafka-configs.sh"
-   ],
+   "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-13108",
-    "KAFKA-17583",
-    "KAFKA-17787",
-    "KAFKA-20111",
-    "KAFKA-20236",
-    "KAFKA-20506"
+    "KAFKA-13108"
    ],
    "proposed": false,
    "first_seen": "2021-07-20",
-   "last_seen": "2026-04-20"
+   "last_seen": "2021-07-20"
   },
   {
    "id": "component:config-manager",
@@ -1058,14 +1116,26 @@
    "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-14193",
-    "KAFKA-14598",
     "KAFKA-14645",
     "KAFKA-14649"
    ],
    "proposed": false,
-   "first_seen": "2022-08-31",
+   "first_seen": "2023-01-23",
    "last_seen": "2023-01-24"
+  },
+  {
+   "id": "component:connect-rest-api-test",
+   "type": "Component",
+   "name": "ConnectRestApiTest",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14193",
+    "KAFKA-14598"
+   ],
+   "proposed": false,
+   "first_seen": "2022-08-31",
+   "last_seen": "2023-01-06"
   },
   {
    "id": "component:connect-rest-server",
@@ -1085,28 +1155,21 @@
    "type": "Component",
    "name": "Connect Runtime",
    "aliases": [
-    "Connect Runtime / Worker",
-    "Connect Worker"
+    "Connect Runtime / Worker"
    ],
    "attributes": {},
    "evidence": [
-    "KAFKA-12645",
-    "KAFKA-13109",
-    "KAFKA-13756",
     "KAFKA-14191",
     "KAFKA-14645",
-    "KAFKA-14742",
     "KAFKA-18072",
     "KAFKA-18073",
     "KAFKA-19139",
     "KAFKA-19140",
-    "KAFKA-19248",
-    "KAFKA-19824",
-    "KAFKA-21047"
+    "KAFKA-19248"
    ],
    "proposed": false,
-   "first_seen": "2021-04-09",
-   "last_seen": "2026-09-07"
+   "first_seen": "2022-08-30",
+   "last_seen": "2025-05-06"
   },
   {
    "id": "component:connect-sink-task",
@@ -1133,6 +1196,23 @@
    "proposed": false,
    "first_seen": "2024-03-08",
    "last_seen": "2024-03-08"
+  },
+  {
+   "id": "component:connect-worker",
+   "type": "Component",
+   "name": "Connect Worker",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-12645",
+    "KAFKA-13109",
+    "KAFKA-13756",
+    "KAFKA-19824",
+    "KAFKA-21047"
+   ],
+   "proposed": false,
+   "first_seen": "2021-04-09",
+   "last_seen": "2026-09-07"
   },
   {
    "id": "component:console-producer",
@@ -1250,13 +1330,11 @@
     "KAFKA-13425",
     "KAFKA-13670",
     "KAFKA-13717",
-    "KAFKA-14264",
-    "KAFKA-15178",
-    "KAFKA-15474"
+    "KAFKA-14264"
    ],
    "proposed": false,
    "first_seen": "2021-02-21",
-   "last_seen": "2023-09-18"
+   "last_seen": "2022-09-28"
   },
   {
    "id": "component:consumer-groups-command",
@@ -1287,6 +1365,19 @@
    "proposed": false,
    "first_seen": "2022-06-23",
    "last_seen": "2023-02-21"
+  },
+  {
+   "id": "component:consumercoordinator",
+   "type": "Component",
+   "name": "ConsumerCoordinator",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15178"
+   ],
+   "proposed": false,
+   "first_seen": "2023-07-11",
+   "last_seen": "2023-07-11"
   },
   {
    "id": "component:controller",
@@ -1382,6 +1473,21 @@
    "last_seen": "2022-12-21"
   },
   {
+   "id": "component:dedicated-mirror-connector",
+   "type": "Component",
+   "name": "DedicatedMirror / MM2 Connector",
+   "aliases": [
+    "DedicatedMirrorIntegrationTest"
+   ],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-17221"
+   ],
+   "proposed": false,
+   "first_seen": "2024-07-30",
+   "last_seen": "2024-07-30"
+  },
+  {
    "id": "component:dependency-management",
    "type": "Component",
    "name": "Dependency Management",
@@ -1403,16 +1509,40 @@
    "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-13187",
     "KAFKA-13719",
-    "KAFKA-14746",
-    "KAFKA-15372",
     "KAFKA-16838",
     "KAFKA-17105"
    ],
    "proposed": false,
-   "first_seen": "2021-08-10",
+   "first_seen": "2022-03-09",
    "last_seen": "2024-07-09"
+  },
+  {
+   "id": "component:distributed-herder-test",
+   "type": "Component",
+   "name": "DistributedHerderTest",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13187"
+   ],
+   "proposed": false,
+   "first_seen": "2021-08-10",
+   "last_seen": "2021-08-10"
+  },
+  {
+   "id": "component:distributedherder",
+   "type": "Component",
+   "name": "DistributedHerder",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14746",
+    "KAFKA-15372"
+   ],
+   "proposed": false,
+   "first_seen": "2023-02-23",
+   "last_seen": "2023-08-17"
   },
   {
    "id": "component:docker-sanity-test",
@@ -1503,6 +1633,19 @@
    "last_seen": "2022-08-08"
   },
   {
+   "id": "component:embeddedconnectcluster",
+   "type": "Component",
+   "name": "EmbeddedConnectCluster test framework",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14855"
+   ],
+   "proposed": false,
+   "first_seen": "2023-03-27",
+   "last_seen": "2023-03-27"
+  },
+  {
    "id": "component:eos-state-manager",
    "type": "Component",
    "name": "EOS State Manager",
@@ -1515,6 +1658,19 @@
    "proposed": false,
    "first_seen": "2022-12-03",
    "last_seen": "2022-12-22"
+  },
+  {
+   "id": "component:exactly-once-source-integration-test",
+   "type": "Component",
+   "name": "ExactlyOnceSourceIntegrationTest",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14742"
+   ],
+   "proposed": false,
+   "first_seen": "2023-02-22",
+   "last_seen": "2023-02-22"
   },
   {
    "id": "component:examples-module",
@@ -1635,24 +1791,35 @@
    "last_seen": "2022-04-08"
   },
   {
+   "id": "component:fk-join",
+   "type": "Component",
+   "name": "FK Join",
+   "aliases": [
+    "Foreign Key Join"
+   ],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14747"
+   ],
+   "proposed": false,
+   "first_seen": "2023-02-23",
+   "last_seen": "2023-02-23"
+  },
+  {
    "id": "component:foreign-key-join",
    "type": "Component",
    "name": "Foreign Key Join",
    "aliases": [
-    "FK Join",
-    "Foreign-Key Join",
-    "KTable Foreign-Key Join"
+    "Foreign-Key Join"
    ],
    "attributes": {},
    "evidence": [
-    "KAFKA-13268",
     "KAFKA-14364",
     "KAFKA-14646",
-    "KAFKA-14747",
     "KAFKA-20792"
    ],
    "proposed": false,
-   "first_seen": "2021-09-02",
+   "first_seen": "2022-11-07",
    "last_seen": "2026-07-09"
   },
   {
@@ -1945,6 +2112,39 @@
    "last_seen": "2022-08-08"
   },
   {
+   "id": "component:kafka-config-tool",
+   "type": "Component",
+   "name": "kafka-configs.sh",
+   "aliases": [
+    "ConfigCommand"
+   ],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-17583",
+    "KAFKA-17787"
+   ],
+   "proposed": false,
+   "first_seen": "2024-09-20",
+   "last_seen": "2024-10-14"
+  },
+  {
+   "id": "component:kafka-configs-cli",
+   "type": "Component",
+   "name": "kafka-configs.sh",
+   "aliases": [
+    "ConfigCommand (kafka-configs.sh)"
+   ],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-20111",
+    "KAFKA-20236",
+    "KAFKA-20506"
+   ],
+   "proposed": false,
+   "first_seen": "2026-02-02",
+   "last_seen": "2026-04-20"
+  },
+  {
    "id": "component:kafka-connect-framework",
    "type": "Component",
    "name": "Kafka Connect Framework",
@@ -1970,13 +2170,11 @@
    "attributes": {},
    "evidence": [
     "KAFKA-14189",
-    "KAFKA-14648",
-    "KAFKA-14848",
-    "KAFKA-15180"
+    "KAFKA-14648"
    ],
    "proposed": false,
    "first_seen": "2022-08-30",
-   "last_seen": "2023-07-11"
+   "last_seen": "2023-01-24"
   },
   {
    "id": "component:kafka-consumer-groups-cli",
@@ -2048,6 +2246,22 @@
    "last_seen": "2022-08-29"
   },
   {
+   "id": "component:kafka-metadata-quorum-cli",
+   "type": "Component",
+   "name": "kafka-metadata-quorum",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-16174",
+    "KAFKA-16520",
+    "KAFKA-16521",
+    "KAFKA-16523"
+   ],
+   "proposed": false,
+   "first_seen": "2024-01-19",
+   "last_seen": "2024-04-11"
+  },
+  {
    "id": "component:kafka-metrics",
    "type": "Component",
    "name": "Kafka Metrics (MetricsReporter)",
@@ -2072,6 +2286,21 @@
    "proposed": false,
    "first_seen": "2023-01-07",
    "last_seen": "2023-01-07"
+  },
+  {
+   "id": "component:kafka-producer",
+   "type": "Component",
+   "name": "KafkaProducer",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14020",
+    "KAFKA-14359",
+    "KAFKA-14546"
+   ],
+   "proposed": false,
+   "first_seen": "2022-06-24",
+   "last_seen": "2022-12-21"
   },
   {
    "id": "component:kafka-protocol",
@@ -2175,8 +2404,7 @@
    "type": "Component",
    "name": "KafkaStreams",
    "aliases": [
-    "Kafka Streams",
-    "KafkaStreams client"
+    "Kafka Streams"
    ],
    "attributes": {},
    "evidence": [
@@ -2186,16 +2414,12 @@
     "KAFKA-13676",
     "KAFKA-13677",
     "KAFKA-13722",
-    "KAFKA-14076",
-    "KAFKA-14641",
-    "KAFKA-14650",
     "KAFKA-16018",
     "KAFKA-16343",
     "KAFKA-16514",
     "KAFKA-17994",
     "KAFKA-19256",
     "KAFKA-19271",
-    "KAFKA-19429",
     "KAFKA-19660",
     "KAFKA-19666",
     "KAFKA-19683",
@@ -2208,6 +2432,21 @@
    "proposed": false,
    "first_seen": "2021-03-25",
    "last_seen": "2026-09-09"
+  },
+  {
+   "id": "component:kafka-streams-client",
+   "type": "Component",
+   "name": "KafkaStreams client",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14076",
+    "KAFKA-14641",
+    "KAFKA-14650"
+   ],
+   "proposed": false,
+   "first_seen": "2022-07-14",
+   "last_seen": "2023-01-24"
   },
   {
    "id": "component:kafka-streams-progress",
@@ -2302,6 +2541,20 @@
    "last_seen": "2023-04-13"
   },
   {
+   "id": "component:kafkaconsumer",
+   "type": "Component",
+   "name": "KafkaConsumer",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14848",
+    "KAFKA-15180"
+   ],
+   "proposed": false,
+   "first_seen": "2023-03-25",
+   "last_seen": "2023-07-11"
+  },
+  {
    "id": "component:key-value-store",
    "type": "Component",
    "name": "Key Value Store",
@@ -2321,6 +2574,22 @@
    "last_seen": "2022-01-20"
   },
   {
+   "id": "component:kraft",
+   "type": "Component",
+   "name": "KRaft / Raft",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-12561",
+    "KAFKA-12992",
+    "KAFKA-13110",
+    "KAFKA-13192"
+   ],
+   "proposed": false,
+   "first_seen": "2021-03-26",
+   "last_seen": "2021-08-11"
+  },
+  {
    "id": "component:kraft-admin-client",
    "type": "Component",
    "name": "KRaft Admin Client",
@@ -2337,22 +2606,9 @@
    "id": "component:kraft-controller",
    "type": "Component",
    "name": "KRaft Controller",
-   "aliases": [
-    "Controller",
-    "KRaft / Raft",
-    "KRaft Quorum Controller",
-    "QuorumController"
-   ],
+   "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-12457",
-    "KAFKA-12467",
-    "KAFKA-12882",
-    "KAFKA-13092",
-    "KAFKA-13112",
-    "KAFKA-13114",
-    "KAFKA-13189",
-    "KAFKA-13190",
     "KAFKA-13470",
     "KAFKA-13471",
     "KAFKA-13528",
@@ -2361,10 +2617,6 @@
     "KAFKA-13871",
     "KAFKA-13940",
     "KAFKA-13944",
-    "KAFKA-15103",
-    "KAFKA-16173",
-    "KAFKA-16179",
-    "KAFKA-16180",
     "KAFKA-16517",
     "KAFKA-16519",
     "KAFKA-16839",
@@ -2393,12 +2645,11 @@
     "KAFKA-19138",
     "KAFKA-19587",
     "KAFKA-19687",
-    "KAFKA-19830",
-    "KAFKA-20895"
+    "KAFKA-19830"
    ],
    "proposed": false,
-   "first_seen": "2021-03-11",
-   "last_seen": "2026-08-05"
+   "first_seen": "2021-11-22",
+   "last_seen": "2025-10-23"
   },
   {
    "id": "component:kraft-metadata-propagation",
@@ -2446,10 +2697,6 @@
    "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-12561",
-    "KAFKA-12992",
-    "KAFKA-13110",
-    "KAFKA-13192",
     "KAFKA-14077",
     "KAFKA-14145",
     "KAFKA-14152",
@@ -2458,7 +2705,7 @@
     "KAFKA-14644"
    ],
    "proposed": false,
-   "first_seen": "2021-03-26",
+   "first_seen": "2022-07-14",
    "last_seen": "2023-01-20"
   },
   {
@@ -2499,6 +2746,34 @@
    "proposed": false,
    "first_seen": "2022-09-30",
    "last_seen": "2022-09-30"
+  },
+  {
+   "id": "component:kraftclient",
+   "type": "Component",
+   "name": "KafkaRaftClient",
+   "aliases": [
+    "KRaft / Raft"
+   ],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15100"
+   ],
+   "proposed": false,
+   "first_seen": "2023-06-17",
+   "last_seen": "2023-06-17"
+  },
+  {
+   "id": "component:kraftclustertest",
+   "type": "Component",
+   "name": "KRaftClusterTest",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15103"
+   ],
+   "proposed": false,
+   "first_seen": "2023-06-19",
+   "last_seen": "2023-06-19"
   },
   {
    "id": "component:kstream",
@@ -2598,6 +2873,19 @@
    "last_seen": "2022-05-04"
   },
   {
+   "id": "component:ktable-foreignkey-join",
+   "type": "Component",
+   "name": "KTable Foreign-Key Join",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13268"
+   ],
+   "proposed": false,
+   "first_seen": "2021-09-02",
+   "last_seen": "2021-09-02"
+  },
+  {
    "id": "component:ktable-source",
    "type": "Component",
    "name": "KTable Source",
@@ -2668,16 +2956,27 @@
     "KAFKA-13760",
     "KAFKA-14321",
     "KAFKA-14322",
-    "KAFKA-15097",
     "KAFKA-17222",
     "KAFKA-17579",
     "KAFKA-18268",
     "KAFKA-18597",
-    "KAFKA-20452",
-    "KAFKA-21152"
+    "KAFKA-20452"
    ],
    "proposed": false,
    "first_seen": "2021-06-04",
+   "last_seen": "2026-04-14"
+  },
+  {
+   "id": "component:log-compaction-tester",
+   "type": "Component",
+   "name": "LogCompactionTester",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-21152"
+   ],
+   "proposed": false,
+   "first_seen": "2026-09-24",
    "last_seen": "2026-09-24"
   },
   {
@@ -2748,7 +3047,6 @@
     "KAFKA-13674",
     "KAFKA-14074",
     "KAFKA-14544",
-    "KAFKA-15375",
     "KAFKA-16114",
     "KAFKA-17584",
     "KAFKA-17997",
@@ -2802,6 +3100,19 @@
    "last_seen": "2022-03-23"
   },
   {
+   "id": "component:logcleaner",
+   "type": "Component",
+   "name": "LogCleaner",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15097"
+   ],
+   "proposed": false,
+   "first_seen": "2023-06-16",
+   "last_seen": "2023-06-16"
+  },
+  {
    "id": "component:logging-subsystem",
    "type": "Component",
    "name": "Logging Subsystem",
@@ -2813,6 +3124,19 @@
    "proposed": false,
    "first_seen": "2025-07-04",
    "last_seen": "2025-07-04"
+  },
+  {
+   "id": "component:logmanager",
+   "type": "Component",
+   "name": "LogManager",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15375"
+   ],
+   "proposed": false,
+   "first_seen": "2023-08-17",
+   "last_seen": "2023-08-17"
   },
   {
    "id": "component:membership-manager",
@@ -2889,22 +3213,17 @@
    "type": "Component",
    "name": "kafka-metadata-quorum.sh",
    "aliases": [
-    "MetadataQuorumCommand",
-    "kafka-metadata-quorum"
+    "MetadataQuorumCommand"
    ],
    "attributes": {},
    "evidence": [
-    "KAFKA-16174",
-    "KAFKA-16520",
-    "KAFKA-16521",
-    "KAFKA-16523",
     "KAFKA-17996",
     "KAFKA-18070",
     "KAFKA-18774",
     "KAFKA-18775"
    ],
    "proposed": false,
-   "first_seen": "2024-01-19",
+   "first_seen": "2024-11-12",
    "last_seen": "2025-02-11"
   },
   {
@@ -3023,6 +3342,19 @@
    "last_seen": "2025-10-15"
   },
   {
+   "id": "component:mirror-maker-2",
+   "type": "Component",
+   "name": "MirrorMaker2",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-17220"
+   ],
+   "proposed": false,
+   "first_seen": "2024-07-30",
+   "last_seen": "2024-07-30"
+  },
+  {
    "id": "component:mirror-source-connector",
    "type": "Component",
    "name": "MirrorSourceConnector",
@@ -3036,14 +3368,11 @@
     "KAFKA-13465",
     "KAFKA-13529",
     "KAFKA-13876",
-    "KAFKA-14314",
-    "KAFKA-14745",
-    "KAFKA-14898",
-    "KAFKA-14980"
+    "KAFKA-14314"
    ],
    "proposed": false,
    "first_seen": "2021-02-20",
-   "last_seen": "2023-05-09"
+   "last_seen": "2022-10-18"
   },
   {
    "id": "component:mirror-source-task",
@@ -3065,25 +3394,17 @@
    "id": "component:mirrormaker-2",
    "type": "Component",
    "name": "MirrorMaker 2 (MM2)",
-   "aliases": [
-    "DedicatedMirror / MM2 Connector",
-    "MM2",
-    "MirrorMaker 2 Worker",
-    "MirrorMaker2"
-   ],
+   "aliases": [],
    "attributes": {},
    "evidence": [
     "KAFKA-14262",
     "KAFKA-14314",
     "KAFKA-14599",
-    "KAFKA-14740",
-    "KAFKA-17220",
-    "KAFKA-17221",
-    "KAFKA-17784"
+    "KAFKA-14740"
    ],
    "proposed": false,
    "first_seen": "2022-09-27",
-   "last_seen": "2024-10-13"
+   "last_seen": "2023-02-22"
   },
   {
    "id": "component:mirrormaker-config-sync",
@@ -3110,6 +3431,50 @@
    "proposed": false,
    "first_seen": "2022-09-27",
    "last_seen": "2022-09-27"
+  },
+  {
+   "id": "component:mirrormaker2-worker",
+   "type": "Component",
+   "name": "MirrorMaker 2 Worker",
+   "aliases": [
+    "MM2"
+   ],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-17784"
+   ],
+   "proposed": false,
+   "first_seen": "2024-10-13",
+   "last_seen": "2024-10-13"
+  },
+  {
+   "id": "component:mirrorsourceconnector",
+   "type": "Component",
+   "name": "MirrorSourceConnector",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14745",
+    "KAFKA-14898",
+    "KAFKA-14980"
+   ],
+   "proposed": false,
+   "first_seen": "2023-02-23",
+   "last_seen": "2023-05-09"
+  },
+  {
+   "id": "component:mock-client",
+   "type": "Component",
+   "name": "MockClient",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13000",
+    "KAFKA-17103"
+   ],
+   "proposed": false,
+   "first_seen": "2021-06-28",
+   "last_seen": "2024-07-09"
   },
   {
    "id": "component:monitoring-documentation",
@@ -3199,24 +3564,20 @@
    "type": "Component",
    "name": "AsyncKafkaConsumer (new consumer)",
    "aliases": [
-    "AsyncKafkaConsumer",
     "new consumer"
    ],
    "attributes": {},
    "evidence": [
-    "KAFKA-14438",
     "KAFKA-17439",
     "KAFKA-17581",
     "KAFKA-17582",
     "KAFKA-18071",
     "KAFKA-18267",
-    "KAFKA-18769",
-    "KAFKA-20332",
-    "KAFKA-21049"
+    "KAFKA-18769"
    ],
    "proposed": false,
-   "first_seen": "2022-12-02",
-   "last_seen": "2026-09-08"
+   "first_seen": "2024-08-28",
+   "last_seen": "2025-02-10"
   },
   {
    "id": "component:nodetocontrollerchannelmanager",
@@ -3295,6 +3656,19 @@
    "proposed": false,
    "first_seen": "2026-05-30",
    "last_seen": "2026-05-30"
+  },
+  {
+   "id": "component:offset-validation-test",
+   "type": "Component",
+   "name": "OffsetValidationTest",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14196"
+   ],
+   "proposed": false,
+   "first_seen": "2022-09-02",
+   "last_seen": "2022-09-02"
   },
   {
    "id": "component:partition",
@@ -3407,27 +3781,35 @@
    "type": "Component",
    "name": "Producer",
    "aliases": [
-    "KafkaProducer",
-    "Producer Client"
+    "KafkaProducer"
    ],
    "attributes": {},
    "evidence": [
     "KAFKA-12351",
     "KAFKA-13115",
     "KAFKA-13184",
-    "KAFKA-13271",
     "KAFKA-13810",
-    "KAFKA-14020",
-    "KAFKA-14359",
-    "KAFKA-14546",
     "KAFKA-16176",
     "KAFKA-16177",
-    "KAFKA-17043",
+    "KAFKA-17043"
+   ],
+   "proposed": false,
+   "first_seen": "2021-02-20",
+   "last_seen": "2024-06-26"
+  },
+  {
+   "id": "component:producer-client",
+   "type": "Component",
+   "name": "Producer Client",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13271",
     "KAFKA-18068",
     "KAFKA-19250"
    ],
    "proposed": false,
-   "first_seen": "2021-02-20",
+   "first_seen": "2021-09-03",
    "last_seen": "2025-05-07"
   },
   {
@@ -3444,6 +3826,19 @@
    "proposed": false,
    "first_seen": "2021-10-10",
    "last_seen": "2022-02-17"
+  },
+  {
+   "id": "component:producer-id-expiration-test",
+   "type": "Component",
+   "name": "ProducerIdExpirationTest",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14600"
+   ],
+   "proposed": false,
+   "first_seen": "2023-01-06",
+   "last_seen": "2023-01-06"
   },
   {
    "id": "component:producer-metadata",
@@ -3512,6 +3907,31 @@
    "last_seen": "2021-12-08"
   },
   {
+   "id": "component:quorum-controller",
+   "type": "Component",
+   "name": "QuorumController",
+   "aliases": [
+    "Controller"
+   ],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-12457",
+    "KAFKA-12467",
+    "KAFKA-12882",
+    "KAFKA-13092",
+    "KAFKA-13112",
+    "KAFKA-13114",
+    "KAFKA-13189",
+    "KAFKA-13190",
+    "KAFKA-16173",
+    "KAFKA-16179",
+    "KAFKA-16180"
+   ],
+   "proposed": false,
+   "first_seen": "2021-03-11",
+   "last_seen": "2024-01-20"
+  },
+  {
    "id": "component:quota-api",
    "type": "Component",
    "name": "Client Quota API",
@@ -3528,10 +3948,7 @@
    "id": "component:raft-client",
    "type": "Component",
    "name": "RaftClient",
-   "aliases": [
-    "KRaft / Raft",
-    "KafkaRaftClient"
-   ],
+   "aliases": [],
    "attributes": {},
    "evidence": [
     "KAFKA-12158",
@@ -3543,12 +3960,40 @@
     "KAFKA-12992",
     "KAFKA-13089",
     "KAFKA-13110",
-    "KAFKA-13113",
-    "KAFKA-15100"
+    "KAFKA-13113"
    ],
    "proposed": false,
    "first_seen": "2021-01-07",
-   "last_seen": "2023-06-17"
+   "last_seen": "2021-07-21"
+  },
+  {
+   "id": "component:raft-quorum-controller",
+   "type": "Component",
+   "name": "KRaft Quorum Controller",
+   "aliases": [
+    "KRaft / Raft"
+   ],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-20895"
+   ],
+   "proposed": false,
+   "first_seen": "2026-08-05",
+   "last_seen": "2026-08-05"
+  },
+  {
+   "id": "component:raft-simulation-tests",
+   "type": "Component",
+   "name": "Raft Simulation Tests",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-12459",
+    "KAFKA-13090"
+   ],
+   "proposed": false,
+   "first_seen": "2021-03-12",
+   "last_seen": "2021-07-14"
   },
   {
    "id": "component:raft-snapshot",
@@ -3663,7 +4108,6 @@
    "name": "RemoteLogManager",
    "aliases": [
     "ConfigHandler",
-    "RLM",
     "RLMExpirationTask",
     "RLMTask",
     "RemoteLogManager (RLMExpirationTask/ConfigHandler)",
@@ -3671,13 +4115,6 @@
    ],
    "attributes": {},
    "evidence": [
-    "KAFKA-15038",
-    "KAFKA-15040",
-    "KAFKA-15047",
-    "KAFKA-15376",
-    "KAFKA-15477",
-    "KAFKA-15479",
-    "KAFKA-15480",
     "KAFKA-16105",
     "KAFKA-16685",
     "KAFKA-17108",
@@ -3688,7 +4125,7 @@
     "KAFKA-20148"
    ],
    "proposed": false,
-   "first_seen": "2023-05-30",
+   "first_seen": "2024-01-09",
    "last_seen": "2026-02-07"
   },
   {
@@ -3696,15 +4133,11 @@
    "type": "Component",
    "name": "TopicBasedRemoteLogMetadataManager",
    "aliases": [
-    "RemoteLogMetadataManager",
-    "TBRLMM"
+    "RemoteLogMetadataManager"
    ],
    "attributes": {},
    "evidence": [
     "KAFKA-13097",
-    "KAFKA-14642",
-    "KAFKA-14643",
-    "KAFKA-15181",
     "KAFKA-16686",
     "KAFKA-19426"
    ],
@@ -3726,6 +4159,27 @@
    "last_seen": "2023-09-20"
   },
   {
+   "id": "component:remotelogmanager",
+   "type": "Component",
+   "name": "RemoteLogManager",
+   "aliases": [
+    "RLM"
+   ],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15038",
+    "KAFKA-15040",
+    "KAFKA-15047",
+    "KAFKA-15376",
+    "KAFKA-15477",
+    "KAFKA-15479",
+    "KAFKA-15480"
+   ],
+   "proposed": false,
+   "first_seen": "2023-05-30",
+   "last_seen": "2023-09-20"
+  },
+  {
    "id": "component:repartition-topic-handling",
    "type": "Component",
    "name": "Repartition Topic Handling",
@@ -3739,21 +4193,30 @@
    "last_seen": "2026-04-16"
   },
   {
+   "id": "component:replica-fetcher",
+   "type": "Component",
+   "name": "ReplicaFetcher",
+   "aliases": [
+    "Replica Fetcher / Leader Access"
+   ],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13754",
+    "KAFKA-13803"
+   ],
+   "proposed": false,
+   "first_seen": "2022-03-17",
+   "last_seen": "2022-04-06"
+  },
+  {
    "id": "component:replica-fetcher-thread",
    "type": "Component",
    "name": "ReplicaFetcherThread",
-   "aliases": [
-    "Replica Fetcher / Leader Access",
-    "ReplicaFetcher"
-   ],
+   "aliases": [],
    "attributes": {},
    "evidence": [
     "KAFKA-12996",
     "KAFKA-13266",
-    "KAFKA-13754",
-    "KAFKA-13803",
-    "KAFKA-15181",
-    "KAFKA-15590",
     "KAFKA-19474"
    ],
    "proposed": false,
@@ -3787,6 +4250,20 @@
    "proposed": false,
    "first_seen": "2026-08-05",
    "last_seen": "2026-08-05"
+  },
+  {
+   "id": "component:replicafetcher",
+   "type": "Component",
+   "name": "ReplicaFetcherThread",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15181",
+    "KAFKA-15590"
+   ],
+   "proposed": false,
+   "first_seen": "2023-07-12",
+   "last_seen": "2023-10-11"
   },
   {
    "id": "component:replication-manager",
@@ -3841,6 +4318,19 @@
    "proposed": false,
    "first_seen": "2023-07-12",
    "last_seen": "2023-09-18"
+  },
+  {
+   "id": "component:requestquotatest",
+   "type": "Component",
+   "name": "RequestQuotaTest",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15289"
+   ],
+   "proposed": false,
+   "first_seen": "2023-08-01",
+   "last_seen": "2023-08-01"
   },
   {
    "id": "component:rocksdb-store",
@@ -3976,6 +4466,19 @@
    "proposed": false,
    "first_seen": "2024-11-12",
    "last_seen": "2026-04-16"
+  },
+  {
+   "id": "component:share-consumer-test-utils",
+   "type": "Component",
+   "name": "Share Consumer Test Utilities",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-21051"
+   ],
+   "proposed": false,
+   "first_seen": "2026-09-09",
+   "last_seen": "2026-09-09"
   },
   {
    "id": "component:share-coordinator",
@@ -4705,6 +5208,19 @@
    "last_seen": "2025-10-23"
   },
   {
+   "id": "component:streams-smoke-test",
+   "type": "Component",
+   "name": "Streams Smoke Test",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-19429"
+   ],
+   "proposed": false,
+   "first_seen": "2025-06-23",
+   "last_seen": "2025-06-23"
+  },
+  {
    "id": "component:streams-system-tests",
    "type": "Component",
    "name": "Streams System Tests",
@@ -4812,42 +5328,39 @@
    "last_seen": "2023-03-24"
   },
   {
+   "id": "component:test-harness",
+   "type": "Component",
+   "name": "Integration Test Harness",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14433"
+   ],
+   "proposed": false,
+   "first_seen": "2022-12-01",
+   "last_seen": "2022-12-01"
+  },
+  {
    "id": "component:test-infrastructure",
    "type": "Component",
    "name": "Test Infrastructure",
-   "aliases": [
-    "MockClient"
-   ],
+   "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-12459",
-    "KAFKA-13000",
-    "KAFKA-13090",
-    "KAFKA-14196",
-    "KAFKA-14263",
-    "KAFKA-14433",
-    "KAFKA-14600",
-    "KAFKA-14855",
     "KAFKA-16678",
     "KAFKA-16679",
     "KAFKA-16680",
     "KAFKA-16681",
     "KAFKA-16682",
     "KAFKA-16683",
-    "KAFKA-16841",
-    "KAFKA-17103",
     "KAFKA-17214",
     "KAFKA-19252",
-    "KAFKA-19938",
     "KAFKA-20105",
-    "KAFKA-21048",
-    "KAFKA-21051",
     "KAFKA-21145",
-    "KAFKA-21146",
     "KAFKA-21148"
    ],
    "proposed": false,
-   "first_seen": "2021-03-12",
+   "first_seen": "2024-05-07",
    "last_seen": "2026-09-23"
   },
   {
@@ -4877,6 +5390,20 @@
    "proposed": false,
    "first_seen": "2026-05-31",
    "last_seen": "2026-05-31"
+  },
+  {
+   "id": "component:topic-based-rlmm",
+   "type": "Component",
+   "name": "TopicBasedRemoteLogMetadataManager",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14642",
+    "KAFKA-14643"
+   ],
+   "proposed": false,
+   "first_seen": "2023-01-20",
+   "last_seen": "2023-01-20"
   },
   {
    "id": "component:topic-command",
@@ -4931,6 +5458,21 @@
    "proposed": false,
    "first_seen": "2022-11-04",
    "last_seen": "2022-11-04"
+  },
+  {
+   "id": "component:topicbasedremotelogmetadatamanager",
+   "type": "Component",
+   "name": "TopicBasedRemoteLogMetadataManager",
+   "aliases": [
+    "TBRLMM"
+   ],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15181"
+   ],
+   "proposed": false,
+   "first_seen": "2023-07-12",
+   "last_seen": "2023-07-12"
   },
   {
    "id": "component:topicmetadatarequestmanager",
@@ -5059,6 +5601,19 @@
    "proposed": false,
    "first_seen": "2024-06-26",
    "last_seen": "2024-06-26"
+  },
+  {
+   "id": "component:upgrade-test",
+   "type": "Component",
+   "name": "upgrade_test.py",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14263"
+   ],
+   "proposed": false,
+   "first_seen": "2022-09-27",
+   "last_seen": "2022-09-27"
   },
   {
    "id": "component:verifiable-producer",
@@ -5191,6 +5746,19 @@
    "proposed": false,
    "first_seen": "2024-05-28",
    "last_seen": "2024-06-26"
+  },
+  {
+   "id": "component:zk-migration-integration-tests",
+   "type": "Component",
+   "name": "ZKMigrationIntegrationTests",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-16841"
+   ],
+   "proposed": false,
+   "first_seen": "2024-05-25",
+   "last_seen": "2024-05-25"
   },
   {
    "id": "component:zkmigrationclient",
@@ -5403,6 +5971,35 @@
    "last_seen": "2021-05-08"
   },
   {
+   "id": "dependency:scala-collection-compat",
+   "type": "External Dependency",
+   "name": "scala-collection-compat",
+   "aliases": [
+    "scalaCollectionCompact"
+   ],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14988"
+   ],
+   "proposed": false,
+   "first_seen": "2023-05-11",
+   "last_seen": "2023-05-11"
+  },
+  {
+   "id": "dependency:snappy-java",
+   "type": "External Dependency",
+   "name": "snappy-java",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15044",
+    "KAFKA-15096"
+   ],
+   "proposed": false,
+   "first_seen": "2023-05-31",
+   "last_seen": "2023-06-16"
+  },
+  {
    "id": "dependency:spotbugs",
    "type": "External Dependency",
    "name": "SpotBugs",
@@ -5489,6 +6086,7 @@
     "KAFKA-14546",
     "KAFKA-14982",
     "KAFKA-15187",
+    "KAFKA-15188",
     "KAFKA-15291",
     "KAFKA-15298",
     "KAFKA-15373",
@@ -5565,6 +6163,7 @@
     "KAFKA-14187",
     "KAFKA-14319",
     "KAFKA-14646",
+    "KAFKA-15289",
     "KAFKA-16180",
     "KAFKA-17216",
     "KAFKA-17788",
@@ -5668,6 +6267,7 @@
     "KAFKA-17784",
     "KAFKA-17994",
     "KAFKA-17996",
+    "KAFKA-18274",
     "KAFKA-18963",
     "KAFKA-19131",
     "KAFKA-19138",
@@ -5744,6 +6344,7 @@
     "KAFKA-14360",
     "KAFKA-14439",
     "KAFKA-14599",
+    "KAFKA-15769",
     "KAFKA-16358",
     "KAFKA-16847",
     "KAFKA-16848",
@@ -5908,9 +6509,11 @@
     "KAFKA-13094",
     "KAFKA-13096",
     "KAFKA-13099",
+    "KAFKA-13106",
     "KAFKA-13111",
     "KAFKA-13112",
     "KAFKA-13114",
+    "KAFKA-13184",
     "KAFKA-13185",
     "KAFKA-13191",
     "KAFKA-13193",
@@ -5996,7 +6599,6 @@
     "KAFKA-15592",
     "KAFKA-15595",
     "KAFKA-15767",
-    "KAFKA-15769",
     "KAFKA-15771",
     "KAFKA-15823",
     "KAFKA-16017",
@@ -6014,6 +6616,7 @@
     "KAFKA-17788",
     "KAFKA-18069",
     "KAFKA-18602",
+    "KAFKA-18769",
     "KAFKA-18972",
     "KAFKA-19246",
     "KAFKA-19267",
@@ -6279,6 +6882,19 @@
    "last_seen": "2023-11-14"
   },
   {
+   "id": "initiative:config-defaults-4-0",
+   "type": "Initiative",
+   "name": "4.0 Config Defaults & Constraints Change",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-16368"
+   ],
+   "proposed": false,
+   "first_seen": "2024-03-13",
+   "last_seen": "2024-03-13"
+  },
+  {
    "id": "initiative:consolidate-window-types",
    "type": "Initiative",
    "name": "Consolidate TimeWindow/SessionWindow/SlidingWindow",
@@ -6350,16 +6966,13 @@
    "id": "initiative:kip-1030",
    "type": "Initiative",
    "name": "KIP-1030: Change constraints and default values for various configurations",
-   "aliases": [
-    "4.0 Config Defaults & Constraints Change"
-   ],
+   "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-16368",
     "KAFKA-20107"
    ],
    "proposed": false,
-   "first_seen": "2024-03-13",
+   "first_seen": "2026-01-30",
    "last_seen": "2026-01-30"
   },
   {
@@ -6695,25 +7308,12 @@
    "type": "Initiative",
    "name": "KIP-405",
    "aliases": [
-    "Tiered Storage",
     "Tiered storage remote log metadata"
    ],
    "attributes": {},
    "evidence": [
     "KAFKA-14642",
     "KAFKA-14643",
-    "KAFKA-15290",
-    "KAFKA-15293",
-    "KAFKA-15294",
-    "KAFKA-15295",
-    "KAFKA-15298",
-    "KAFKA-15376",
-    "KAFKA-15477",
-    "KAFKA-15479",
-    "KAFKA-15480",
-    "KAFKA-15481",
-    "KAFKA-15772",
-    "KAFKA-15776",
     "KAFKA-19265"
    ],
    "proposed": false,
@@ -7472,6 +8072,30 @@
    "last_seen": "2022-05-04"
   },
   {
+   "id": "initiative:tiered-storage",
+   "type": "Initiative",
+   "name": "Tiered Storage",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15290",
+    "KAFKA-15293",
+    "KAFKA-15294",
+    "KAFKA-15295",
+    "KAFKA-15298",
+    "KAFKA-15376",
+    "KAFKA-15477",
+    "KAFKA-15479",
+    "KAFKA-15480",
+    "KAFKA-15481",
+    "KAFKA-15772",
+    "KAFKA-15776"
+   ],
+   "proposed": false,
+   "first_seen": "2023-08-01",
+   "last_seen": "2023-11-02"
+  },
+  {
    "id": "initiative:zk-to-kraft-migration",
    "type": "Initiative",
    "name": "ZK to KRaft Migration",
@@ -7777,6 +8401,21 @@
    "last_seen": "2024-06-25"
   },
   {
+   "id": "interface:close-options-api",
+   "type": "Interface",
+   "name": "KafkaStreams.CloseOptions",
+   "aliases": [],
+   "attributes": {
+    "kind": "api"
+   },
+   "evidence": [
+    "KAFKA-14076"
+   ],
+   "proposed": false,
+   "first_seen": "2022-07-14",
+   "last_seen": "2022-07-14"
+  },
+  {
    "id": "interface:common-errors-api",
    "type": "Interface",
    "name": "org.apache.kafka.common.errors",
@@ -7905,11 +8544,10 @@
     "kind": "api"
    },
    "evidence": [
-    "KAFKA-18267",
     "KAFKA-19249"
    ],
    "proposed": false,
-   "first_seen": "2024-12-16",
+   "first_seen": "2025-05-07",
    "last_seen": "2025-05-07"
   },
   {
@@ -7926,6 +8564,21 @@
    "proposed": false,
    "first_seen": "2025-05-07",
    "last_seen": "2025-05-07"
+  },
+  {
+   "id": "interface:consumer-close-options",
+   "type": "Interface",
+   "name": "Consumer#close(CloseOptions)",
+   "aliases": [],
+   "attributes": {
+    "kind": "api"
+   },
+   "evidence": [
+    "KAFKA-18267"
+   ],
+   "proposed": false,
+   "first_seen": "2024-12-16",
+   "last_seen": "2024-12-16"
   },
   {
    "id": "interface:consumer-commit-metrics",
@@ -8459,6 +9112,21 @@
    "last_seen": "2025-09-02"
   },
   {
+   "id": "interface:kafka-configs-cli",
+   "type": "Interface",
+   "name": "kafka-configs.sh",
+   "aliases": [],
+   "attributes": {
+    "kind": "cli"
+   },
+   "evidence": [
+    "KAFKA-20111"
+   ],
+   "proposed": false,
+   "first_seen": "2026-02-02",
+   "last_seen": "2026-02-02"
+  },
+  {
    "id": "interface:kafka-configs-sh",
    "type": "Interface",
    "name": "kafka-configs.sh",
@@ -8470,7 +9138,6 @@
    },
    "evidence": [
     "KAFKA-17583",
-    "KAFKA-20111",
     "KAFKA-20236",
     "KAFKA-20506"
    ],
@@ -9557,18 +10224,15 @@
    "id": "interface:streams-close-options",
    "type": "Interface",
    "name": "KafkaStreams#close(CloseOptions)",
-   "aliases": [
-    "KafkaStreams.CloseOptions"
-   ],
+   "aliases": [],
    "attributes": {
     "kind": "api"
    },
    "evidence": [
-    "KAFKA-14076",
     "KAFKA-16514"
    ],
    "proposed": false,
-   "first_seen": "2022-07-14",
+   "first_seen": "2024-04-11",
    "last_seen": "2024-04-11"
   },
   {
@@ -9917,6 +10581,7 @@
     "KAFKA-15483",
     "KAFKA-15592",
     "KAFKA-15597",
+    "KAFKA-15773",
     "KAFKA-15828",
     "KAFKA-15831",
     "KAFKA-16345",
@@ -9995,6 +10660,7 @@
     "KAFKA-13759",
     "KAFKA-13868",
     "KAFKA-14079",
+    "KAFKA-15098",
     "KAFKA-15375",
     "KAFKA-16015",
     "KAFKA-16108",
@@ -10065,6 +10731,7 @@
     "KAFKA-17580",
     "KAFKA-18065",
     "KAFKA-18266",
+    "KAFKA-18596",
     "KAFKA-18603",
     "KAFKA-18768",
     "KAFKA-19247",
@@ -10138,6 +10805,24 @@
    "last_seen": "2022-06-24"
   },
   {
+   "id": "release:3-6-0",
+   "type": "Release",
+   "name": "3.6.0",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15294",
+    "KAFKA-15375",
+    "KAFKA-15473",
+    "KAFKA-15481",
+    "KAFKA-15483",
+    "KAFKA-15593"
+   ],
+   "proposed": false,
+   "first_seen": "2023-08-02",
+   "last_seen": "2023-10-12"
+  },
+  {
    "id": "release:3-7-0",
    "type": "Release",
    "name": "3.7.0",
@@ -10168,32 +10853,38 @@
    "last_seen": "2024-03-11"
   },
   {
-   "id": "release:3-9-0",
+   "id": "release:3-9",
    "type": "Release",
-   "name": "3.9.0",
-   "aliases": [
-    "3.9"
-   ],
+   "name": "3.9",
+   "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-14077",
     "KAFKA-19690"
    ],
    "proposed": false,
-   "first_seen": "2022-07-14",
+   "first_seen": "2025-09-08",
    "last_seen": "2025-09-08"
   },
   {
-   "id": "release:4-0-0",
+   "id": "release:3-9-0",
    "type": "Release",
-   "name": "4.0.0",
-   "aliases": [
-    "4.0"
-   ],
+   "name": "3.9.0",
+   "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-14262",
-    "KAFKA-14542",
+    "KAFKA-14077"
+   ],
+   "proposed": false,
+   "first_seen": "2022-07-14",
+   "last_seen": "2022-07-14"
+  },
+  {
+   "id": "release:4-0",
+   "type": "Release",
+   "name": "4.0",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
     "KAFKA-14906",
     "KAFKA-15377",
     "KAFKA-15480",
@@ -10204,8 +10895,22 @@
     "KAFKA-19690"
    ],
    "proposed": false,
-   "first_seen": "2022-09-27",
+   "first_seen": "2023-04-14",
    "last_seen": "2025-09-08"
+  },
+  {
+   "id": "release:4-0-0",
+   "type": "Release",
+   "name": "4.0.0",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14262",
+    "KAFKA-14542"
+   ],
+   "proposed": false,
+   "first_seen": "2022-09-27",
+   "last_seen": "2022-12-21"
   },
   {
    "id": "release:4-1",
@@ -10236,37 +10941,57 @@
    "last_seen": "2026-02-02"
   },
   {
+   "id": "release:4-3",
+   "type": "Release",
+   "name": "4.3",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-20106"
+   ],
+   "proposed": false,
+   "first_seen": "2026-01-30",
+   "last_seen": "2026-01-30"
+  },
+  {
    "id": "release:4-3-0",
    "type": "Release",
    "name": "4.3.0",
-   "aliases": [
-    "4.3"
-   ],
+   "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-20106",
     "KAFKA-20335",
     "KAFKA-20336"
    ],
    "proposed": false,
-   "first_seen": "2026-01-30",
+   "first_seen": "2026-03-19",
    "last_seen": "2026-03-19"
+  },
+  {
+   "id": "release:5-0",
+   "type": "Release",
+   "name": "5.0",
+   "aliases": [],
+   "attributes": {},
+   "evidence": [
+    "KAFKA-18393"
+   ],
+   "proposed": false,
+   "first_seen": "2025-01-02",
+   "last_seen": "2025-01-02"
   },
   {
    "id": "release:5-0-0",
    "type": "Release",
    "name": "5.0.0",
-   "aliases": [
-    "5.0"
-   ],
+   "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-18393",
     "KAFKA-20001",
     "KAFKA-20698"
    ],
    "proposed": false,
-   "first_seen": "2025-01-02",
+   "first_seen": "2025-12-17",
    "last_seen": "2026-06-16"
   },
   {
@@ -10343,6 +11068,7 @@
     "KAFKA-17584",
     "KAFKA-18065",
     "KAFKA-18266",
+    "KAFKA-18596",
     "KAFKA-18603",
     "KAFKA-18768",
     "KAFKA-19247",
@@ -10498,212 +11224,22 @@
    "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-12157",
-    "KAFKA-12162",
-    "KAFKA-12166",
-    "KAFKA-12167",
-    "KAFKA-12461",
-    "KAFKA-12560",
-    "KAFKA-12641",
-    "KAFKA-12642",
-    "KAFKA-12646",
-    "KAFKA-12647",
-    "KAFKA-12761",
-    "KAFKA-12763",
-    "KAFKA-12889",
-    "KAFKA-12890",
-    "KAFKA-12996",
-    "KAFKA-13093",
-    "KAFKA-13097",
-    "KAFKA-13107",
-    "KAFKA-13111",
-    "KAFKA-13191",
-    "KAFKA-13193",
-    "KAFKA-13194",
-    "KAFKA-13266",
-    "KAFKA-13270",
-    "KAFKA-13272",
-    "KAFKA-13360",
-    "KAFKA-13366",
-    "KAFKA-13416",
-    "KAFKA-13417",
-    "KAFKA-13418",
-    "KAFKA-13468",
-    "KAFKA-13473",
-    "KAFKA-13474",
-    "KAFKA-13527",
-    "KAFKA-13530",
-    "KAFKA-13603",
-    "KAFKA-13672",
-    "KAFKA-13674",
-    "KAFKA-13720",
-    "KAFKA-13727",
-    "KAFKA-13753",
-    "KAFKA-13758",
-    "KAFKA-13760",
-    "KAFKA-13802",
-    "KAFKA-13804",
-    "KAFKA-13807",
-    "KAFKA-13872",
-    "KAFKA-13874",
-    "KAFKA-13935",
-    "KAFKA-14010",
-    "KAFKA-14013",
-    "KAFKA-14019",
-    "KAFKA-14074",
-    "KAFKA-14075",
-    "KAFKA-14078",
-    "KAFKA-14149",
-    "KAFKA-14150",
-    "KAFKA-14151",
-    "KAFKA-14153",
-    "KAFKA-14190",
-    "KAFKA-14267",
-    "KAFKA-14320",
-    "KAFKA-14321",
-    "KAFKA-14322",
-    "KAFKA-14363",
-    "KAFKA-14430",
-    "KAFKA-14439",
-    "KAFKA-14540",
-    "KAFKA-14541",
-    "KAFKA-14543",
-    "KAFKA-14544",
-    "KAFKA-14549",
-    "KAFKA-14550",
-    "KAFKA-14602",
-    "KAFKA-14603",
-    "KAFKA-14640",
-    "KAFKA-14737",
-    "KAFKA-14743",
+    "KAFKA-13803",
     "KAFKA-14744",
-    "KAFKA-14845",
-    "KAFKA-14849",
-    "KAFKA-14850",
-    "KAFKA-14852",
-    "KAFKA-14854",
-    "KAFKA-14899",
-    "KAFKA-14907",
-    "KAFKA-14987",
-    "KAFKA-15037",
-    "KAFKA-15046",
-    "KAFKA-15481",
-    "KAFKA-15599",
-    "KAFKA-15771",
-    "KAFKA-15823",
-    "KAFKA-15830",
-    "KAFKA-16016",
-    "KAFKA-16020",
     "KAFKA-16105",
     "KAFKA-16106",
     "KAFKA-16114",
-    "KAFKA-16181",
     "KAFKA-16183",
-    "KAFKA-16340",
-    "KAFKA-16341",
-    "KAFKA-16342",
     "KAFKA-16346",
     "KAFKA-16347",
     "KAFKA-16365",
-    "KAFKA-16367",
-    "KAFKA-16677",
     "KAFKA-16684",
     "KAFKA-16686",
-    "KAFKA-16843",
-    "KAFKA-16845",
-    "KAFKA-17104",
-    "KAFKA-17436",
-    "KAFKA-17444",
-    "KAFKA-17577",
-    "KAFKA-17579",
-    "KAFKA-17584",
-    "KAFKA-17585",
-    "KAFKA-17783",
-    "KAFKA-17995",
-    "KAFKA-17997",
-    "KAFKA-18265",
-    "KAFKA-18268",
-    "KAFKA-18269",
-    "KAFKA-18272",
-    "KAFKA-18273",
-    "KAFKA-18390",
-    "KAFKA-18392",
-    "KAFKA-18597",
-    "KAFKA-18604",
-    "KAFKA-18605",
-    "KAFKA-18770",
-    "KAFKA-19131",
-    "KAFKA-19132",
-    "KAFKA-19133",
-    "KAFKA-19134",
-    "KAFKA-19137",
-    "KAFKA-19246",
-    "KAFKA-19253",
-    "KAFKA-19264",
-    "KAFKA-19265",
-    "KAFKA-19266",
-    "KAFKA-19268",
-    "KAFKA-19270",
-    "KAFKA-19273",
-    "KAFKA-19274",
-    "KAFKA-19425",
-    "KAFKA-19426",
-    "KAFKA-19431",
-    "KAFKA-19433",
-    "KAFKA-19468",
-    "KAFKA-19470",
-    "KAFKA-19474",
-    "KAFKA-19476",
-    "KAFKA-19586",
-    "KAFKA-19684",
-    "KAFKA-19693",
-    "KAFKA-19795",
-    "KAFKA-19796",
-    "KAFKA-19797",
-    "KAFKA-19798",
-    "KAFKA-19800",
-    "KAFKA-19821",
-    "KAFKA-19823",
-    "KAFKA-19937",
-    "KAFKA-19940",
-    "KAFKA-19996",
-    "KAFKA-19997",
-    "KAFKA-19999",
-    "KAFKA-20001",
-    "KAFKA-20107",
-    "KAFKA-20148",
-    "KAFKA-20152",
-    "KAFKA-20233",
-    "KAFKA-20234",
-    "KAFKA-20235",
-    "KAFKA-20240",
-    "KAFKA-20241",
-    "KAFKA-20243",
-    "KAFKA-20330",
-    "KAFKA-20451",
-    "KAFKA-20452",
-    "KAFKA-20453",
-    "KAFKA-20505",
-    "KAFKA-20639",
-    "KAFKA-20640",
-    "KAFKA-20641",
-    "KAFKA-20645",
-    "KAFKA-20648",
-    "KAFKA-20696",
-    "KAFKA-20791",
-    "KAFKA-20793",
-    "KAFKA-20795",
-    "KAFKA-20799",
-    "KAFKA-20898",
-    "KAFKA-20901",
-    "KAFKA-21055",
-    "KAFKA-21057",
-    "KAFKA-21150",
-    "KAFKA-21151"
+    "KAFKA-17104"
    ],
    "proposed": false,
-   "first_seen": "2021-01-07",
-   "last_seen": "2026-09-23"
+   "first_seen": "2022-04-06",
+   "last_seen": "2024-07-09"
   },
   {
    "id": "system:build-ci",
@@ -10712,64 +11248,36 @@
    "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-12764",
-    "KAFKA-12767",
-    "KAFKA-12884",
-    "KAFKA-12892",
-    "KAFKA-13001",
-    "KAFKA-13116",
-    "KAFKA-13186",
-    "KAFKA-13273",
-    "KAFKA-13274",
-    "KAFKA-13671",
-    "KAFKA-13724",
-    "KAFKA-13726",
-    "KAFKA-13805",
-    "KAFKA-13938",
-    "KAFKA-13941",
-    "KAFKA-13942",
-    "KAFKA-13943",
+    "KAFKA-14900",
+    "KAFKA-14901",
+    "KAFKA-14904",
+    "KAFKA-14905",
+    "KAFKA-14908",
+    "KAFKA-14983",
+    "KAFKA-14984",
+    "KAFKA-14985",
+    "KAFKA-14988",
+    "KAFKA-15099",
+    "KAFKA-15101",
+    "KAFKA-15103",
+    "KAFKA-15104",
+    "KAFKA-15105",
+    "KAFKA-15292",
+    "KAFKA-15378",
+    "KAFKA-15474",
+    "KAFKA-15476",
+    "KAFKA-15589",
+    "KAFKA-15593",
+    "KAFKA-15594",
+    "KAFKA-15770",
+    "KAFKA-15772",
     "KAFKA-15829",
     "KAFKA-16349",
-    "KAFKA-16678",
-    "KAFKA-16679",
-    "KAFKA-16680",
-    "KAFKA-16681",
-    "KAFKA-16682",
-    "KAFKA-16683",
-    "KAFKA-17214",
-    "KAFKA-17575",
-    "KAFKA-17786",
-    "KAFKA-17791",
-    "KAFKA-18271",
-    "KAFKA-18391",
-    "KAFKA-18396",
-    "KAFKA-18772",
-    "KAFKA-18773",
-    "KAFKA-18965",
-    "KAFKA-18967",
-    "KAFKA-18968",
-    "KAFKA-18970",
-    "KAFKA-18973",
-    "KAFKA-19252",
-    "KAFKA-19466",
-    "KAFKA-19580",
-    "KAFKA-19581",
-    "KAFKA-19664",
-    "KAFKA-19686",
-    "KAFKA-20105",
-    "KAFKA-20146",
-    "KAFKA-20147",
-    "KAFKA-20153",
-    "KAFKA-20154",
-    "KAFKA-20900",
-    "KAFKA-21056",
-    "KAFKA-21145",
-    "KAFKA-21148"
+    "KAFKA-16841"
    ],
    "proposed": false,
-   "first_seen": "2021-05-08",
-   "last_seen": "2026-09-23"
+   "first_seen": "2023-04-12",
+   "last_seen": "2024-05-25"
   },
   {
    "id": "system:clients",
@@ -10778,123 +11286,35 @@
    "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-12165",
-    "KAFKA-12351",
-    "KAFKA-12352",
-    "KAFKA-12464",
-    "KAFKA-12557",
-    "KAFKA-12567",
-    "KAFKA-12637",
-    "KAFKA-12639",
-    "KAFKA-12640",
-    "KAFKA-12644",
-    "KAFKA-12759",
-    "KAFKA-12762",
-    "KAFKA-12991",
-    "KAFKA-12995",
-    "KAFKA-12999",
-    "KAFKA-13095",
-    "KAFKA-13099",
-    "KAFKA-13115",
-    "KAFKA-13184",
-    "KAFKA-13188",
-    "KAFKA-13265",
-    "KAFKA-13267",
-    "KAFKA-13359",
-    "KAFKA-13361",
-    "KAFKA-13419",
-    "KAFKA-13420",
-    "KAFKA-13421",
-    "KAFKA-13425",
-    "KAFKA-13467",
-    "KAFKA-13598",
-    "KAFKA-13668",
-    "KAFKA-13670",
-    "KAFKA-13673",
-    "KAFKA-13717",
-    "KAFKA-13757",
-    "KAFKA-13810",
-    "KAFKA-14016",
-    "KAFKA-14018",
-    "KAFKA-14080",
-    "KAFKA-14081",
-    "KAFKA-14189",
-    "KAFKA-14194",
-    "KAFKA-14196",
-    "KAFKA-14264",
-    "KAFKA-14317",
-    "KAFKA-14356",
-    "KAFKA-14357",
-    "KAFKA-14359",
-    "KAFKA-14362",
-    "KAFKA-14365",
-    "KAFKA-14366",
-    "KAFKA-14648",
-    "KAFKA-14739",
-    "KAFKA-15101",
+    "KAFKA-13271",
+    "KAFKA-14848",
+    "KAFKA-14849",
     "KAFKA-15106",
+    "KAFKA-15178",
+    "KAFKA-15180",
     "KAFKA-15184",
+    "KAFKA-15185",
+    "KAFKA-15186",
     "KAFKA-15188",
-    "KAFKA-15373",
     "KAFKA-15475",
-    "KAFKA-15478",
-    "KAFKA-15598",
+    "KAFKA-15592",
     "KAFKA-15767",
+    "KAFKA-15771",
+    "KAFKA-15773",
+    "KAFKA-15775",
     "KAFKA-15824",
-    "KAFKA-15828",
     "KAFKA-15832",
     "KAFKA-15833",
-    "KAFKA-16021",
-    "KAFKA-16109",
-    "KAFKA-16110",
-    "KAFKA-16111",
     "KAFKA-16176",
     "KAFKA-16182",
     "KAFKA-16361",
-    "KAFKA-16840",
     "KAFKA-17040",
     "KAFKA-17043",
-    "KAFKA-17046",
-    "KAFKA-17106",
-    "KAFKA-17110",
-    "KAFKA-17213",
-    "KAFKA-17217",
-    "KAFKA-17223",
-    "KAFKA-17439",
-    "KAFKA-17578",
-    "KAFKA-17581",
-    "KAFKA-17582",
-    "KAFKA-17782",
-    "KAFKA-17989",
-    "KAFKA-17990",
-    "KAFKA-17993",
-    "KAFKA-18071",
-    "KAFKA-18267",
-    "KAFKA-18767",
-    "KAFKA-18769",
-    "KAFKA-18963",
-    "KAFKA-18969",
-    "KAFKA-19249",
-    "KAFKA-19251",
-    "KAFKA-19272",
-    "KAFKA-19659",
-    "KAFKA-19804",
-    "KAFKA-19822",
-    "KAFKA-19946",
-    "KAFKA-20114",
-    "KAFKA-20145",
-    "KAFKA-20237",
-    "KAFKA-20333",
-    "KAFKA-20455",
-    "KAFKA-20458",
-    "KAFKA-20460",
-    "KAFKA-20894",
-    "KAFKA-21050",
-    "KAFKA-21144"
+    "KAFKA-17103"
    ],
    "proposed": false,
-   "first_seen": "2021-01-08",
-   "last_seen": "2026-09-22"
+   "first_seen": "2021-09-03",
+   "last_seen": "2024-07-09"
   },
   {
    "id": "system:connect",
@@ -10904,53 +11324,28 @@
    "attributes": {},
    "evidence": [
     "KAFKA-12164",
-    "KAFKA-12343",
-    "KAFKA-12463",
-    "KAFKA-13185",
-    "KAFKA-13362",
-    "KAFKA-13469",
-    "KAFKA-13472",
-    "KAFKA-13601",
-    "KAFKA-13669",
-    "KAFKA-13719",
-    "KAFKA-13759",
-    "KAFKA-13763",
-    "KAFKA-13809",
-    "KAFKA-13878",
-    "KAFKA-14011",
-    "KAFKA-14012",
-    "KAFKA-14015",
-    "KAFKA-14017",
-    "KAFKA-14079",
-    "KAFKA-14147",
-    "KAFKA-14191",
-    "KAFKA-14645",
-    "KAFKA-14649",
-    "KAFKA-14741",
+    "KAFKA-14746",
+    "KAFKA-14855",
     "KAFKA-14902",
-    "KAFKA-14978",
-    "KAFKA-14983",
-    "KAFKA-15179",
+    "KAFKA-15041",
+    "KAFKA-15182",
+    "KAFKA-15291",
+    "KAFKA-15296",
+    "KAFKA-15377",
+    "KAFKA-15473",
+    "KAFKA-15478",
+    "KAFKA-15597",
     "KAFKA-15826",
     "KAFKA-15827",
     "KAFKA-16358",
     "KAFKA-16838",
     "KAFKA-16844",
     "KAFKA-17044",
-    "KAFKA-17111",
-    "KAFKA-17792",
-    "KAFKA-18072",
-    "KAFKA-18073",
-    "KAFKA-19685",
-    "KAFKA-20113",
-    "KAFKA-20450",
-    "KAFKA-20644",
-    "KAFKA-20700",
-    "KAFKA-20797"
+    "KAFKA-17111"
    ],
    "proposed": false,
    "first_seen": "2021-01-08",
-   "last_seen": "2026-07-11"
+   "last_seen": "2024-07-10"
   },
   {
    "id": "system:controller",
@@ -10959,78 +11354,22 @@
    "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-12158",
-    "KAFKA-12163",
-    "KAFKA-12348",
-    "KAFKA-12466",
-    "KAFKA-12467",
-    "KAFKA-12997",
-    "KAFKA-12998",
-    "KAFKA-13098",
-    "KAFKA-13357",
-    "KAFKA-13424",
     "KAFKA-13470",
-    "KAFKA-13471",
-    "KAFKA-13528",
-    "KAFKA-13667",
-    "KAFKA-13755",
-    "KAFKA-13812",
-    "KAFKA-13869",
-    "KAFKA-13871",
-    "KAFKA-13940",
-    "KAFKA-13944",
-    "KAFKA-14073",
-    "KAFKA-14077",
-    "KAFKA-14144",
-    "KAFKA-14145",
-    "KAFKA-14152",
-    "KAFKA-14154",
-    "KAFKA-14195",
-    "KAFKA-14197",
-    "KAFKA-14271",
-    "KAFKA-14313",
-    "KAFKA-14315",
-    "KAFKA-14316",
-    "KAFKA-14323",
-    "KAFKA-14358",
-    "KAFKA-14436",
-    "KAFKA-14437",
-    "KAFKA-14547",
-    "KAFKA-14550",
-    "KAFKA-14601",
-    "KAFKA-14644",
     "KAFKA-14846",
-    "KAFKA-15039",
-    "KAFKA-15183",
+    "KAFKA-15043",
+    "KAFKA-15098",
     "KAFKA-15374",
+    "KAFKA-15381",
+    "KAFKA-15766",
+    "KAFKA-15823",
     "KAFKA-15825",
-    "KAFKA-16516",
-    "KAFKA-16517",
-    "KAFKA-16519",
-    "KAFKA-16839",
-    "KAFKA-17045",
-    "KAFKA-17576",
-    "KAFKA-17788",
-    "KAFKA-17988",
-    "KAFKA-17996",
-    "KAFKA-18274",
-    "KAFKA-18602",
-    "KAFKA-18771",
-    "KAFKA-19130",
-    "KAFKA-19138",
-    "KAFKA-19269",
-    "KAFKA-19467",
-    "KAFKA-19587",
-    "KAFKA-19687",
-    "KAFKA-19692",
-    "KAFKA-19830",
-    "KAFKA-19998",
-    "KAFKA-20897",
-    "KAFKA-21142"
+    "KAFKA-16173",
+    "KAFKA-16515",
+    "KAFKA-16516"
    ],
    "proposed": false,
-   "first_seen": "2021-01-07",
-   "last_seen": "2026-09-22"
+   "first_seen": "2021-11-22",
+   "last_seen": "2024-04-11"
   },
   {
    "id": "system:documentation",
@@ -11039,31 +11378,15 @@
    "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-12160",
-    "KAFKA-12993",
-    "KAFKA-13520",
-    "KAFKA-13868",
-    "KAFKA-14188",
-    "KAFKA-14360",
+    "KAFKA-15042",
+    "KAFKA-15293",
+    "KAFKA-15483",
     "KAFKA-16847",
-    "KAFKA-16848",
-    "KAFKA-17785",
-    "KAFKA-18074",
-    "KAFKA-20004",
-    "KAFKA-20110",
-    "KAFKA-20149",
-    "KAFKA-20150",
-    "KAFKA-20151",
-    "KAFKA-20238",
-    "KAFKA-20239",
-    "KAFKA-20242",
-    "KAFKA-20331",
-    "KAFKA-20335",
-    "KAFKA-20336"
+    "KAFKA-16848"
    ],
    "proposed": false,
-   "first_seen": "2021-01-08",
-   "last_seen": "2026-03-19"
+   "first_seen": "2023-05-31",
+   "last_seen": "2024-05-28"
   },
   {
    "id": "system:mirrormaker",
@@ -11072,35 +11395,21 @@
    "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-12350",
-    "KAFKA-12558",
-    "KAFKA-12563",
-    "KAFKA-12768",
-    "KAFKA-13097",
-    "KAFKA-13358",
-    "KAFKA-13465",
-    "KAFKA-13529",
-    "KAFKA-13606",
-    "KAFKA-13808",
-    "KAFKA-13876",
-    "KAFKA-14072",
-    "KAFKA-14082",
-    "KAFKA-14262",
-    "KAFKA-14266",
-    "KAFKA-14314",
-    "KAFKA-14361",
-    "KAFKA-14545",
-    "KAFKA-14599",
-    "KAFKA-14647",
-    "KAFKA-14740",
+    "KAFKA-14745",
+    "KAFKA-14898",
+    "KAFKA-14903",
+    "KAFKA-14905",
+    "KAFKA-14980",
+    "KAFKA-15102",
+    "KAFKA-15292",
+    "KAFKA-15372",
     "KAFKA-16344",
     "KAFKA-16364",
-    "KAFKA-19794",
-    "KAFKA-20643"
+    "KAFKA-17220"
    ],
    "proposed": false,
-   "first_seen": "2021-02-20",
-   "last_seen": "2026-05-30"
+   "first_seen": "2023-02-23",
+   "last_seen": "2024-07-30"
   },
   {
    "id": "system:security",
@@ -11109,30 +11418,13 @@
    "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-12765",
-    "KAFKA-12769",
-    "KAFKA-13363",
-    "KAFKA-13422",
-    "KAFKA-13464",
-    "KAFKA-13607",
-    "KAFKA-13725",
-    "KAFKA-13937",
-    "KAFKA-14265",
-    "KAFKA-14435",
-    "KAFKA-14604",
     "KAFKA-14738",
     "KAFKA-16175",
-    "KAFKA-16345",
-    "KAFKA-18064",
-    "KAFKA-18270",
-    "KAFKA-18766",
-    "KAFKA-20109",
-    "KAFKA-20800",
-    "KAFKA-21143"
+    "KAFKA-16345"
    ],
    "proposed": false,
-   "first_seen": "2021-05-08",
-   "last_seen": "2026-09-22"
+   "first_seen": "2023-02-21",
+   "last_seen": "2024-03-05"
   },
   {
    "id": "system:streams",
@@ -11141,135 +11433,32 @@
    "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-12344",
-    "KAFKA-12346",
-    "KAFKA-12347",
-    "KAFKA-12462",
-    "KAFKA-12559",
     "KAFKA-12562",
-    "KAFKA-12565",
-    "KAFKA-12766",
-    "KAFKA-12883",
-    "KAFKA-12887",
-    "KAFKA-12994",
-    "KAFKA-13094",
-    "KAFKA-13096",
-    "KAFKA-13264",
-    "KAFKA-13269",
-    "KAFKA-13356",
-    "KAFKA-13423",
-    "KAFKA-13521",
-    "KAFKA-13522",
-    "KAFKA-13523",
-    "KAFKA-13524",
-    "KAFKA-13525",
-    "KAFKA-13526",
-    "KAFKA-13599",
-    "KAFKA-13600",
-    "KAFKA-13602",
-    "KAFKA-13605",
-    "KAFKA-13676",
-    "KAFKA-13677",
-    "KAFKA-13721",
-    "KAFKA-13722",
-    "KAFKA-13811",
-    "KAFKA-13870",
-    "KAFKA-13873",
-    "KAFKA-13877",
-    "KAFKA-13934",
-    "KAFKA-13936",
-    "KAFKA-13939",
-    "KAFKA-14014",
-    "KAFKA-14192",
-    "KAFKA-14268",
-    "KAFKA-14270",
-    "KAFKA-14318",
-    "KAFKA-14364",
-    "KAFKA-14431",
-    "KAFKA-14432",
-    "KAFKA-14440",
-    "KAFKA-14548",
-    "KAFKA-14597",
-    "KAFKA-14641",
-    "KAFKA-14646",
-    "KAFKA-14650",
+    "KAFKA-14747",
     "KAFKA-14847",
+    "KAFKA-14981",
+    "KAFKA-15045",
+    "KAFKA-15297",
+    "KAFKA-15299",
+    "KAFKA-15378",
+    "KAFKA-15379",
+    "KAFKA-15595",
     "KAFKA-15768",
+    "KAFKA-15770",
+    "KAFKA-15774",
     "KAFKA-16017",
     "KAFKA-16018",
     "KAFKA-16025",
     "KAFKA-16339",
-    "KAFKA-16343",
     "KAFKA-16362",
     "KAFKA-16366",
     "KAFKA-17112",
     "KAFKA-17113",
-    "KAFKA-17215",
-    "KAFKA-17445",
-    "KAFKA-17446",
-    "KAFKA-17789",
-    "KAFKA-17994",
-    "KAFKA-18067",
-    "KAFKA-18069",
-    "KAFKA-18765",
-    "KAFKA-18972",
-    "KAFKA-19256",
-    "KAFKA-19271",
-    "KAFKA-19430",
-    "KAFKA-19434",
-    "KAFKA-19660",
-    "KAFKA-19666",
-    "KAFKA-19668",
-    "KAFKA-19683",
-    "KAFKA-19691",
-    "KAFKA-19803",
-    "KAFKA-19828",
-    "KAFKA-19829",
-    "KAFKA-19831",
-    "KAFKA-19939",
-    "KAFKA-19942",
-    "KAFKA-19994",
-    "KAFKA-20326",
-    "KAFKA-20327",
-    "KAFKA-20328",
-    "KAFKA-20329",
-    "KAFKA-20334",
-    "KAFKA-20454",
-    "KAFKA-20456",
-    "KAFKA-20457",
-    "KAFKA-20496",
-    "KAFKA-20497",
-    "KAFKA-20498",
-    "KAFKA-20499",
-    "KAFKA-20500",
-    "KAFKA-20501",
-    "KAFKA-20502",
-    "KAFKA-20503",
-    "KAFKA-20504",
-    "KAFKA-20649",
-    "KAFKA-20697",
-    "KAFKA-20699",
-    "KAFKA-20701",
-    "KAFKA-20702",
-    "KAFKA-20703",
-    "KAFKA-20704",
-    "KAFKA-20705",
-    "KAFKA-20792",
-    "KAFKA-20796",
-    "KAFKA-20798",
-    "KAFKA-20801",
-    "KAFKA-20893",
-    "KAFKA-20896",
-    "KAFKA-20899",
-    "KAFKA-20902",
-    "KAFKA-20903",
-    "KAFKA-21053",
-    "KAFKA-21054",
-    "KAFKA-21149"
+    "KAFKA-17215"
    ],
    "proposed": false,
-   "first_seen": "2021-02-18",
-   "last_seen": "2026-09-23"
+   "first_seen": "2021-03-26",
+   "last_seen": "2024-07-29"
   },
   {
    "id": "system:tooling",
@@ -11278,49 +11467,21 @@
    "aliases": [],
    "attributes": {},
    "evidence": [
-    "KAFKA-12159",
-    "KAFKA-12885",
-    "KAFKA-12888",
-    "KAFKA-13106",
-    "KAFKA-13108",
     "KAFKA-13466",
-    "KAFKA-13675",
-    "KAFKA-13718",
-    "KAFKA-13761",
-    "KAFKA-13875",
-    "KAFKA-14146",
-    "KAFKA-14148",
-    "KAFKA-14187",
-    "KAFKA-14319",
-    "KAFKA-14547",
-    "KAFKA-14594",
-    "KAFKA-14595",
-    "KAFKA-14596",
-    "KAFKA-14851",
+    "KAFKA-14982",
+    "KAFKA-15104",
     "KAFKA-15371",
     "KAFKA-16015",
+    "KAFKA-16174",
     "KAFKA-16348",
     "KAFKA-16363",
     "KAFKA-16518",
-    "KAFKA-17218",
-    "KAFKA-17993",
-    "KAFKA-17996",
-    "KAFKA-18070",
-    "KAFKA-18774",
-    "KAFKA-18775",
-    "KAFKA-19582",
-    "KAFKA-19583",
-    "KAFKA-19662",
-    "KAFKA-19663",
-    "KAFKA-19941",
-    "KAFKA-20642",
-    "KAFKA-20646",
-    "KAFKA-20647",
-    "KAFKA-20695"
+    "KAFKA-16521",
+    "KAFKA-17218"
    ],
    "proposed": false,
-   "first_seen": "2021-01-07",
-   "last_seen": "2026-06-15"
+   "first_seen": "2021-11-19",
+   "last_seen": "2024-07-30"
   }
  ],
  "relationships": [
@@ -12584,25 +12745,7 @@
   {
    "subject": "initiative:kip-405",
    "predicate": "CHANGES",
-   "object": "component:remote-log-manager",
-   "attributes": {
-    "action": "modifies"
-   },
-   "evidence": [
-    "KAFKA-15038",
-    "KAFKA-15040",
-    "KAFKA-15047",
-    "KAFKA-15376",
-    "KAFKA-15477",
-    "KAFKA-15479",
-    "KAFKA-15480"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "initiative:kip-405",
-   "predicate": "CHANGES",
-   "object": "component:remote-log-metadata-manager",
+   "object": "component:topic-based-rlmm",
    "attributes": {
     "action": "introduces"
    },
@@ -12676,6 +12819,18 @@
   {
    "subject": "initiative:kip-500",
    "predicate": "CHANGES",
+   "object": "component:kraft",
+   "attributes": {
+    "action": "modifies"
+   },
+   "evidence": [
+    "KAFKA-13110"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "subject": "initiative:kip-500",
+   "predicate": "CHANGES",
    "object": "component:kraft-controller",
    "attributes": {
     "action": "modifies"
@@ -12689,14 +12844,14 @@
   {
    "subject": "initiative:kip-500",
    "predicate": "CHANGES",
-   "object": "component:kraft-quorum",
+   "object": "component:metadata-module",
    "attributes": {
     "action": "modifies"
    },
    "evidence": [
-    "KAFKA-13110"
+    "KAFKA-12348"
    ],
-   "confidence": "medium"
+   "confidence": "low"
   },
   {
    "subject": "initiative:kip-500",
@@ -12741,7 +12896,7 @@
   {
    "subject": "initiative:kip-516",
    "predicate": "CHANGES",
-   "object": "component:kraft-controller",
+   "object": "component:quorum-controller",
    "attributes": {
     "action": "modifies"
    },
@@ -12874,7 +13029,7 @@
   {
    "subject": "initiative:kip-731",
    "predicate": "CHANGES",
-   "object": "component:connect-runtime",
+   "object": "component:connect-worker",
    "attributes": {
     "action": "introduces"
    },
@@ -12958,7 +13113,7 @@
   {
    "subject": "initiative:kip-812",
    "predicate": "CHANGES",
-   "object": "interface:streams-close-options",
+   "object": "interface:close-options-api",
    "attributes": {
     "action": "introduces"
    },
@@ -13018,6 +13173,18 @@
   {
    "subject": "initiative:kip-848",
    "predicate": "CHANGES",
+   "object": "component:async-kafka-consumer",
+   "attributes": {
+    "action": "modifies"
+   },
+   "evidence": [
+    "KAFKA-14438"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "initiative:kip-848",
+   "predicate": "CHANGES",
    "object": "component:consumer",
    "attributes": {
     "action": "modifies"
@@ -13032,7 +13199,7 @@
   {
    "subject": "initiative:kip-848",
    "predicate": "CHANGES",
-   "object": "component:kafka-consumer",
+   "object": "component:kafkaconsumer",
    "attributes": {
     "action": "modifies"
    },
@@ -13062,7 +13229,6 @@
     "action": "modifies"
    },
    "evidence": [
-    "KAFKA-14438",
     "KAFKA-17439",
     "KAFKA-17581"
    ],
@@ -13095,6 +13261,19 @@
   {
    "subject": "initiative:kip-853",
    "predicate": "CHANGES",
+   "object": "component:kafka-metadata-quorum-cli",
+   "attributes": {
+    "action": "modifies"
+   },
+   "evidence": [
+    "KAFKA-16521",
+    "KAFKA-16523"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "initiative:kip-853",
+   "predicate": "CHANGES",
    "object": "component:kafka-storage-tool",
    "attributes": {
     "action": "modifies"
@@ -13114,19 +13293,6 @@
    },
    "evidence": [
     "KAFKA-14077"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "initiative:kip-853",
-   "predicate": "CHANGES",
-   "object": "component:metadata-quorum-command",
-   "attributes": {
-    "action": "modifies"
-   },
-   "evidence": [
-    "KAFKA-16521",
-    "KAFKA-16523"
    ],
    "confidence": "high"
   },
@@ -13229,7 +13395,7 @@
   {
    "subject": "initiative:kip-909",
    "predicate": "CHANGES",
-   "object": "component:connect-runtime",
+   "object": "component:connect-worker",
    "attributes": {
     "action": "modifies"
    },
@@ -13241,7 +13407,7 @@
   {
    "subject": "initiative:kip-918",
    "predicate": "CHANGES",
-   "object": "component:mirror-source-connector",
+   "object": "component:mirrorsourceconnector",
    "attributes": {
     "action": "introduces"
    },
@@ -13337,7 +13503,7 @@
   {
    "subject": "initiative:kip-955",
    "predicate": "CHANGES",
-   "object": "component:foreign-key-join",
+   "object": "component:fk-join",
    "attributes": {
     "action": "introduces"
    },
@@ -13409,7 +13575,7 @@
   {
    "subject": "initiative:mm2-observability-metrics",
    "predicate": "CHANGES",
-   "object": "component:mirrormaker-2",
+   "object": "component:mirror-maker-2",
    "attributes": {
     "action": "modifies"
    },
@@ -13443,6 +13609,24 @@
    "confidence": "medium"
   },
   {
+   "subject": "initiative:tiered-storage",
+   "predicate": "CHANGES",
+   "object": "component:remotelogmanager",
+   "attributes": {
+    "action": "modifies"
+   },
+   "evidence": [
+    "KAFKA-15038",
+    "KAFKA-15040",
+    "KAFKA-15047",
+    "KAFKA-15376",
+    "KAFKA-15477",
+    "KAFKA-15479",
+    "KAFKA-15480"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "initiative:zk-to-kraft-migration",
    "predicate": "CHANGES",
    "object": "component:controller-node-provider",
@@ -13462,7 +13646,14 @@
     "action": "removes"
    },
    "evidence": [
-    "KAFKA-18598"
+    "KAFKA-17787",
+    "KAFKA-17788",
+    "KAFKA-17790",
+    "KAFKA-17987",
+    "KAFKA-18595",
+    "KAFKA-18598",
+    "KAFKA-18599",
+    "KAFKA-18600"
    ],
    "confidence": "high"
   },
@@ -13628,14 +13819,14 @@
    "confidence": "medium"
   },
   {
-   "subject": "component:config-command",
+   "subject": "component:consumer",
    "predicate": "DELIVERED_IN",
-   "object": "release:4-2",
+   "object": "release:3-7-1",
    "attributes": {},
    "evidence": [
-    "KAFKA-20111"
+    "KAFKA-16359"
    ],
-   "confidence": "high"
+   "confidence": "medium"
   },
   {
    "subject": "component:consumer",
@@ -13650,7 +13841,7 @@
   {
    "subject": "component:consumer",
    "predicate": "DELIVERED_IN",
-   "object": "release:4-3-0",
+   "object": "release:4-3",
    "attributes": {},
    "evidence": [
     "KAFKA-20106"
@@ -13658,17 +13849,47 @@
    "confidence": "high"
   },
   {
-   "subject": "component:kafka-clients-build",
+   "subject": "component:kafka-configs-cli",
    "predicate": "DELIVERED_IN",
-   "object": "release:3-7-1",
+   "object": "release:4-2",
    "attributes": {},
    "evidence": [
-    "KAFKA-16359"
+    "KAFKA-20111"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:kafka-producer",
+   "predicate": "DELIVERED_IN",
+   "object": "release:3-3-0",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14020"
    ],
    "confidence": "medium"
   },
   {
-   "subject": "component:log-manager",
+   "subject": "component:kafkaapis",
+   "predicate": "DELIVERED_IN",
+   "object": "release:3-6-0",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15593"
+   ],
+   "confidence": "low"
+  },
+  {
+   "subject": "component:kafkaconsumer",
+   "predicate": "DELIVERED_IN",
+   "object": "release:3-7-0",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15775"
+   ],
+   "confidence": "low"
+  },
+  {
+   "subject": "component:logmanager",
    "predicate": "DELIVERED_IN",
    "object": "release:3-7-0",
    "attributes": {},
@@ -13698,19 +13919,19 @@
    "confidence": "high"
   },
   {
-   "subject": "component:producer",
+   "subject": "component:requestquotatest",
    "predicate": "DELIVERED_IN",
-   "object": "release:3-3-0",
+   "object": "release:3-7-0",
    "attributes": {},
    "evidence": [
-    "KAFKA-14020"
+    "KAFKA-15289"
    ],
-   "confidence": "medium"
+   "confidence": "low"
   },
   {
    "subject": "component:transaction-manager",
    "predicate": "DELIVERED_IN",
-   "object": "release:3-9-0",
+   "object": "release:3-9",
    "attributes": {},
    "evidence": [
     "KAFKA-19690"
@@ -13720,7 +13941,7 @@
   {
    "subject": "component:transaction-manager",
    "predicate": "DELIVERED_IN",
-   "object": "release:4-0-0",
+   "object": "release:4-0",
    "attributes": {},
    "evidence": [
     "KAFKA-19690"
@@ -13738,9 +13959,9 @@
    "confidence": "high"
   },
   {
-   "subject": "initiative:kip-1030",
+   "subject": "initiative:config-defaults-4-0",
    "predicate": "DELIVERED_IN",
-   "object": "release:4-0-0",
+   "object": "release:4-0",
    "attributes": {},
    "evidence": [
     "KAFKA-16368"
@@ -13750,7 +13971,7 @@
   {
    "subject": "initiative:kip-1043",
    "predicate": "DELIVERED_IN",
-   "object": "release:5-0-0",
+   "object": "release:5-0",
    "attributes": {},
    "evidence": [
     "KAFKA-18393"
@@ -13791,7 +14012,7 @@
   {
    "subject": "initiative:kip-937",
    "predicate": "DELIVERED_IN",
-   "object": "release:4-0-0",
+   "object": "release:4-0",
    "attributes": {},
    "evidence": [
     "KAFKA-17997"
@@ -13819,6 +14040,17 @@
     "KAFKA-14542"
    ],
    "confidence": "medium"
+  },
+  {
+   "subject": "system:streams",
+   "predicate": "DELIVERED_IN",
+   "object": "release:3-6-0",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15594"
+   ],
+   "confidence": "low",
+   "schema_violation": "domain/range: System -DELIVERED_IN-> Release"
   },
   {
    "subject": "component:alter-isr-manager",
@@ -14133,6 +14365,16 @@
    "confidence": "medium"
   },
   {
+   "subject": "component:abstractcoordinator",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15474"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:abstractstickyassignor",
    "predicate": "EXHIBITS",
    "object": "failure:hang-stuck-state",
@@ -14193,16 +14435,6 @@
     "KAFKA-17993"
    ],
    "confidence": "high"
-  },
-  {
-   "subject": "component:admin-client",
-   "predicate": "EXHIBITS",
-   "object": "failure:performance-degradation",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-17041"
-   ],
-   "confidence": "medium"
   },
   {
    "subject": "component:admin-zk-client",
@@ -14288,6 +14520,26 @@
    "confidence": "high"
   },
   {
+   "subject": "component:async-consumer",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-20332"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:async-consumer",
+   "predicate": "EXHIBITS",
+   "object": "failure:performance-degradation",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-21049"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:authorizer",
    "predicate": "EXHIBITS",
    "object": "failure:flaky-test",
@@ -14323,12 +14575,6 @@
    "object": "failure:flaky-test",
    "attributes": {},
    "evidence": [
-    "KAFKA-14900",
-    "KAFKA-14904",
-    "KAFKA-14984",
-    "KAFKA-14985",
-    "KAFKA-15099",
-    "KAFKA-15589",
     "KAFKA-18770"
    ],
    "confidence": "high"
@@ -14340,6 +14586,17 @@
    "attributes": {},
    "evidence": [
     "KAFKA-16183"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:broker-topic-stats-test-utils",
+   "predicate": "EXHIBITS",
+   "object": "failure:resource-leak",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-21048",
+    "KAFKA-21146"
    ],
    "confidence": "high"
   },
@@ -14398,16 +14655,6 @@
     "KAFKA-20108"
    ],
    "confidence": "medium"
-  },
-  {
-   "subject": "component:build-tooling",
-   "predicate": "EXHIBITS",
-   "object": "failure:performance-degradation",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15476"
-   ],
-   "confidence": "high"
   },
   {
    "subject": "component:byte-array-converter",
@@ -14481,33 +14728,22 @@
    "confidence": "high"
   },
   {
+   "subject": "component:cluster-test-kit",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-19938"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:common-errors",
    "predicate": "EXHIBITS",
    "object": "failure:documentation-gap",
    "attributes": {},
    "evidence": [
     "KAFKA-12644"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:config-command",
-   "predicate": "EXHIBITS",
-   "object": "failure:compatibility-upgrade-break",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-20111"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:config-command",
-   "predicate": "EXHIBITS",
-   "object": "failure:incorrect-behavior",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-17583",
-    "KAFKA-20506"
    ],
    "confidence": "high"
   },
@@ -14564,16 +14800,6 @@
   {
    "subject": "component:connect-rest-api",
    "predicate": "EXHIBITS",
-   "object": "failure:build-ci-failure",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-14193"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:connect-rest-api",
-   "predicate": "EXHIBITS",
    "object": "failure:crash-unhandled-exception",
    "attributes": {},
    "evidence": [
@@ -14584,20 +14810,30 @@
   {
    "subject": "component:connect-rest-api",
    "predicate": "EXHIBITS",
-   "object": "failure:flaky-test",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-14598"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:connect-rest-api",
-   "predicate": "EXHIBITS",
    "object": "failure:incorrect-behavior",
    "attributes": {},
    "evidence": [
     "KAFKA-14645"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:connect-rest-api-test",
+   "predicate": "EXHIBITS",
+   "object": "failure:build-ci-failure",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14193"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:connect-rest-api-test",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14598"
    ],
    "confidence": "high"
   },
@@ -14625,34 +14861,12 @@
   {
    "subject": "component:connect-runtime",
    "predicate": "EXHIBITS",
-   "object": "failure:flaky-test",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-14742",
-    "KAFKA-14901",
-    "KAFKA-14905"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:connect-runtime",
-   "predicate": "EXHIBITS",
    "object": "failure:security-vulnerability",
    "attributes": {},
    "evidence": [
     "KAFKA-17437"
    ],
    "confidence": "high"
-  },
-  {
-   "subject": "component:connect-transformations",
-   "predicate": "EXHIBITS",
-   "object": "failure:api-usability-gap",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15597"
-   ],
-   "confidence": "medium"
   },
   {
    "subject": "component:connect-transformations",
@@ -14734,6 +14948,16 @@
    "confidence": "medium"
   },
   {
+   "subject": "component:consumer",
+   "predicate": "EXHIBITS",
+   "object": "failure:resource-leak",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-16687"
+   ],
+   "confidence": "low"
+  },
+  {
    "subject": "component:consumer-coordinator",
    "predicate": "EXHIBITS",
    "object": "failure:config-not-honored",
@@ -14750,8 +14974,7 @@
    "object": "failure:flaky-test",
    "attributes": {},
    "evidence": [
-    "KAFKA-13421",
-    "KAFKA-15474"
+    "KAFKA-13421"
    ],
    "confidence": "high"
   },
@@ -14782,16 +15005,6 @@
    "confidence": "high"
   },
   {
-   "subject": "component:consumer-coordinator",
-   "predicate": "EXHIBITS",
-   "object": "failure:performance-degradation",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15178"
-   ],
-   "confidence": "high"
-  },
-  {
    "subject": "component:consumer-rebalance-protocol",
    "predicate": "EXHIBITS",
    "object": "failure:data-loss-corruption",
@@ -14815,6 +15028,16 @@
    "confidence": "high"
   },
   {
+   "subject": "component:consumercoordinator",
+   "predicate": "EXHIBITS",
+   "object": "failure:performance-degradation",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15178"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:controller",
    "predicate": "EXHIBITS",
    "object": "failure:incorrect-behavior",
@@ -14824,16 +15047,6 @@
     "KAFKA-14195"
    ],
    "confidence": "high"
-  },
-  {
-   "subject": "component:controller",
-   "predicate": "EXHIBITS",
-   "object": "failure:performance-degradation",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15766"
-   ],
-   "confidence": "medium"
   },
   {
    "subject": "component:controller-apis",
@@ -14876,6 +15089,16 @@
    "confidence": "high"
   },
   {
+   "subject": "component:dedicated-mirror-connector",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-17221"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:dependency-management",
    "predicate": "EXHIBITS",
    "object": "failure:security-vulnerability",
@@ -14901,20 +15124,20 @@
   {
    "subject": "component:distributed-herder",
    "predicate": "EXHIBITS",
-   "object": "failure:missing-observability",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-14746"
-   ],
-   "confidence": "medium"
-  },
-  {
-   "subject": "component:distributed-herder",
-   "predicate": "EXHIBITS",
    "object": "failure:performance-degradation",
    "attributes": {},
    "evidence": [
     "KAFKA-17105"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "subject": "component:distributedherder",
+   "predicate": "EXHIBITS",
+   "object": "failure:missing-observability",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14746"
    ],
    "confidence": "medium"
   },
@@ -14997,6 +15220,16 @@
    "confidence": "high"
   },
   {
+   "subject": "component:embeddedconnectcluster",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14855"
+   ],
+   "confidence": "medium"
+  },
+  {
    "subject": "component:eos-state-manager",
    "predicate": "EXHIBITS",
    "object": "failure:data-loss-corruption",
@@ -15005,6 +15238,16 @@
     "KAFKA-14440"
    ],
    "confidence": "medium"
+  },
+  {
+   "subject": "component:exactly-once-source-integration-test",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14742"
+   ],
+   "confidence": "high"
   },
   {
    "subject": "component:examples-module",
@@ -15067,12 +15310,32 @@
    "confidence": "medium"
   },
   {
-   "subject": "component:foreign-key-join",
+   "subject": "component:fk-join",
    "predicate": "EXHIBITS",
    "object": "failure:api-usability-gap",
    "attributes": {},
    "evidence": [
     "KAFKA-15379"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "subject": "component:fk-join",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15595"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:fk-join",
+   "predicate": "EXHIBITS",
+   "object": "failure:missing-observability",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14747"
    ],
    "confidence": "medium"
   },
@@ -15095,26 +15358,6 @@
     "KAFKA-20792"
    ],
    "confidence": "high"
-  },
-  {
-   "subject": "component:foreign-key-join",
-   "predicate": "EXHIBITS",
-   "object": "failure:incorrect-behavior",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15595"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:foreign-key-join",
-   "predicate": "EXHIBITS",
-   "object": "failure:missing-observability",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-14747"
-   ],
-   "confidence": "medium"
   },
   {
    "subject": "component:global-stream-thread",
@@ -15298,16 +15541,6 @@
    "confidence": "high"
   },
   {
-   "subject": "component:iqv2",
-   "predicate": "EXHIBITS",
-   "object": "failure:flaky-test",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15770"
-   ],
-   "confidence": "high"
-  },
-  {
    "subject": "component:json-converter",
    "predicate": "EXHIBITS",
    "object": "failure:crash-unhandled-exception",
@@ -15348,24 +15581,34 @@
    "confidence": "high"
   },
   {
-   "subject": "component:kafka-consumer",
+   "subject": "component:kafka-config-tool",
    "predicate": "EXHIBITS",
-   "object": "failure:crash-unhandled-exception",
+   "object": "failure:incorrect-behavior",
    "attributes": {},
    "evidence": [
-    "KAFKA-14848"
+    "KAFKA-17583"
    ],
    "confidence": "high"
   },
   {
-   "subject": "component:kafka-consumer",
+   "subject": "component:kafka-configs-cli",
    "predicate": "EXHIBITS",
-   "object": "failure:data-loss-corruption",
+   "object": "failure:compatibility-upgrade-break",
    "attributes": {},
    "evidence": [
-    "KAFKA-15185"
+    "KAFKA-20111"
    ],
-   "confidence": "medium"
+   "confidence": "high"
+  },
+  {
+   "subject": "component:kafka-configs-cli",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-20506"
+   ],
+   "confidence": "high"
   },
   {
    "subject": "component:kafka-consumer",
@@ -15430,12 +15673,32 @@
    "confidence": "medium"
   },
   {
+   "subject": "component:kafka-metadata-quorum-cli",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-16174"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:kafka-metrics",
    "predicate": "EXHIBITS",
    "object": "failure:missing-observability",
    "attributes": {},
    "evidence": [
     "KAFKA-14081"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:kafka-producer",
+   "predicate": "EXHIBITS",
+   "object": "failure:performance-degradation",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14020"
    ],
    "confidence": "high"
   },
@@ -15504,16 +15767,6 @@
   {
    "subject": "component:kafka-streams",
    "predicate": "EXHIBITS",
-   "object": "failure:flaky-test",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-19429"
-   ],
-   "confidence": "medium"
-  },
-  {
-   "subject": "component:kafka-streams",
-   "predicate": "EXHIBITS",
    "object": "failure:incorrect-behavior",
    "attributes": {},
    "evidence": [
@@ -15573,6 +15826,48 @@
    "confidence": "high"
   },
   {
+   "subject": "component:kafkaconsumer",
+   "predicate": "EXHIBITS",
+   "object": "failure:crash-unhandled-exception",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14848"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:kafkaconsumer",
+   "predicate": "EXHIBITS",
+   "object": "failure:data-loss-corruption",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15185"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "subject": "component:kafkametadataquorum-cli",
+   "predicate": "EXHIBITS",
+   "object": "failure:api-usability-gap",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14982"
+   ],
+   "confidence": "high",
+   "schema_violation": "dangling reference"
+  },
+  {
+   "subject": "component:kafkametadataquorum-cli",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15104"
+   ],
+   "confidence": "high",
+   "schema_violation": "dangling reference"
+  },
+  {
    "subject": "component:key-value-store",
    "predicate": "EXHIBITS",
    "object": "failure:incorrect-behavior",
@@ -15583,12 +15878,21 @@
    "confidence": "medium"
   },
   {
+   "subject": "component:kraft",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-12561"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:kraft-controller",
    "predicate": "EXHIBITS",
    "object": "failure:compatibility-upgrade-break",
    "attributes": {},
    "evidence": [
-    "KAFKA-16180",
     "KAFKA-17788",
     "KAFKA-18601"
    ],
@@ -15600,8 +15904,8 @@
    "object": "failure:crash-unhandled-exception",
    "attributes": {},
    "evidence": [
-    "KAFKA-16179",
     "KAFKA-17996",
+    "KAFKA-18274",
     "KAFKA-19138"
    ],
    "confidence": "high"
@@ -15612,8 +15916,6 @@
    "object": "failure:flaky-test",
    "attributes": {},
    "evidence": [
-    "KAFKA-15103",
-    "KAFKA-16173",
     "KAFKA-17988",
     "KAFKA-18771"
    ],
@@ -15635,34 +15937,11 @@
    "object": "failure:incorrect-behavior",
    "attributes": {},
    "evidence": [
-    "KAFKA-13112",
-    "KAFKA-13114",
     "KAFKA-13528",
     "KAFKA-13667",
     "KAFKA-13944",
     "KAFKA-17788",
-    "KAFKA-18602",
-    "KAFKA-20895"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:kraft-controller",
-   "predicate": "EXHIBITS",
-   "object": "failure:missing-observability",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15183"
-   ],
-   "confidence": "medium"
-  },
-  {
-   "subject": "component:kraft-controller",
-   "predicate": "EXHIBITS",
-   "object": "failure:performance-degradation",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-13092"
+    "KAFKA-18602"
    ],
    "confidence": "high"
   },
@@ -15687,16 +15966,6 @@
    "confidence": "high"
   },
   {
-   "subject": "component:kraft-migration-driver",
-   "predicate": "EXHIBITS",
-   "object": "failure:incorrect-behavior",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15381"
-   ],
-   "confidence": "high"
-  },
-  {
    "subject": "component:kraft-migration-zk-writer",
    "predicate": "EXHIBITS",
    "object": "failure:compatibility-upgrade-break",
@@ -15713,16 +15982,6 @@
    "attributes": {},
    "evidence": [
     "KAFKA-14077"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:kraft-quorum",
-   "predicate": "EXHIBITS",
-   "object": "failure:flaky-test",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-12561"
    ],
    "confidence": "high"
   },
@@ -15774,6 +16033,27 @@
    "attributes": {},
    "evidence": [
     "KAFKA-14271"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:kraftclient",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15100",
+    "KAFKA-15591"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:kraftclustertest",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15103"
    ],
    "confidence": "high"
   },
@@ -15861,32 +16141,12 @@
   {
    "subject": "component:log-cleaner",
    "predicate": "EXHIBITS",
-   "object": "failure:crash-unhandled-exception",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15097"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:log-cleaner",
-   "predicate": "EXHIBITS",
    "object": "failure:data-loss-corruption",
    "attributes": {},
    "evidence": [
     "KAFKA-13194",
     "KAFKA-13727",
     "KAFKA-13753"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:log-cleaner",
-   "predicate": "EXHIBITS",
-   "object": "failure:flaky-test",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-21152"
    ],
    "confidence": "high"
   },
@@ -15929,6 +16189,16 @@
    "evidence": [
     "KAFKA-12889",
     "KAFKA-14322"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:log-compaction-tester",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-21152"
    ],
    "confidence": "high"
   },
@@ -15999,7 +16269,6 @@
    "attributes": {},
    "evidence": [
     "KAFKA-14074",
-    "KAFKA-15375",
     "KAFKA-16114"
    ],
    "confidence": "high"
@@ -16045,14 +16314,14 @@
    "confidence": "high"
   },
   {
-   "subject": "component:logging-subsystem",
+   "subject": "component:logcleaner",
    "predicate": "EXHIBITS",
-   "object": "failure:incorrect-behavior",
+   "object": "failure:crash-unhandled-exception",
    "attributes": {},
    "evidence": [
-    "KAFKA-15769"
+    "KAFKA-15097"
    ],
-   "confidence": "medium"
+   "confidence": "high"
   },
   {
    "subject": "component:logging-subsystem",
@@ -16061,6 +16330,16 @@
    "attributes": {},
    "evidence": [
     "KAFKA-19470"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:logmanager",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15375"
    ],
    "confidence": "high"
   },
@@ -16110,7 +16389,6 @@
    "object": "failure:api-usability-gap",
    "attributes": {},
    "evidence": [
-    "KAFKA-14982",
     "KAFKA-18775"
    ],
    "confidence": "high"
@@ -16133,17 +16411,6 @@
    "evidence": [
     "KAFKA-18070",
     "KAFKA-18774"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:metadata-quorum-command",
-   "predicate": "EXHIBITS",
-   "object": "failure:flaky-test",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15104",
-    "KAFKA-16174"
    ],
    "confidence": "high"
   },
@@ -16230,15 +16497,23 @@
    "confidence": "high"
   },
   {
+   "subject": "component:mirror-maker-2",
+   "predicate": "EXHIBITS",
+   "object": "failure:missing-observability",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-17220"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:mirror-source-connector",
    "predicate": "EXHIBITS",
    "object": "failure:config-not-honored",
    "attributes": {},
    "evidence": [
     "KAFKA-13529",
-    "KAFKA-13876",
-    "KAFKA-14898",
-    "KAFKA-14980"
+    "KAFKA-13876"
    ],
    "confidence": "high"
   },
@@ -16261,16 +16536,6 @@
     "KAFKA-13465"
    ],
    "confidence": "high"
-  },
-  {
-   "subject": "component:mirror-source-connector",
-   "predicate": "EXHIBITS",
-   "object": "failure:performance-degradation",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-14745"
-   ],
-   "confidence": "medium"
   },
   {
    "subject": "component:mirror-source-task",
@@ -16303,17 +16568,17 @@
    "confidence": "high"
   },
   {
-   "subject": "component:mirrormaker-2",
+   "subject": "component:mirrormaker-config-sync",
    "predicate": "EXHIBITS",
    "object": "failure:config-not-honored",
    "attributes": {},
    "evidence": [
-    "KAFKA-15372"
+    "KAFKA-14082"
    ],
-   "confidence": "high"
+   "confidence": "medium"
   },
   {
-   "subject": "component:mirrormaker-2",
+   "subject": "component:mirrormaker2-worker",
    "predicate": "EXHIBITS",
    "object": "failure:crash-unhandled-exception",
    "attributes": {},
@@ -16323,33 +16588,43 @@
    "confidence": "high"
   },
   {
-   "subject": "component:mirrormaker-2",
-   "predicate": "EXHIBITS",
-   "object": "failure:flaky-test",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15292",
-    "KAFKA-17221"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:mirrormaker-2",
-   "predicate": "EXHIBITS",
-   "object": "failure:missing-observability",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-17220"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:mirrormaker-config-sync",
+   "subject": "component:mirrorsourceconnector",
    "predicate": "EXHIBITS",
    "object": "failure:config-not-honored",
    "attributes": {},
    "evidence": [
-    "KAFKA-14082"
+    "KAFKA-14898",
+    "KAFKA-14980"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:mirrorsourceconnector",
+   "predicate": "EXHIBITS",
+   "object": "failure:performance-degradation",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14745"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "subject": "component:mock-client",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13000"
+   ],
+   "confidence": "low"
+  },
+  {
+   "subject": "component:mock-client",
+   "predicate": "EXHIBITS",
+   "object": "failure:performance-degradation",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-17103"
    ],
    "confidence": "medium"
   },
@@ -16425,17 +16700,7 @@
    "evidence": [
     "KAFKA-17581",
     "KAFKA-17582",
-    "KAFKA-20332"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:new-consumer",
-   "predicate": "EXHIBITS",
-   "object": "failure:performance-degradation",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-21049"
+    "KAFKA-18769"
    ],
    "confidence": "high"
   },
@@ -16466,6 +16731,16 @@
    "attributes": {},
    "evidence": [
     "KAFKA-13725"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "subject": "component:offset-validation-test",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14196"
    ],
    "confidence": "medium"
   },
@@ -16573,12 +16848,12 @@
   {
    "subject": "component:producer",
    "predicate": "EXHIBITS",
-   "object": "failure:performance-degradation",
+   "object": "failure:incorrect-behavior",
    "attributes": {},
    "evidence": [
-    "KAFKA-14020"
+    "KAFKA-13184"
    ],
-   "confidence": "high"
+   "confidence": "low"
   },
   {
    "subject": "component:producer-config",
@@ -16598,6 +16873,16 @@
    "evidence": [
     "KAFKA-13598",
     "KAFKA-13673"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:producer-id-expiration-test",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14600"
    ],
    "confidence": "high"
   },
@@ -16653,6 +16938,57 @@
    "confidence": "high"
   },
   {
+   "subject": "component:quorum-controller",
+   "predicate": "EXHIBITS",
+   "object": "failure:compatibility-upgrade-break",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-16180"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "subject": "component:quorum-controller",
+   "predicate": "EXHIBITS",
+   "object": "failure:crash-unhandled-exception",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-16179"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "subject": "component:quorum-controller",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-16173"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:quorum-controller",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13112",
+    "KAFKA-13114"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:quorum-controller",
+   "predicate": "EXHIBITS",
+   "object": "failure:performance-degradation",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13092"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:quota-api",
    "predicate": "EXHIBITS",
    "object": "failure:documentation-gap",
@@ -16673,13 +17009,12 @@
    "confidence": "low"
   },
   {
-   "subject": "component:raft-client",
+   "subject": "component:raft-quorum-controller",
    "predicate": "EXHIBITS",
    "object": "failure:incorrect-behavior",
    "attributes": {},
    "evidence": [
-    "KAFKA-15100",
-    "KAFKA-15591"
+    "KAFKA-20895"
    ],
    "confidence": "high"
   },
@@ -16746,16 +17081,6 @@
   {
    "subject": "component:remote-log-manager",
    "predicate": "EXHIBITS",
-   "object": "failure:api-usability-gap",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15776"
-   ],
-   "confidence": "medium"
-  },
-  {
-   "subject": "component:remote-log-manager",
-   "predicate": "EXHIBITS",
    "object": "failure:config-not-honored",
    "attributes": {},
    "evidence": [
@@ -16780,18 +17105,7 @@
    "object": "failure:data-loss-corruption",
    "attributes": {},
    "evidence": [
-    "KAFKA-15376",
     "KAFKA-20148"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:remote-log-manager",
-   "predicate": "EXHIBITS",
-   "object": "failure:flaky-test",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15772"
    ],
    "confidence": "high"
   },
@@ -16801,21 +17115,9 @@
    "object": "failure:hang-stuck-state",
    "attributes": {},
    "evidence": [
-    "KAFKA-15477",
     "KAFKA-16105"
    ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:remote-log-manager",
-   "predicate": "EXHIBITS",
-   "object": "failure:incorrect-behavior",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15040",
-    "KAFKA-15479"
-   ],
-   "confidence": "high"
+   "confidence": "medium"
   },
   {
    "subject": "component:remote-log-manager",
@@ -16823,7 +17125,6 @@
    "object": "failure:missing-observability",
    "attributes": {},
    "evidence": [
-    "KAFKA-15480",
     "KAFKA-16685"
    ],
    "confidence": "high"
@@ -16834,7 +17135,6 @@
    "object": "failure:resource-leak",
    "attributes": {},
    "evidence": [
-    "KAFKA-15038",
     "KAFKA-19425"
    ],
    "confidence": "high"
@@ -16852,24 +17152,12 @@
   {
    "subject": "component:remote-log-metadata-manager",
    "predicate": "EXHIBITS",
-   "object": "failure:hang-stuck-state",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15181"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:remote-log-metadata-manager",
-   "predicate": "EXHIBITS",
    "object": "failure:incorrect-behavior",
    "attributes": {},
    "evidence": [
-    "KAFKA-14642",
-    "KAFKA-14643",
     "KAFKA-19426"
    ],
-   "confidence": "high"
+   "confidence": "medium"
   },
   {
    "subject": "component:remoteindexcache",
@@ -16882,12 +17170,73 @@
    "confidence": "high"
   },
   {
-   "subject": "component:replica-fetcher-thread",
+   "subject": "component:remotelogmanager",
    "predicate": "EXHIBITS",
-   "object": "failure:flaky-test",
+   "object": "failure:api-usability-gap",
    "attributes": {},
    "evidence": [
-    "KAFKA-15105"
+    "KAFKA-15776"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "subject": "component:remotelogmanager",
+   "predicate": "EXHIBITS",
+   "object": "failure:data-loss-corruption",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15376"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "subject": "component:remotelogmanager",
+   "predicate": "EXHIBITS",
+   "object": "failure:hang-stuck-state",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15477"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:remotelogmanager",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15040",
+    "KAFKA-15479"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:remotelogmanager",
+   "predicate": "EXHIBITS",
+   "object": "failure:missing-observability",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15480"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "subject": "component:remotelogmanager",
+   "predicate": "EXHIBITS",
+   "object": "failure:resource-leak",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15038"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "subject": "component:replica-fetcher",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13754"
    ],
    "confidence": "medium"
   },
@@ -16898,9 +17247,7 @@
    "attributes": {},
    "evidence": [
     "KAFKA-12996",
-    "KAFKA-13266",
-    "KAFKA-13754",
-    "KAFKA-15590"
+    "KAFKA-13266"
    ],
    "confidence": "high"
   },
@@ -16945,6 +17292,26 @@
    "confidence": "high"
   },
   {
+   "subject": "component:replicafetcher",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15105"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "subject": "component:replicafetcher",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15590"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:replication-manager",
    "predicate": "EXHIBITS",
    "object": "failure:incorrect-behavior",
@@ -16953,6 +17320,26 @@
     "KAFKA-14078"
    ],
    "confidence": "high"
+  },
+  {
+   "subject": "component:requestmanagers",
+   "predicate": "EXHIBITS",
+   "object": "failure:api-usability-gap",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15188"
+   ],
+   "confidence": "low"
+  },
+  {
+   "subject": "component:requestquotatest",
+   "predicate": "EXHIBITS",
+   "object": "failure:compatibility-upgrade-break",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15289"
+   ],
+   "confidence": "medium"
   },
   {
    "subject": "component:rocksdb-store",
@@ -17097,6 +17484,16 @@
     "KAFKA-20460"
    ],
    "confidence": "high"
+  },
+  {
+   "subject": "component:share-consumer-test-utils",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-21051"
+   ],
+   "confidence": "medium"
   },
   {
    "subject": "component:share-group-coordinator",
@@ -17470,7 +17867,8 @@
    "attributes": {},
    "evidence": [
     "KAFKA-17445",
-    "KAFKA-17446"
+    "KAFKA-17446",
+    "KAFKA-17789"
    ],
    "confidence": "high"
   },
@@ -17510,12 +17908,12 @@
   {
    "subject": "component:streams-config",
    "predicate": "EXHIBITS",
-   "object": "failure:config-not-honored",
+   "object": "failure:compatibility-upgrade-break",
    "attributes": {},
    "evidence": [
-    "KAFKA-15774"
+    "KAFKA-17216"
    ],
-   "confidence": "high"
+   "confidence": "low"
   },
   {
    "subject": "component:streams-config-docs",
@@ -17618,6 +18016,16 @@
    "confidence": "medium"
   },
   {
+   "subject": "component:streams-smoke-test",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-19429"
+   ],
+   "confidence": "medium"
+  },
+  {
    "subject": "component:streams-system-tests",
    "predicate": "EXHIBITS",
    "object": "failure:build-ci-failure",
@@ -17625,7 +18033,6 @@
    "evidence": [
     "KAFKA-12767",
     "KAFKA-13116",
-    "KAFKA-15378",
     "KAFKA-19581"
    ],
    "confidence": "high"
@@ -17681,60 +18088,12 @@
    "confidence": "medium"
   },
   {
-   "subject": "component:test-infrastructure",
-   "predicate": "EXHIBITS",
-   "object": "failure:build-ci-failure",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-14908",
-    "KAFKA-16841"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:test-infrastructure",
-   "predicate": "EXHIBITS",
-   "object": "failure:flaky-test",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-14196",
-    "KAFKA-14263",
-    "KAFKA-14600",
-    "KAFKA-14855"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:test-infrastructure",
-   "predicate": "EXHIBITS",
-   "object": "failure:incorrect-behavior",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-13000",
-    "KAFKA-19938",
-    "KAFKA-21051"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:test-infrastructure",
-   "predicate": "EXHIBITS",
-   "object": "failure:performance-degradation",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-17103"
-   ],
-   "confidence": "medium"
-  },
-  {
-   "subject": "component:test-infrastructure",
+   "subject": "component:test-harness",
    "predicate": "EXHIBITS",
    "object": "failure:resource-leak",
    "attributes": {},
    "evidence": [
-    "KAFKA-14433",
-    "KAFKA-21048",
-    "KAFKA-21146"
+    "KAFKA-14433"
    ],
    "confidence": "high"
   },
@@ -17756,6 +18115,17 @@
    "evidence": [
     "KAFKA-19579",
     "KAFKA-19995"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:topic-based-rlmm",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14642",
+    "KAFKA-14643"
    ],
    "confidence": "high"
   },
@@ -17796,6 +18166,16 @@
    "attributes": {},
    "evidence": [
     "KAFKA-14358"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:topicbasedremotelogmetadatamanager",
+   "predicate": "EXHIBITS",
+   "object": "failure:hang-stuck-state",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15181"
    ],
    "confidence": "high"
   },
@@ -17911,6 +18291,16 @@
    "attributes": {},
    "evidence": [
     "KAFKA-17043"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:upgrade-test",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14263"
    ],
    "confidence": "high"
   },
@@ -18038,6 +18428,16 @@
    "confidence": "high"
   },
   {
+   "subject": "component:zk-migration-integration-tests",
+   "predicate": "EXHIBITS",
+   "object": "failure:build-ci-failure",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-16841"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:zkmigrationclient",
    "predicate": "EXHIBITS",
    "object": "failure:crash-unhandled-exception",
@@ -18069,6 +18469,61 @@
    "confidence": "medium"
   },
   {
+   "subject": "dependency:jetty-server",
+   "predicate": "EXHIBITS",
+   "object": "failure:security-vulnerability",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14983"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: External Dependency -EXHIBITS-> Failure Mode"
+  },
+  {
+   "subject": "dependency:jose4j",
+   "predicate": "EXHIBITS",
+   "object": "failure:security-vulnerability",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14986"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: External Dependency -EXHIBITS-> Failure Mode"
+  },
+  {
+   "subject": "dependency:scala-collection-compat",
+   "predicate": "EXHIBITS",
+   "object": "failure:security-vulnerability",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14988"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: External Dependency -EXHIBITS-> Failure Mode"
+  },
+  {
+   "subject": "dependency:zookeeper",
+   "predicate": "EXHIBITS",
+   "object": "failure:security-vulnerability",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15596"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: External Dependency -EXHIBITS-> Failure Mode"
+  },
+  {
+   "subject": "initiative:tiered-storage",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15772"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: Initiative -EXHIBITS-> Failure Mode"
+  },
+  {
    "subject": "interface:add-raft-voter-options",
    "predicate": "EXHIBITS",
    "object": "failure:documentation-gap",
@@ -18077,6 +18532,16 @@
     "KAFKA-19692"
    ],
    "confidence": "high"
+  },
+  {
+   "subject": "interface:admin-api-pagination",
+   "predicate": "EXHIBITS",
+   "object": "failure:performance-degradation",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-17041"
+   ],
+   "confidence": "medium"
   },
   {
    "subject": "interface:appinfo-metrics",
@@ -18107,6 +18572,16 @@
     "KAFKA-13192"
    ],
    "confidence": "medium"
+  },
+  {
+   "subject": "interface:close-options-api",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14076"
+   ],
+   "confidence": "high"
   },
   {
    "subject": "interface:connect-tasks-config-endpoint",
@@ -18318,6 +18793,16 @@
     "KAFKA-14430"
    ],
    "confidence": "medium"
+  },
+  {
+   "subject": "interface:kafka-consumer-groups-cli",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13106"
+   ],
+   "confidence": "low"
   },
   {
    "subject": "interface:kafka-features-cli",
@@ -18680,16 +19165,6 @@
    "confidence": "high"
   },
   {
-   "subject": "interface:streams-close-options",
-   "predicate": "EXHIBITS",
-   "object": "failure:incorrect-behavior",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-14076"
-   ],
-   "confidence": "high"
-  },
-  {
    "subject": "interface:streams-group-heartbeat-protocol",
    "predicate": "EXHIBITS",
    "object": "failure:incorrect-behavior",
@@ -18748,6 +19223,176 @@
     "KAFKA-16359"
    ],
    "confidence": "high"
+  },
+  {
+   "subject": "system:broker",
+   "predicate": "EXHIBITS",
+   "object": "failure:documentation-gap",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15769"
+   ],
+   "confidence": "medium",
+   "schema_violation": "domain/range: System -EXHIBITS-> Failure Mode"
+  },
+  {
+   "subject": "system:broker",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14900",
+    "KAFKA-14904",
+    "KAFKA-14984",
+    "KAFKA-14985",
+    "KAFKA-15099"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: System -EXHIBITS-> Failure Mode"
+  },
+  {
+   "subject": "system:build-ci",
+   "predicate": "EXHIBITS",
+   "object": "failure:build-ci-failure",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14908"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: System -EXHIBITS-> Failure Mode"
+  },
+  {
+   "subject": "system:build-ci",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15589"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: System -EXHIBITS-> Failure Mode"
+  },
+  {
+   "subject": "system:build-ci",
+   "predicate": "EXHIBITS",
+   "object": "failure:performance-degradation",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15476"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: System -EXHIBITS-> Failure Mode"
+  },
+  {
+   "subject": "system:connect",
+   "predicate": "EXHIBITS",
+   "object": "failure:api-usability-gap",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15597"
+   ],
+   "confidence": "medium",
+   "schema_violation": "domain/range: System -EXHIBITS-> Failure Mode"
+  },
+  {
+   "subject": "system:connect",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14901",
+    "KAFKA-14905"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: System -EXHIBITS-> Failure Mode"
+  },
+  {
+   "subject": "system:controller",
+   "predicate": "EXHIBITS",
+   "object": "failure:incorrect-behavior",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15381"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: System -EXHIBITS-> Failure Mode"
+  },
+  {
+   "subject": "system:controller",
+   "predicate": "EXHIBITS",
+   "object": "failure:missing-observability",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15183"
+   ],
+   "confidence": "medium",
+   "schema_violation": "domain/range: System -EXHIBITS-> Failure Mode"
+  },
+  {
+   "subject": "system:controller",
+   "predicate": "EXHIBITS",
+   "object": "failure:performance-degradation",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15766"
+   ],
+   "confidence": "medium",
+   "schema_violation": "domain/range: System -EXHIBITS-> Failure Mode"
+  },
+  {
+   "subject": "system:mirrormaker",
+   "predicate": "EXHIBITS",
+   "object": "failure:config-not-honored",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15372"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: System -EXHIBITS-> Failure Mode"
+  },
+  {
+   "subject": "system:mirrormaker",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15292"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: System -EXHIBITS-> Failure Mode"
+  },
+  {
+   "subject": "system:streams",
+   "predicate": "EXHIBITS",
+   "object": "failure:build-ci-failure",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15378"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: System -EXHIBITS-> Failure Mode"
+  },
+  {
+   "subject": "system:streams",
+   "predicate": "EXHIBITS",
+   "object": "failure:config-not-honored",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15774"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: System -EXHIBITS-> Failure Mode"
+  },
+  {
+   "subject": "system:streams",
+   "predicate": "EXHIBITS",
+   "object": "failure:flaky-test",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15770"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: System -EXHIBITS-> Failure Mode"
   },
   {
    "subject": "component:admin-cli-tools",
@@ -18930,65 +19575,12 @@
    "confidence": "high"
   },
   {
-   "subject": "component:config-command",
-   "predicate": "EXPOSES",
-   "object": "interface:kafka-configs-sh",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-17583",
-    "KAFKA-20111",
-    "KAFKA-20236",
-    "KAFKA-20506"
-   ],
-   "confidence": "high"
-  },
-  {
    "subject": "component:config-manager",
    "predicate": "EXPOSES",
    "object": "interface:dynamic-config-failure-policy",
    "attributes": {},
    "evidence": [
     "KAFKA-19997"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:connect-rest-api",
-   "predicate": "EXPOSES",
-   "object": "interface:connect-tasks-config-endpoint",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15377"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:connect-rest-api",
-   "predicate": "EXPOSES",
-   "object": "interface:connector-plugins-endpoint",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15473"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:connect-runtime",
-   "predicate": "EXPOSES",
-   "object": "interface:connect-validate-endpoint-api",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-13756"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:connect-runtime",
-   "predicate": "EXPOSES",
-   "object": "interface:connector-client-config-override-policy",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-19824"
    ],
    "confidence": "high"
   },
@@ -19003,36 +19595,6 @@
    "confidence": "high"
   },
   {
-   "subject": "component:connect-runtime",
-   "predicate": "EXPOSES",
-   "object": "interface:errors-retry-timeout",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-13109"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:connect-runtime",
-   "predicate": "EXPOSES",
-   "object": "interface:sourceconnector-alteroffsets",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15182"
-   ],
-   "confidence": "medium"
-  },
-  {
-   "subject": "component:connect-runtime",
-   "predicate": "EXPOSES",
-   "object": "interface:versioned-interface",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15291"
-   ],
-   "confidence": "medium"
-  },
-  {
    "subject": "component:connect-sink-task",
    "predicate": "EXPOSES",
    "object": "interface:consumer-partition-assignor",
@@ -19041,6 +19603,36 @@
     "KAFKA-12463"
    ],
    "confidence": "medium"
+  },
+  {
+   "subject": "component:connect-worker",
+   "predicate": "EXPOSES",
+   "object": "interface:connect-validate-endpoint-api",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13756"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:connect-worker",
+   "predicate": "EXPOSES",
+   "object": "interface:connector-client-config-override-policy",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-19824"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:connect-worker",
+   "predicate": "EXPOSES",
+   "object": "interface:errors-retry-timeout",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13109"
+   ],
+   "confidence": "high"
   },
   {
    "subject": "component:console-producer",
@@ -19313,12 +19905,33 @@
    "confidence": "high"
   },
   {
-   "subject": "component:kafka-consumer",
+   "subject": "component:kafka-config-tool",
    "predicate": "EXPOSES",
-   "object": "interface:fetchconfig",
+   "object": "interface:kafka-configs-sh",
    "attributes": {},
    "evidence": [
-    "KAFKA-14848"
+    "KAFKA-17583"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:kafka-configs-cli",
+   "predicate": "EXPOSES",
+   "object": "interface:kafka-configs-cli",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-20111"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:kafka-configs-cli",
+   "predicate": "EXPOSES",
+   "object": "interface:kafka-configs-sh",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-20236",
+    "KAFKA-20506"
    ],
    "confidence": "high"
   },
@@ -19333,14 +19946,14 @@
    "confidence": "high"
   },
   {
-   "subject": "component:kafka-metrics",
+   "subject": "component:kafka-producer",
    "predicate": "EXPOSES",
-   "object": "interface:appinfo-metrics",
+   "object": "interface:partitioner-api",
    "attributes": {},
    "evidence": [
-    "KAFKA-15186"
+    "KAFKA-14546"
    ],
-   "confidence": "medium"
+   "confidence": "high"
   },
   {
    "subject": "component:kafka-protocol",
@@ -19378,8 +19991,17 @@
    "object": "interface:streams-close-options",
    "attributes": {},
    "evidence": [
-    "KAFKA-14076",
     "KAFKA-16514"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:kafka-streams-client",
+   "predicate": "EXPOSES",
+   "object": "interface:close-options-api",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14076"
    ],
    "confidence": "high"
   },
@@ -19395,6 +20017,16 @@
    "confidence": "high"
   },
   {
+   "subject": "component:kafkaconsumer",
+   "predicate": "EXPOSES",
+   "object": "interface:fetchconfig",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14848"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:key-value-store",
    "predicate": "EXPOSES",
    "object": "interface:state-store-context-api",
@@ -19405,23 +20037,32 @@
    "confidence": "high"
   },
   {
+   "subject": "component:kraft",
+   "predicate": "EXPOSES",
+   "object": "interface:broker-id-node-id",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13192"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:kraft",
+   "predicate": "EXPOSES",
+   "object": "interface:kraft-configuration-properties",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-12992"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:kraft-admin-client",
    "predicate": "EXPOSES",
    "object": "interface:add-raft-voter-options",
    "attributes": {},
    "evidence": [
     "KAFKA-19692"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:kraft-controller",
-   "predicate": "EXPOSES",
-   "object": "interface:create-topic-api",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-13189",
-    "KAFKA-13190"
    ],
    "confidence": "high"
   },
@@ -19448,50 +20089,10 @@
   {
    "subject": "component:kraft-controller",
    "predicate": "EXPOSES",
-   "object": "interface:kraft-quorum-metrics",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-16524"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:kraft-controller",
-   "predicate": "EXPOSES",
    "object": "interface:quorum-fetch-timeout-ms-config",
    "attributes": {},
    "evidence": [
     "KAFKA-13871"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:kraft-controller",
-   "predicate": "EXPOSES",
-   "object": "interface:request-forwarding-protocol",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-12886"
-   ],
-   "confidence": "medium"
-  },
-  {
-   "subject": "component:kraft-quorum",
-   "predicate": "EXPOSES",
-   "object": "interface:broker-id-node-id",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-13192"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:kraft-quorum",
-   "predicate": "EXPOSES",
-   "object": "interface:kraft-configuration-properties",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-12992"
    ],
    "confidence": "high"
   },
@@ -19558,16 +20159,6 @@
   {
    "subject": "component:log-config",
    "predicate": "EXPOSES",
-   "object": "interface:log-message-timestamp-difference-max-ms",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-17997"
-   ],
-   "confidence": "medium"
-  },
-  {
-   "subject": "component:log-config",
-   "predicate": "EXPOSES",
    "object": "interface:segment-bytes-config",
    "attributes": {},
    "evidence": [
@@ -19614,6 +20205,16 @@
     "KAFKA-14544"
    ],
    "confidence": "high"
+  },
+  {
+   "subject": "component:log-manager",
+   "predicate": "EXPOSES",
+   "object": "interface:log-message-timestamp-difference-max-ms",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-17997"
+   ],
+   "confidence": "medium"
   },
   {
    "subject": "component:log-manager",
@@ -19709,16 +20310,6 @@
    "confidence": "high"
   },
   {
-   "subject": "component:mirror-source-connector",
-   "predicate": "EXPOSES",
-   "object": "interface:sync-topic-configs-enabled",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-14898"
-   ],
-   "confidence": "high"
-  },
-  {
    "subject": "component:mirror-source-task",
    "predicate": "EXPOSES",
    "object": "interface:mirrorsource-metrics-tags",
@@ -19735,6 +20326,16 @@
    "attributes": {},
    "evidence": [
     "KAFKA-14599"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:mirrorsourceconnector",
+   "predicate": "EXPOSES",
+   "object": "interface:sync-topic-configs-enabled",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14898"
    ],
    "confidence": "high"
   },
@@ -19761,7 +20362,7 @@
   {
    "subject": "component:new-consumer",
    "predicate": "EXPOSES",
-   "object": "interface:consumer-close-closeoptions",
+   "object": "interface:consumer-close-options",
    "attributes": {},
    "evidence": [
     "KAFKA-18267"
@@ -19801,16 +20402,6 @@
   {
    "subject": "component:producer",
    "predicate": "EXPOSES",
-   "object": "interface:partitioner-api",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-14546"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "component:producer",
-   "predicate": "EXPOSES",
    "object": "interface:producer-doSend-api",
    "attributes": {},
    "evidence": [
@@ -19829,7 +20420,7 @@
    "confidence": "high"
   },
   {
-   "subject": "component:producer",
+   "subject": "component:producer-client",
    "predicate": "EXPOSES",
    "object": "interface:producerconfig-adaptive-partitioning-config",
    "attributes": {},
@@ -19847,6 +20438,37 @@
     "KAFKA-13361"
    ],
    "confidence": "high"
+  },
+  {
+   "subject": "component:quorum-controller",
+   "predicate": "EXPOSES",
+   "object": "interface:create-topic-api",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13189",
+    "KAFKA-13190"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:quorum-controller",
+   "predicate": "EXPOSES",
+   "object": "interface:kraft-quorum-metrics",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-16524"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:quorum-controller",
+   "predicate": "EXPOSES",
+   "object": "interface:request-forwarding-protocol",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-12886"
+   ],
+   "confidence": "medium"
   },
   {
    "subject": "component:quota-api",
@@ -19905,16 +20527,6 @@
    "attributes": {},
    "evidence": [
     "KAFKA-17108"
-   ],
-   "confidence": "medium"
-  },
-  {
-   "subject": "component:replica-manager",
-   "predicate": "EXPOSES",
-   "object": "interface:deleterecords-api",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15298"
    ],
    "confidence": "medium"
   },
@@ -20119,6 +20731,72 @@
    "confidence": "high"
   },
   {
+   "subject": "system:broker",
+   "predicate": "EXPOSES",
+   "object": "interface:deleterecords-api",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15298"
+   ],
+   "confidence": "medium",
+   "schema_violation": "domain/range: System -EXPOSES-> Interface"
+  },
+  {
+   "subject": "system:clients",
+   "predicate": "EXPOSES",
+   "object": "interface:appinfo-metrics",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15186"
+   ],
+   "confidence": "medium",
+   "schema_violation": "domain/range: System -EXPOSES-> Interface"
+  },
+  {
+   "subject": "system:connect",
+   "predicate": "EXPOSES",
+   "object": "interface:connect-tasks-config-endpoint",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15377"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: System -EXPOSES-> Interface"
+  },
+  {
+   "subject": "system:connect",
+   "predicate": "EXPOSES",
+   "object": "interface:connector-plugins-endpoint",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15473"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: System -EXPOSES-> Interface"
+  },
+  {
+   "subject": "system:connect",
+   "predicate": "EXPOSES",
+   "object": "interface:sourceconnector-alteroffsets",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15182"
+   ],
+   "confidence": "medium",
+   "schema_violation": "domain/range: System -EXPOSES-> Interface"
+  },
+  {
+   "subject": "system:connect",
+   "predicate": "EXPOSES",
+   "object": "interface:versioned-interface",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15291"
+   ],
+   "confidence": "medium",
+   "schema_violation": "domain/range: System -EXPOSES-> Interface"
+  },
+  {
    "subject": "initiative:broadcast-result-record",
    "predicate": "GOVERNED_BY",
    "object": "process:kip-design-proposal-process",
@@ -20135,6 +20813,16 @@
    "attributes": {},
    "evidence": [
     "KAFKA-15828"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "initiative:config-defaults-4-0",
+   "predicate": "GOVERNED_BY",
+   "object": "process:kip-design-proposal-process",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-16368"
    ],
    "confidence": "high"
   },
@@ -20175,16 +20863,6 @@
    "attributes": {},
    "evidence": [
     "KAFKA-15831"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "initiative:kip-1030",
-   "predicate": "GOVERNED_BY",
-   "object": "process:kip-design-proposal-process",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-16368"
    ],
    "confidence": "high"
   },
@@ -20369,16 +21047,6 @@
     "KAFKA-20801"
    ],
    "confidence": "high"
-  },
-  {
-   "subject": "initiative:kip-405",
-   "predicate": "GOVERNED_BY",
-   "object": "process:kip-design-proposal-process",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-15480"
-   ],
-   "confidence": "medium"
   },
   {
    "subject": "initiative:kip-784",
@@ -20594,6 +21262,16 @@
    "confidence": "high"
   },
   {
+   "subject": "initiative:tiered-storage",
+   "predicate": "GOVERNED_BY",
+   "object": "process:kip-design-proposal-process",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15480"
+   ],
+   "confidence": "medium"
+  },
+  {
    "subject": "initiative:zk-to-kraft-migration",
    "predicate": "GOVERNED_BY",
    "object": "process:platform-migration",
@@ -20703,6 +21381,16 @@
     "KAFKA-19684"
    ],
    "confidence": "medium"
+  },
+  {
+   "subject": "interface:group-instance-id",
+   "predicate": "GOVERNED_BY",
+   "object": "process:kip-design-proposal-process",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15773"
+   ],
+   "confidence": "low"
   },
   {
    "subject": "interface:group-name-collision-error",
@@ -20984,6 +21672,27 @@
    "confidence": "high"
   },
   {
+   "subject": "initiative:zk-to-kraft-migration",
+   "predicate": "MITIGATED_BY",
+   "object": "process:release-backport",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15098"
+   ],
+   "confidence": "low",
+   "schema_violation": "domain/range: Initiative -MITIGATED_BY-> Process"
+  },
+  {
+   "subject": "component:abstractcoordinator",
+   "predicate": "PART_OF",
+   "object": "system:clients",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15474"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:abstractstickyassignor",
    "predicate": "PART_OF",
    "object": "system:clients",
@@ -21090,6 +21799,17 @@
    "confidence": "high"
   },
   {
+   "subject": "component:alter-isr-manager",
+   "predicate": "PART_OF",
+   "object": "system:controller",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-12345",
+    "KAFKA-13091"
+   ],
+   "confidence": "medium"
+  },
+  {
    "subject": "component:alter-partition-manager",
    "predicate": "PART_OF",
    "object": "system:controller",
@@ -21116,6 +21836,27 @@
    "attributes": {},
    "evidence": [
     "KAFKA-16365"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:async-consumer",
+   "predicate": "PART_OF",
+   "object": "system:clients",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-20332",
+    "KAFKA-21049"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:async-kafka-consumer",
+   "predicate": "PART_OF",
+   "object": "system:clients",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14438"
    ],
    "confidence": "high"
   },
@@ -21212,6 +21953,17 @@
     "KAFKA-12647"
    ],
    "confidence": "medium"
+  },
+  {
+   "subject": "component:broker-topic-stats-test-utils",
+   "predicate": "PART_OF",
+   "object": "system:build-ci",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-21048",
+    "KAFKA-21146"
+   ],
+   "confidence": "high"
   },
   {
    "subject": "component:broker-zk-registration",
@@ -21362,6 +22114,16 @@
    "confidence": "high"
   },
   {
+   "subject": "component:cluster-test-kit",
+   "predicate": "PART_OF",
+   "object": "system:tooling",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-19938"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:common-errors",
    "predicate": "PART_OF",
    "object": "system:clients",
@@ -21454,6 +22216,17 @@
    "confidence": "high"
   },
   {
+   "subject": "component:connect-rest-api-test",
+   "predicate": "PART_OF",
+   "object": "system:build-ci",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14193",
+    "KAFKA-14598"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:connect-rest-server",
    "predicate": "PART_OF",
    "object": "system:connect",
@@ -21493,6 +22266,20 @@
    "attributes": {},
    "evidence": [
     "KAFKA-16358"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:connect-worker",
+   "predicate": "PART_OF",
+   "object": "system:connect",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-12645",
+    "KAFKA-13109",
+    "KAFKA-13756",
+    "KAFKA-19824",
+    "KAFKA-21047"
    ],
    "confidence": "high"
   },
@@ -21606,6 +22393,16 @@
    "confidence": "high"
   },
   {
+   "subject": "component:consumercoordinator",
+   "predicate": "PART_OF",
+   "object": "system:clients",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15178"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:controller",
    "predicate": "PART_OF",
    "object": "system:controller",
@@ -21678,6 +22475,16 @@
    "confidence": "high"
   },
   {
+   "subject": "component:dedicated-mirror-connector",
+   "predicate": "PART_OF",
+   "object": "system:mirrormaker",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-17221"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:dependency-management",
    "predicate": "PART_OF",
    "object": "system:build-ci",
@@ -21697,6 +22504,26 @@
    "evidence": [
     "KAFKA-13719",
     "KAFKA-16838"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:distributed-herder-test",
+   "predicate": "PART_OF",
+   "object": "system:build-ci",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13187"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "subject": "component:distributedherder",
+   "predicate": "PART_OF",
+   "object": "system:connect",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14746"
    ],
    "confidence": "high"
   },
@@ -21771,6 +22598,16 @@
    "confidence": "high"
   },
   {
+   "subject": "component:embeddedconnectcluster",
+   "predicate": "PART_OF",
+   "object": "system:connect",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14855"
+   ],
+   "confidence": "medium"
+  },
+  {
    "subject": "component:eos-state-manager",
    "predicate": "PART_OF",
    "object": "system:streams",
@@ -21778,6 +22615,16 @@
    "evidence": [
     "KAFKA-14440",
     "KAFKA-14548"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:exactly-once-source-integration-test",
+   "predicate": "PART_OF",
+   "object": "system:build-ci",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14742"
    ],
    "confidence": "high"
   },
@@ -21869,6 +22716,16 @@
    "attributes": {},
    "evidence": [
     "KAFKA-13809"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:fk-join",
+   "predicate": "PART_OF",
+   "object": "system:streams",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14747"
    ],
    "confidence": "high"
   },
@@ -22109,6 +22966,29 @@
    "confidence": "high"
   },
   {
+   "subject": "component:kafka-config-tool",
+   "predicate": "PART_OF",
+   "object": "system:tooling",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-17583",
+    "KAFKA-17787"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:kafka-configs-cli",
+   "predicate": "PART_OF",
+   "object": "system:tooling",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-20111",
+    "KAFKA-20236",
+    "KAFKA-20506"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:kafka-connect-framework",
    "predicate": "PART_OF",
    "object": "system:connect",
@@ -22189,6 +23069,17 @@
    "confidence": "high"
   },
   {
+   "subject": "component:kafka-metadata-quorum-cli",
+   "predicate": "PART_OF",
+   "object": "system:tooling",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-16174",
+    "KAFKA-16521"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:kafka-metrics",
    "predicate": "PART_OF",
    "object": "system:clients",
@@ -22205,6 +23096,18 @@
    "attributes": {},
    "evidence": [
     "KAFKA-14603"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:kafka-producer",
+   "predicate": "PART_OF",
+   "object": "system:clients",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14020",
+    "KAFKA-14359",
+    "KAFKA-14546"
    ],
    "confidence": "high"
   },
@@ -22311,6 +23214,18 @@
    "confidence": "high"
   },
   {
+   "subject": "component:kafka-streams-client",
+   "predicate": "PART_OF",
+   "object": "system:streams",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14076",
+    "KAFKA-14641",
+    "KAFKA-14650"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:kafka-streams-progress",
    "predicate": "PART_OF",
    "object": "system:streams",
@@ -22382,6 +23297,28 @@
    "confidence": "high"
   },
   {
+   "subject": "component:kafkaconsumer",
+   "predicate": "PART_OF",
+   "object": "system:clients",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14848",
+    "KAFKA-15180"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:kafkametadataquorum-cli",
+   "predicate": "PART_OF",
+   "object": "system:tooling",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14982"
+   ],
+   "confidence": "high",
+   "schema_violation": "dangling reference"
+  },
+  {
    "subject": "component:key-value-store",
    "predicate": "PART_OF",
    "object": "system:streams",
@@ -22396,6 +23333,19 @@
     "KAFKA-13605"
    ],
    "confidence": "high"
+  },
+  {
+   "subject": "component:kraft",
+   "predicate": "PART_OF",
+   "object": "system:controller",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-12561",
+    "KAFKA-12992",
+    "KAFKA-13110",
+    "KAFKA-13192"
+   ],
+   "confidence": "medium"
   },
   {
    "subject": "component:kraft-admin-client",
@@ -22516,6 +23466,27 @@
    "confidence": "high"
   },
   {
+   "subject": "component:kraftclient",
+   "predicate": "PART_OF",
+   "object": "system:controller",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15100",
+    "KAFKA-15599"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:kraftclustertest",
+   "predicate": "PART_OF",
+   "object": "system:build-ci",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15103"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:kstream",
    "predicate": "PART_OF",
    "object": "system:streams",
@@ -22589,6 +23560,16 @@
    "confidence": "high"
   },
   {
+   "subject": "component:ktable-foreignkey-join",
+   "predicate": "PART_OF",
+   "object": "system:streams",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13268"
+   ],
+   "confidence": "medium"
+  },
+  {
    "subject": "component:ktable-source",
    "predicate": "PART_OF",
    "object": "system:streams",
@@ -22648,6 +23629,16 @@
     "KAFKA-18268",
     "KAFKA-18597",
     "KAFKA-20452"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:log-compaction-tester",
+   "predicate": "PART_OF",
+   "object": "system:tooling",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-21152"
    ],
    "confidence": "high"
   },
@@ -22746,6 +23737,16 @@
    "confidence": "high"
   },
   {
+   "subject": "component:logcleaner",
+   "predicate": "PART_OF",
+   "object": "system:broker",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15097"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:logging-subsystem",
    "predicate": "PART_OF",
    "object": "system:broker",
@@ -22756,12 +23757,32 @@
    "confidence": "high"
   },
   {
+   "subject": "component:logmanager",
+   "predicate": "PART_OF",
+   "object": "system:broker",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15375"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:membership-manager",
    "predicate": "PART_OF",
    "object": "system:clients",
    "attributes": {},
    "evidence": [
     "KAFKA-15832"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:memory-pool",
+   "predicate": "PART_OF",
+   "object": "system:broker",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-20003"
    ],
    "confidence": "high"
   },
@@ -22782,6 +23803,16 @@
    "attributes": {},
    "evidence": [
     "KAFKA-14153"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:metadata-cache",
+   "predicate": "PART_OF",
+   "object": "system:controller",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-16515"
    ],
    "confidence": "high"
   },
@@ -22910,6 +23941,16 @@
    "confidence": "high"
   },
   {
+   "subject": "component:mirror-maker-2",
+   "predicate": "PART_OF",
+   "object": "system:mirrormaker",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-17220"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:mirror-source-connector",
    "predicate": "PART_OF",
    "object": "system:mirrormaker",
@@ -22969,6 +24010,39 @@
    "attributes": {},
    "evidence": [
     "KAFKA-14262"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:mirrormaker2-worker",
+   "predicate": "PART_OF",
+   "object": "system:mirrormaker",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-17784"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:mirrorsourceconnector",
+   "predicate": "PART_OF",
+   "object": "system:mirrormaker",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14745",
+    "KAFKA-14898",
+    "KAFKA-14980"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:mock-client",
+   "predicate": "PART_OF",
+   "object": "system:clients",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13000",
+    "KAFKA-17103"
    ],
    "confidence": "high"
   },
@@ -23112,6 +24186,16 @@
    "confidence": "high"
   },
   {
+   "subject": "component:offset-validation-test",
+   "predicate": "PART_OF",
+   "object": "system:build-ci",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14196"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:partition",
    "predicate": "PART_OF",
    "object": "system:broker",
@@ -23208,6 +24292,18 @@
    "confidence": "high"
   },
   {
+   "subject": "component:producer-client",
+   "predicate": "PART_OF",
+   "object": "system:clients",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13271",
+    "KAFKA-18068",
+    "KAFKA-19250"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:producer-config",
    "predicate": "PART_OF",
    "object": "system:clients",
@@ -23216,6 +24312,16 @@
     "KAFKA-13361",
     "KAFKA-13598",
     "KAFKA-13673"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:producer-id-expiration-test",
+   "predicate": "PART_OF",
+   "object": "system:build-ci",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14600"
    ],
    "confidence": "high"
   },
@@ -23271,6 +24377,24 @@
    "confidence": "high"
   },
   {
+   "subject": "component:quorum-controller",
+   "predicate": "PART_OF",
+   "object": "system:controller",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-12457",
+    "KAFKA-12467",
+    "KAFKA-12882",
+    "KAFKA-13092",
+    "KAFKA-13112",
+    "KAFKA-13114",
+    "KAFKA-13189",
+    "KAFKA-13190",
+    "KAFKA-16173"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:quota-api",
    "predicate": "PART_OF",
    "object": "system:clients",
@@ -23287,6 +24411,27 @@
    "attributes": {},
    "evidence": [
     "KAFKA-12158"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "subject": "component:raft-quorum-controller",
+   "predicate": "PART_OF",
+   "object": "system:controller",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-20895"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:raft-simulation-tests",
+   "predicate": "PART_OF",
+   "object": "system:build-ci",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-12459",
+    "KAFKA-13090"
    ],
    "confidence": "medium"
   },
@@ -23410,12 +24555,39 @@
    "confidence": "high"
   },
   {
+   "subject": "component:remotelogmanager",
+   "predicate": "PART_OF",
+   "object": "system:broker",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15038",
+    "KAFKA-15040",
+    "KAFKA-15047",
+    "KAFKA-15376",
+    "KAFKA-15477",
+    "KAFKA-15479",
+    "KAFKA-15480"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:repartition-topic-handling",
    "predicate": "PART_OF",
    "object": "system:streams",
    "attributes": {},
    "evidence": [
     "KAFKA-20457"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:replica-fetcher",
+   "predicate": "PART_OF",
+   "object": "system:broker",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-13754",
+    "KAFKA-13803"
    ],
    "confidence": "high"
   },
@@ -23450,6 +24622,17 @@
    "attributes": {},
    "evidence": [
     "KAFKA-20897"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:replicafetcher",
+   "predicate": "PART_OF",
+   "object": "system:broker",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15181",
+    "KAFKA-15590"
    ],
    "confidence": "high"
   },
@@ -23491,6 +24674,16 @@
    "evidence": [
     "KAFKA-15184",
     "KAFKA-15188"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:requestquotatest",
+   "predicate": "PART_OF",
+   "object": "system:build-ci",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15289"
    ],
    "confidence": "high"
   },
@@ -23594,6 +24787,16 @@
     "KAFKA-20460"
    ],
    "confidence": "high"
+  },
+  {
+   "subject": "component:share-consumer-test-utils",
+   "predicate": "PART_OF",
+   "object": "system:tooling",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-21051"
+   ],
+   "confidence": "medium"
   },
   {
    "subject": "component:share-coordinator",
@@ -24045,6 +25248,16 @@
    "confidence": "high"
   },
   {
+   "subject": "component:streams-group-coordinator",
+   "predicate": "PART_OF",
+   "object": "system:streams",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-19661"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:streams-group-description",
    "predicate": "PART_OF",
    "object": "system:clients",
@@ -24146,6 +25359,16 @@
    "confidence": "high"
   },
   {
+   "subject": "component:streams-smoke-test",
+   "predicate": "PART_OF",
+   "object": "system:streams",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-19429"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:streams-system-tests",
    "predicate": "PART_OF",
    "object": "system:build-ci",
@@ -24228,6 +25451,16 @@
    "confidence": "high"
   },
   {
+   "subject": "component:test-harness",
+   "predicate": "PART_OF",
+   "object": "system:build-ci",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14433"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:test-infrastructure",
    "predicate": "PART_OF",
    "object": "system:build-ci",
@@ -24268,6 +25501,17 @@
    "confidence": "medium"
   },
   {
+   "subject": "component:topic-based-rlmm",
+   "predicate": "PART_OF",
+   "object": "system:broker",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14642",
+    "KAFKA-14643"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:topic-command",
    "predicate": "PART_OF",
    "object": "system:tooling",
@@ -24306,6 +25550,16 @@
    "attributes": {},
    "evidence": [
     "KAFKA-14358"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:topicbasedremotelogmetadatamanager",
+   "predicate": "PART_OF",
+   "object": "system:broker",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-15181"
    ],
    "confidence": "high"
   },
@@ -24406,6 +25660,16 @@
    "attributes": {},
    "evidence": [
     "KAFKA-17043"
+   ],
+   "confidence": "high"
+  },
+  {
+   "subject": "component:upgrade-test",
+   "predicate": "PART_OF",
+   "object": "system:build-ci",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14263"
    ],
    "confidence": "high"
   },
@@ -24512,6 +25776,16 @@
    "confidence": "high"
   },
   {
+   "subject": "component:zk-migration-integration-tests",
+   "predicate": "PART_OF",
+   "object": "system:build-ci",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-16841"
+   ],
+   "confidence": "high"
+  },
+  {
    "subject": "component:zkmigrationclient",
    "predicate": "PART_OF",
    "object": "system:controller",
@@ -24612,6 +25886,7 @@
     "KAFKA-17580",
     "KAFKA-18065",
     "KAFKA-18266",
+    "KAFKA-18596",
     "KAFKA-18603",
     "KAFKA-18768",
     "KAFKA-19247",
@@ -24763,16 +26038,6 @@
    "attributes": {},
    "evidence": [
     "KAFKA-17584"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "failure:config-not-honored",
-   "predicate": "TRIGGERED_BY",
-   "object": "interface:sync-topic-configs-enabled",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-14898"
    ],
    "confidence": "high"
   },
@@ -24993,26 +26258,6 @@
   {
    "subject": "failure:security-vulnerability",
    "predicate": "TRIGGERED_BY",
-   "object": "dependency:jetty-server",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-14983"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "failure:security-vulnerability",
-   "predicate": "TRIGGERED_BY",
-   "object": "dependency:jose4j",
-   "attributes": {},
-   "evidence": [
-    "KAFKA-14986"
-   ],
-   "confidence": "high"
-  },
-  {
-   "subject": "failure:security-vulnerability",
-   "predicate": "TRIGGERED_BY",
    "object": "dependency:log4j",
    "attributes": {},
    "evidence": [
@@ -25026,10 +26271,20 @@
    "object": "dependency:zookeeper",
    "attributes": {},
    "evidence": [
-    "KAFKA-15596",
     "KAFKA-16347"
    ],
    "confidence": "high"
+  },
+  {
+   "subject": "interface:sync-topic-configs-enabled",
+   "predicate": "TRIGGERED_BY",
+   "object": "component:mirrorsourceconnector",
+   "attributes": {},
+   "evidence": [
+    "KAFKA-14898"
+   ],
+   "confidence": "high",
+   "schema_violation": "domain/range: Interface -TRIGGERED_BY-> Component"
   }
  ]
 }
