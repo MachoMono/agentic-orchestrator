@@ -24,5 +24,8 @@ The agent is given a **goal**, not step-by-step instructions. It **plans → cal
 
 The full roadmap, with prompts and vocabulary, is in [PLAN.md](PLAN.md).
 
+## 📘 The Field Guide
+[**GUIDE.md**](GUIDE.md) is a living guide to agentic orchestration: principles, patterns and a glossary, each learned from a real project here. It grows with every project.
+
 ## Data
 All data comes from the **public Apache Jira** (issues.apache.org). No private or company data is used.
