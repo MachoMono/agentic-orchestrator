@@ -11,7 +11,7 @@ The agent is given a **goal**, not step-by-step instructions. It **plans → cal
 | # | Project | Pattern | Status |
 |---|---|---|---|
 | 00 | [Portfolio Scaffold](projects/00-portfolio-scaffold) | Goal → multi-tool execution | ✅ |
-| 01 | Jira Harvester | Gather | ⏳ |
+| 01 | [Jira Harvester](projects/01-jira-harvester) | Gather | ✅ |
 | 02 | Ontology Forge | Fan-out → Merge, Critique → Revise | ⏳ |
 | 03 | Organizational Archaeology | Build → browser QA loop | ⏳ |
 | 04 | Ontology MCP Server | Knowledge as a tool | ⏳ |

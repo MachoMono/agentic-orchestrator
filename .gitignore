@@ -1,0 +1,3 @@
+data/raw/.checkpoint/
+__pycache__/
+*.tmp
