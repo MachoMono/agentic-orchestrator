@@ -1,0 +1,177 @@
+{
+  "entity_types": {
+    "System": "system:<kebab-case-name>",
+    "Component": "component:<kebab-case-name>",
+    "Interface": "interface:<kebab-case-name>",
+    "Initiative": "initiative:<kebab-case-name>",
+    "Release": "release:<kebab-case-name>",
+    "External Dependency": "dependency:<kebab-case-name>",
+    "Failure Mode": "failure:<kebab-case-name>",
+    "Business Impact": "impact:<kebab-case-name>",
+    "Role": "role:<kebab-case-name>",
+    "Process": "process:<kebab-case-name>"
+  },
+  "relations": {
+    "PART_OF": {
+      "subject": [
+        "Component"
+      ],
+      "object": [
+        "System"
+      ]
+    },
+    "DEPENDS_ON": {
+      "subject": [
+        "Component",
+        "System"
+      ],
+      "object": [
+        "Component",
+        "External Dependency",
+        "System"
+      ]
+    },
+    "EXPOSES": {
+      "subject": [
+        "Component"
+      ],
+      "object": [
+        "Interface"
+      ]
+    },
+    "EXHIBITS": {
+      "subject": [
+        "Component",
+        "Interface",
+        "Release"
+      ],
+      "object": [
+        "Failure Mode"
+      ]
+    },
+    "TRIGGERED_BY": {
+      "subject": [
+        "Failure Mode"
+      ],
+      "object": [
+        "Component",
+        "External Dependency",
+        "Interface"
+      ]
+    },
+    "CAUSES": {
+      "subject": [
+        "Failure Mode"
+      ],
+      "object": [
+        "Business Impact"
+      ]
+    },
+    "CHANGES": {
+      "subject": [
+        "Initiative"
+      ],
+      "object": [
+        "Component",
+        "Interface"
+      ]
+    },
+    "SUPERSEDES": {
+      "subject": [
+        "Component",
+        "Interface"
+      ],
+      "object": [
+        "Component",
+        "Interface"
+      ]
+    },
+    "DELIVERED_IN": {
+      "subject": [
+        "Component",
+        "Initiative",
+        "Interface"
+      ],
+      "object": [
+        "Release"
+      ]
+    },
+    "MITIGATED_BY": {
+      "subject": [
+        "Failure Mode"
+      ],
+      "object": [
+        "Initiative",
+        "Interface",
+        "Process"
+      ]
+    },
+    "CONCERNED_WITH": {
+      "subject": [
+        "Role"
+      ],
+      "object": [
+        "Business Impact",
+        "System"
+      ]
+    },
+    "PERFORMS": {
+      "subject": [
+        "Role"
+      ],
+      "object": [
+        "Process"
+      ]
+    },
+    "GOVERNED_BY": {
+      "subject": [
+        "Initiative",
+        "Interface"
+      ],
+      "object": [
+        "Process"
+      ]
+    }
+  },
+  "controlled_vocabulary_ids": {
+    "failure:crash-unhandled-exception": "Failure Mode: Crash / Unhandled Exception",
+    "failure:hang-stuck-state": "Failure Mode: Hang / Stuck State",
+    "failure:data-loss-corruption": "Failure Mode: Data Loss / Corruption",
+    "failure:incorrect-behavior": "Failure Mode: Incorrect Behavior",
+    "failure:config-not-honored": "Failure Mode: Config Not Honored",
+    "failure:performance-degradation": "Failure Mode: Performance Degradation",
+    "failure:resource-leak": "Failure Mode: Resource Leak",
+    "failure:security-vulnerability": "Failure Mode: Security Vulnerability",
+    "failure:flaky-test": "Failure Mode: Flaky Test",
+    "failure:build-ci-failure": "Failure Mode: Build / CI Failure",
+    "failure:packaging-release-defect": "Failure Mode: Packaging / Release Defect",
+    "failure:compatibility-upgrade-break": "Failure Mode: Compatibility / Upgrade Break",
+    "failure:documentation-gap": "Failure Mode: Documentation Gap",
+    "failure:api-usability-gap": "Failure Mode: API Usability Gap",
+    "failure:missing-observability": "Failure Mode: Missing Observability",
+    "impact:data-durability-risk": "Business Impact: Data Durability Risk",
+    "impact:availability-outage-risk": "Business Impact: Availability / Outage Risk",
+    "impact:security-compliance-exposure": "Business Impact: Security & Compliance Exposure",
+    "impact:upgrade-migration-friction": "Business Impact: Upgrade / Migration Friction",
+    "impact:operational-burden": "Business Impact: Operational Burden",
+    "impact:developer-productivity-loss": "Business Impact: Developer Productivity Loss",
+    "impact:user-confusion-adoption-barrier": "Business Impact: User Confusion / Adoption Barrier",
+    "impact:performance-cost": "Business Impact: Performance / Cost",
+    "role:end-user-app-developer": "Role: End User / App Developer",
+    "role:operator-sre": "Role: Operator / SRE",
+    "role:contributor": "Role: Contributor",
+    "role:newcomer-contributor": "Role: Newcomer Contributor",
+    "role:committer-reviewer": "Role: Committer / Reviewer",
+    "role:release-manager": "Role: Release Manager",
+    "role:security-reporter": "Role: Security Reporter",
+    "role:vendor-integrator": "Role: Vendor / Integrator",
+    "process:kip-design-proposal-process": "Process: KIP (Design Proposal) Process",
+    "process:release-backport": "Process: Release & Backport",
+    "process:ci-testing": "Process: CI / Testing",
+    "process:deprecation-lifecycle": "Process: Deprecation Lifecycle",
+    "process:vulnerability-response": "Process: Vulnerability Response",
+    "process:contributor-onboarding": "Process: Contributor Onboarding",
+    "process:triage": "Process: Triage",
+    "process:platform-migration": "Process: Platform Migration"
+  }
+}
