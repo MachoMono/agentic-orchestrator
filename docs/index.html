@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agentic Orchestrator</title>
+<meta name="description" content="A portfolio of agentic AI workflows: turning Jira tickets into a living business ontology, and beyond.">
+<style>
+  :root {
+    --bg: #f7f6f2; --surface: #ffffff; --text: #1d1d1b; --muted: #6b6a65;
+    --border: #e3e1da; --accent: #b4541f; --accent-soft: #f6e6db;
+    --done: #2f7d4f; --todo: #9a988f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #151513; --surface: #1e1e1b; --text: #ecebe6; --muted: #a09e96;
+      --border: #33322e; --accent: #e7894f; --accent-soft: #3a2619;
+      --done: #6cc38f; --todo: #77756d;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #151513; --surface: #1e1e1b; --text: #ecebe6; --muted: #a09e96;
+    --border: #33322e; --accent: #e7894f; --accent-soft: #3a2619;
+    --done: #6cc38f; --todo: #77756d;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { max-width: 880px; margin: 0 auto; padding: 56px 16px 80px; }
+  .eyebrow { color: var(--accent); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: 13px; }
+  h1 { font-size: clamp(32px, 6vw, 48px); line-height: 1.1; margin: 8px 0 16px; }
+  .lede { color: var(--muted); font-size: 18px; max-width: 640px; margin: 0; }
+  h2 { font-size: 20px; margin: 48px 0 16px; }
+  .loop {
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px;
+  }
+  .loop span { background: var(--accent-soft); color: var(--text); padding: 4px 10px; border-radius: 999px; font-size: 14px; }
+  .loop b { color: var(--muted); font-weight: 400; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 16px; display: flex; flex-direction: column; gap: 6px;
+    color: inherit; text-decoration: none;
+  }
+  a.card:hover { border-color: var(--accent); }
+  .card .num { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 13px; }
+  .card h3 { margin: 0; font-size: 17px; }
+  .card p { margin: 0; color: var(--muted); font-size: 14px; }
+  .status { font-size: 12px; font-weight: 600; margin-top: auto; padding-top: 8px; }
+  .status.done { color: var(--done); }
+  .status.todo { color: var(--todo); }
+  footer { margin-top: 56px; color: var(--muted); font-size: 14px; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">AI Orchestrator Portfolio</div>
+  <h1>Agentic workflows for knowledge management</h1>
+  <p class="lede">Real projects built by directing Claude Code agents. It starts with turning raw Jira tickets into a living business ontology, then turns that knowledge into tools, forecasts, risk radars and an installable playbook.</p>
+
+  <h2>What "agentic" means here</h2>
+  <div class="loop">
+    <span>Goal</span><b>→</b><span>Plan</span><b>→</b><span>Tool calls</span><b>→</b><span>Observe</span><b>→</b><span>Self-verify</span><b>→</b><span>Human checkpoint</span>
+  </div>
+
+  <h2>Projects</h2>
+  <div class="grid">
+    <a class="card" href="https://github.com/MachoMono/agentic-orchestrator/tree/main/projects/00-portfolio-scaffold">
+      <span class="num">00</span><h3>Portfolio Scaffold</h3>
+      <p>One goal-level prompt → repo, templates, this site, published and verified.</p>
+      <span class="status done">● Done</span>
+    </a>
+    <div class="card"><span class="num">01</span><h3>Jira Harvester</h3><p>Gather: paginate a public Jira API, recover from errors, validate the dataset.</p><span class="status todo">○ Planned</span></div>
+    <div class="card"><span class="num">02</span><h3>Ontology Forge</h3><p>Fan-out subagents extract entities with evidence; a critic agent cleans them up.</p><span class="status todo">○ Planned</span></div>
+    <div class="card"><span class="num">03</span><h3>Organizational Archaeology</h3><p>A time-lapse knowledge graph: watch concepts get born, grow and die.</p><span class="status todo">○ Planned</span></div>
+    <div class="card"><span class="num">04</span><h3>Ontology MCP Server</h3><p>Turn the knowledge into a tool any AI agent can plug into.</p><span class="status todo">○ Planned</span></div>
+    <div class="card"><span class="num">05</span><h3>Stakeholder Council</h3><p>Persona agents, grounded in real tickets, debate a proposal and write a decision memo.</p><span class="status todo">○ Planned</span></div>
+    <div class="card"><span class="num">06</span><h3>Time-Machine Forecaster</h3><p>Hide the future, predict it, grade the agent against what really happened.</p><span class="status todo">○ Planned</span></div>
+    <div class="card"><span class="num">07</span><h3>Tribal Knowledge Radar</h3><p>Bus-factor, ticket ping-pong and friction, found in the changelog.</p><span class="status todo">○ Planned</span></div>
+    <div class="card"><span class="num">08</span><h3>Self-Improving Skill</h3><p>The agent runs evals, reads its failures, rewrites its own skill.</p><span class="status todo">○ Planned</span></div>
+    <div class="card"><span class="num">09</span><h3>Ontology Radio</h3><p>An unattended weekly audio briefing, mastered to −16 LUFS.</p><span class="status todo">○ Planned</span></div>
+    <div class="card"><span class="num">10</span><h3>Agentic Playbook</h3><p>Every pattern shipped as an installable Claude Code plugin marketplace.</p><span class="status todo">○ Planned</span></div>
+  </div>
+
+  <footer>
+    Source and prompts: <a href="https://github.com/MachoMono/agentic-orchestrator">github.com/MachoMono/agentic-orchestrator</a> · Data: public Apache Jira.
+  </footer>
+</main>
+</body>
+</html>
