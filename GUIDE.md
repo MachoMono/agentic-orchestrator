@@ -65,6 +65,22 @@ You are not the one doing the work, and you are not a passive requester either. 
 ### Context engineering
 The **context window** is everything the model can "see" at once. It's limited, and quality drops as it fills with noise. **Rule: give each agent exactly what it needs and nothing more.** That's why each extraction agent read *only* the schema, the vocab and its own batch. *(P2)*
 
+### Compaction and fresh context
+When a conversation nears the context limit, Claude Code **compacts**: it summarizes older parts to make room. Work continues, but detail (exact numbers, reasons, instruction wording) gets blurry. **Rule: context is working memory, files are long-term memory.** Keep working memory small, and put everything important on disk. Then compaction, or a full reset, costs nothing. *(P2 discussion)*
+
+| Technique | Why it works |
+|---|---|
+| **Delegate heavy work to subagents** | Each has its own context, and only a short report comes back. In P2, agents read ≈1.3M tokens and the main session saw ≈10 short reports |
+| **Scripts move bulk data** | Data goes to disk, never into the conversation *(P1)* |
+| **Query big files, don't read them** | Python/jq pulls just the answer *(P2 critic)* |
+| **State on disk** | NOTES.md, CLAUDE.md, schema and guide survive anything |
+| **Fresh start at breakpoints** | `/clear` → "read NOTES.md and continue". A clean context that knows everything that matters |
+| **Compact on your terms** | `/compact focus on X` at a breakpoint beats automatic compaction mid-task |
+| **Headless runs** | `claude -p` starts a fresh context each time, ideal for pipelines |
+
+- Check usage with `/context`.
+- **`/goal` does not reset context.** The worker keeps its conversation, and only the separate goal *checker* judges with fresh eyes. It's a finish-line tool, not a memory tool.
+
 ### Model routing
 **Rule: match the model to how much judgment the task needs, not how important it feels.** *(P2)*
 
@@ -193,6 +209,7 @@ Mechanical checks (format, schema, counts) passing doesn't mean the content is r
 | **Checkpoint (data)** | Saved progress so an interrupted run resumes instead of restarting |
 | **CLAUDE.md** | A file Claude reads at the start of every session in that folder: standing instructions |
 | **Context window** | Everything the model can see at once |
+| **Compaction** | Claude Code summarizing older conversation to free context space. Detail gets lost, so keep state in files |
 | **Controlled vocabulary** | An approved list of terms so everyone labels things the same way |
 | **Custom subagent** | A reusable agent definition (`.claude/agents/*.md`) with its own instructions, tools and model |
 | **Domain / range** | Which entity types a relationship may start from and point to |
