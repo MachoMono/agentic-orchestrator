@@ -156,6 +156,10 @@ Mechanical checks (format, schema, counts) passing doesn't mean the content is r
 - **RAG (retrieval-augmented generation):** find the relevant documents, then answer from them.
 - Basic RAG finds text by *similarity* (**embeddings** in a **vector database**). It's good for "find text about X".
 - **GraphRAG** walks the *relationships* in a knowledge graph. It's good for multi-hop questions like *"what business impact follows if the Controller fails?"*. It's your specialty path. *(P1 discussion, P4)*
+- **A graph is not GraphRAG yet.** GraphRAG = **Graph** (the index) + **Retrieval** (question → entities → follow relationships → pull evidence) + **Generation** (answer only from what was retrieved, with citations). P2 built the graph; P4 adds retrieval and generation. Until then, a question gets answered from the model's general knowledge, not your data.
+- **Agentic retrieval** means the agent *chooses* which steps to take through the graph, using tools (`neighbors`, `path_between`, `evidence_for`), instead of a fixed pipeline fetching "the top 5 chunks". It handles questions nobody anticipated.
+- **The graph is the durable asset. Retrieval is swappable.** The same evidence-backed graph can sit behind an MCP server, a Slack bot or a dashboard. Invest in graph quality.
+- **Two meanings of "GraphRAG":** the general idea (retrieve by walking a graph), and **Microsoft GraphRAG**, a specific method that auto-builds a graph, clusters it into "communities" and pre-summarizes them. That's good for broad "main themes?" questions. A human-approved schema with evidence on every fact (our approach) is stronger for precise, auditable business questions.
 
 ### Sampling
 - **Stratified sampling:** split the data into groups (quarters) and sample each evenly, so no period dominates. *(P1)*
